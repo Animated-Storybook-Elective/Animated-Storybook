@@ -4,13 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Animated Storybook</title>
-    <link rel="stylesheet" href="./lib/styles.css">
+    <link rel="stylesheet" href="./lib/styles.css"> <!-- Base Styles -->
+    <link rel="stylesheet" href="./css/navbar.css"> <!-- Navigation Styles -->
+    <link rel="stylesheet" href="./css/footer.css"> <!-- Footer Styles -->
 </head>
 <body>
     <nav class="navbar">
         <div class="logo">
             <img src="images/logo.png" alt="StoryPlay Logo" class="logo-img">
-        
             <a href="#"> Cooh StoryPlay Hub</a>
         </div>
         <ul class="nav-links">
@@ -26,10 +27,15 @@
             </li>
             <li><a href="contact.html">Contact</a></li>
         </ul>
-        <div class="menu-toggle" id="menuToggle">
-            ☰
-        </div>
+        <div class="menu-toggle" id="menuToggle">☰</div>
     </nav>
+
+    <!-- Content here -->
+
+    <footer class="footer">
+        <p>&copy; 2024 Cooh StoryPlay Hub. All Rights Reserved.</p>
+        <p><a href="privacy.html">Privacy Policy</a> | <a href="terms.html">Terms of Service</a></p>
+    </footer>
 
     <script src="app.js"></script>
 </body>
