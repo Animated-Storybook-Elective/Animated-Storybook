@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Read Story - Cooh StoryPlay Hub</title>
+
+  <!-- Cloudflare CDN for Tailwind CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+
+  <!-- Cloudflare CDN for Font Awesome (for icons like speaker) -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body class="bg-gray-100">
+
+  <nav class="navbar bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 text-white p-4 fixed w-full top-0 z-50">
+    <div class="container mx-auto flex items-center justify-between">
+      <div class="logo flex items-center space-x-2">
+        <img src="images/logo.png" alt="StoryPlay Logo" class="h-12">
+        <a href="index.html" class="text-2xl font-bold">Cooh StoryPlay Hub</a>
+      </div>
+    </div>
+  </nav>
+
+  <div id="storybook" class="container mx-auto p-6 mt-16">
+    <div id="page-content" class="text-center mb-6">
+      <img id="page-image" class="w-full h-auto mb-4" src="" alt="Page Image" />
+      <p id="page-text" class="text-lg leading-relaxed"></p>
+    </div>
+
+    <div id="controls" class="flex justify-between items-center mb-4">
+      <button id="prev-btn" class="storybook-btn bg-blue-500 text-white py-2 px-4 rounded-lg hover:bg-blue-600">
+        <i class="fas fa-arrow-left"></i> Previous
+      </button>
+      <button id="next-btn" class="storybook-btn bg-blue-500 text-white py-2 px-4 rounded-lg hover:bg-blue-600">
+        Next <i class="fas fa-arrow-right"></i>
+      </button>
+      <button id="audio-toggle-btn" class="storybook-btn bg-blue-500 text-white py-2 px-4 rounded-lg hover:bg-blue-600" aria-label="Toggle Narration">
+        <i class="fas fa-volume-up"></i> Narration
+      </button>
+    </div>
+
+    <div id="progress" class="text-center text-xl">
+      <span id="current-page">1</span>/<span id="total-pages">10</span>
+    </div>
+
+<audio id="bg-music" loop></audio>
+<audio id="page-sound" loop></audio>
+<audio id="narration" loop></audio>
+
+  <footer class="bg-gray-800 text-white py-6">
+    <div class="container mx-auto text-center">
+      <p class="text-sm">&copy; 2024 Cooh StoryPlay Hub. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Link to the external JS file -->
+  <script src="script.js"></script>
+
+</body>
+</html>
