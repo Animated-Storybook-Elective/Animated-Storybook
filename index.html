@@ -44,17 +44,18 @@
   <div class="container mx-auto text-center">
     <h2 class="text-4xl font-bold mb-12 animate__animated animate__fadeInUp">Featured Storybook Previews</h2>
     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-      <!-- Story Card 1 -->
-      <div class="story-card bg-white p-6 rounded-lg shadow-xl hover:scale-105 transition-transform duration-300">
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbd86Wt75R2Z500X-SdO9PF5frFBkO4HhTK1vv_BPz1_wvnq8FkXmuHwM&s=10" alt="The Lion and the Mouse" class="w-full h-48 object-cover rounded-lg mb-4 transition-opacity duration-300">
-        <h3 class="text-xl font-bold">The Lion and the Mouse</h3>
-        <p class="text-sm text-gray-600 mb-4">A heartwarming tale of friendship and discovery, teaching that even the smallest creatures can make a big impact.</p>
-        <a href="story.html?storyId=1">
+<!-- Story Card 1 -->
+<div class="story-card bg-white p-6 rounded-lg shadow-xl hover:scale-105 transition-transform duration-300">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbd86Wt75R2Z500X-SdO9PF5frFBkO4HhTK1vv_BPz1_wvnq8FkXmuHwM&s=10" alt="The Lion and the Mouse" class="w-full h-48 object-cover rounded-lg mb-4 transition-opacity duration-300">
+    <h3 class="text-xl font-bold">The Lion and the Mouse</h3>
+    <p class="text-sm text-gray-600 mb-4">A heartwarming tale of friendship and discovery, teaching that even the smallest creatures can make a big impact.</p>
+    <a href="story.html?storyId=1">
         <button class="read-now-btn bg-blue-500 text-white py-2 px-4 rounded-full hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-400 transition-colors duration-300">
-                Read Now
-            </button>
-          </a>
-      </div>
+            Read Now
+        </button>
+    </a>
+</div>
+
       
       <!-- Story Card 2 -->
       <div class="story-card bg-white p-6 rounded-lg shadow-xl hover:scale-105 transition-transform duration-300">
@@ -215,113 +216,7 @@
             </p>
         </div>
     </footer>
-</body>
-</html>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Read Story - Cooh StoryPlay Hub</title>
-  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="./css/styles.css">
-</head>
-<body class="bg-gray-100">
 
-  <nav class="navbar bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 text-white p-4 fixed w-full top-0 z-50">
-    <div class="container mx-auto flex items-center justify-between">
-      <div class="logo flex items-center space-x-2">
-        <img src="images/logo.png" alt="StoryPlay Logo" class="h-12">
-        <a href="index.html" class="text-2xl font-bold">Cooh StoryPlay Hub</a>
-      </div>
-    </div>
-  </nav>
-
-  <div id="storybook" class="container mx-auto p-6 mt-16">
-    <div id="page-content" class="text-center mb-6">
-      <img id="page-image" class="w-full h-auto mb-4" src="" alt="Page Image" />
-      <p id="page-text" class="text-lg leading-relaxed"></p>
-    </div>
-
-    <div id="controls" class="flex justify-between items-center mb-4">
-      <button id="prev-btn" class="storybook-btn bg-blue-500 text-white py-2 px-4 rounded-lg hover:bg-blue-600">⬅ Previous</button>
-      <button id="next-btn" class="storybook-btn bg-blue-500 text-white py-2 px-4 rounded-lg hover:bg-blue-600">Next ➡</button>
-      <button id="audio-toggle-btn" class="storybook-btn bg-blue-500 text-white py-2 px-4 rounded-lg hover:bg-blue-600" aria-label="Toggle Narration">🔊 Narration</button>
-    </div>
-
-    <div id="progress" class="text-center text-xl">
-      <span id="current-page">1</span>/<span id="total-pages">10</span>
-    </div>
-
-    <audio id="page-sound" loop></audio>
-    <audio id="bg-music" loop></audio>
-  </div>
-
-  <footer class="bg-gray-800 text-white py-6">
-    <div class="container mx-auto text-center">
-      <p class="text-sm">&copy; 2024 Cooh StoryPlay Hub. All Rights Reserved.</p>
-    </div>
-  </footer>
-
-  <script>
-    // Get the storyId from the URL
-    const urlParams = new URLSearchParams(window.location.search);
-    const storyId = urlParams.get('storyId'); // storyId = 1
-
-    // Fetch the story JSON file based on the storyId
-    fetch(`stories/story${storyId}.json`)
-      .then(response => response.json())
-      .then(data => {
-        const totalPages = data.pages.length;
-        document.getElementById('total-pages').textContent = totalPages;
-
-        // Load the first page
-        loadPage(0, data);
-
-        let currentPage = 0;
-
-        // Previous and Next buttons
-        document.getElementById('prev-btn').addEventListener('click', () => {
-          if (currentPage > 0) {
-            loadPage(--currentPage, data);
-          }
-        });
-
-        document.getElementById('next-btn').addEventListener('click', () => {
-          if (currentPage < totalPages - 1) {
-            loadPage(++currentPage, data);
-          }
-        });
-
-        function loadPage(pageIndex, storyData) {
-          const page = storyData.pages[pageIndex];
-          document.getElementById('page-image').src = page.image;
-          document.getElementById('page-text').textContent = page.text || ''; // Assuming the page has text
-          document.getElementById('current-page').textContent = pageIndex + 1;
-
-          // Audio setup
-          const pageSound = document.getElementById('page-sound');
-          pageSound.src = page.sound;
-          pageSound.play();
-
-          const bgMusic = document.getElementById('bg-music');
-          bgMusic.src = page.bgMusic;
-          bgMusic.volume = page.bgMusicVolume;
-          bgMusic.play();
-
-          const narration = document.getElementById('page-sound');
-          if (page.narration) {
-            narration.src = page.narration;
-            narration.volume = page.narrationVolume;
-            narration.play();
-          }
-        }
-      })
-      .catch(error => {
-        console.error('Error loading story:', error);
-      });
-  </script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.2.3/howler.min.js"></script>
-
+    
 </body>
 </html>
