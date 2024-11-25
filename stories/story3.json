@@ -1,0 +1,24 @@
+{
+  "storyId": 3,
+  "title": "The Boy Who Cried Wolf",
+  "pages": [
+    {
+      "page": 1,
+      "image": "images/page-01.jpg",
+      "sound": "audios/pageturn.mp3",
+      "bgMusic": "audios/bg1.mp3",
+      "narration": "audios/page1-audio.mp3",
+      "narrationVolume": 1,
+      "bgMusicVolume": 0.5
+    },
+    {
+      "page": 2,
+      "image": "images/page-02.jpg",
+      "sound": "audios/pageturn.mp3",
+      "bgMusic": "audios/bg2.mp3",
+      "narration": "audios/page2-audio.mp3",
+      "narrationVolume": 1,
+      "bgMusicVolume": 0.5
+    }
+  ]
+}

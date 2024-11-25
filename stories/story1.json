@@ -1,0 +1,112 @@
+{
+  "storyId": 1,
+  "title": "The Lion and the Mouse",
+  "pages": [
+    {
+      "page": 0,
+      "image": "images/page-01.jpg",
+      "sound": "audios/pageturn.mp3",
+      "bgMusic": "audios/bg1.mp3",
+      "narrationVolume": 1,
+      "bgMusicVolume": 0.5
+    },
+    {
+      "page": 1,
+      "image": "images/page-01.jpg",
+      "sound": "audios/pageturn.mp3",
+      "bgMusic": "audios/bg1.mp3",
+      "narration": "audios/page1-audio.mp3",
+      "narrationVolume": 1,
+      "bgMusicVolume": 0.5
+    },
+    {
+      "page": 2,
+      "image": "images/page-02.jpg",
+      "sound": "audios/pageturn.mp3",
+      "bgMusic": "audios/bg2.mp3",
+      "narration": "audios/page2-audio.mp3",
+      "narrationVolume": 1,
+      "bgMusicVolume": 0.5
+    },
+    {
+      "page": 3,
+      "image": "images/page-03.jpg",
+      "sound": "audios/pageturn.mp3",
+      "bgMusic": "audios/bg3.mp3",
+      "narration": "audios/page3-audio.mp3",
+      "narrationVolume": 1,
+      "bgMusicVolume": 0.5
+    },
+    {
+      "page": 4,
+      "image": "images/page-04.jpg",
+      "sound": "audios/pageturn.mp3",
+      "bgMusic": "audios/bg4.mp3",
+      "narration": "audios/page4-audio.mp3",
+      "narrationVolume": 1,
+      "bgMusicVolume": 0.5
+    },
+    {
+      "page": 5,
+      "image": "images/page-05.jpg",
+      "sound": "audios/pageturn.mp3",
+      "bgMusic": "audios/jungle.mp3",
+      "narration": "audios/page5-audio.mp3",
+      "narrationVolume": 1,
+      "bgMusicVolume": 0.5
+    },
+    {
+      "page": 6,
+      "image": "images/page-06.jpg",
+      "sound": "audios/pageturn.mp3",
+      "bgMusic": "audios/bg3.mp3",
+      "narration": "audios/page6-audio.mp3",
+      "narrationVolume": 1,
+      "bgMusicVolume": 0.5
+    },
+    {
+      "page": 7,
+      "image": "images/page-07.jpg",
+      "sound": "audios/pageturn.mp3",
+      "bgMusic": "audios/bg4.mp3",
+      "narration": "audios/page7-audio.mp3",
+      "narrationVolume": 1,
+      "bgMusicVolume": 0.5
+    },
+    {
+      "page": 8,
+      "image": "images/page-08.jpg",
+      "sound": "audios/pageturn.mp3",
+      "bgMusic": "audios/rat-gnawing.mp3",
+      "narration": "audios/page8-audio.mp3",
+      "narrationVolume": 1,
+      "bgMusicVolume": 0.5
+    },
+    {
+      "page": 9,
+      "image": "images/page-09.jpg",
+      "sound": "audios/pageturn.mp3",
+      "bgMusic": "audios/jungle.mp3",
+      "narration": "audios/page9-audio.mp3",
+      "narrationVolume": 1,
+      "bgMusicVolume": 0.5
+    },
+    {
+      "page": 10,
+      "image": "images/page-10.jpg",
+      "sound": "audios/pageturn.mp3",
+      "bgMusic": "audios/jungle.mp3",
+      "narration": "audios/page10-audio.mp3",
+      "narrationVolume": 1,
+      "bgMusicVolume": 0.5
+    },
+    {
+      "page": 11,
+      "image": "images/page-01.jpg",
+      "sound": "audios/pageturn.mp3",
+      "bgMusic": "audios/bg1.mp3",
+      "narrationVolume": 1,
+      "bgMusicVolume": 0.5
+    }
+  ]
+}

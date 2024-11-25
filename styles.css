@@ -1,0 +1,88 @@
+body {
+  font-family: "Comic Sans MS", sans-serif;
+  background-color: #f4f8ff;
+  margin: 0;
+  padding: 0;
+}
+
+#storybook {
+  max-width: 800px;
+  margin: auto;
+  padding: 20px;
+  text-align: center;
+  justify-self: center;
+  position: relative;
+  background: url('images/storybook-bg.jpg') no-repeat center center / cover;
+  border: 5px solid #ffd700;
+  border-radius: 15px;
+}
+
+#page-content {
+  font-size: 1.5rem;
+  padding: 20px;
+}
+
+#page-image {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.storybook-btn {
+  background: #ffd700;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  margin: 10px;
+  cursor: pointer;
+}
+
+.storybook-btn:hover {
+  background: #ffae00;
+}
+
+#progress {
+  font-size: 1.2rem;
+  margin-top: 10px;
+}
+
+/* Style for active button state */
+button.active {
+  background-color: #4CAF50; /* Change the background color when active */
+  color: white;               /* Change the text color when active */
+  transform: scale(0.98);     /* Slightly shrink the button */
+  transition: all 0.1s ease;  /* Smooth transition */
+}
+
+/* Navigation Bar Styles */
+#main-navigation {
+    background-color: #333;
+    padding: 1em 0;
+}
+
+#main-navigation ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+#main-navigation ul li {
+    display: inline;
+}
+
+#main-navigation ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+    padding: 0.5em 1em;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+#main-navigation ul li a:hover {
+    background-color: #555;
+}
