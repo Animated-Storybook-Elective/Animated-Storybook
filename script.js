@@ -15,6 +15,8 @@ fetch(storyFile)
 
     let currentPage = 0;
     let narrationEnabled = true;
+    let bgMusic = null; // Background music instance
+    let narration = null; // Narration instance
 
     const prevBtn = document.getElementById("prev-btn");
     const nextBtn = document.getElementById("next-btn");
@@ -32,9 +34,12 @@ fetch(storyFile)
       updateAudioToggleButton();
     });
 
-    // Handle page turn with sound (but without delay)
+    // Handle page turn with sound
     function handlePageTurn(direction) {
-      const pageSound = document.getElementById("page-sound");
+      const pageTurnSound = new Howl({
+        src: ["audios/pageturn.mp3"], // Replace with actual sound file path
+        volume: 1
+      });
 
       // Disable buttons temporarily to avoid accidental multiple clicks
       prevBtn.disabled = true;
@@ -50,15 +55,8 @@ fetch(storyFile)
       // Load the new page
       loadPage(currentPage, data);
 
-      // Play the page turn sound in the background
-      pageSound.src = "audios/pageturn.mp3"; // Replace with actual sound file path
-      pageSound.volume = 1; // Normal volume
-      pageSound.muted = false;
-      pageSound.loop = false;
-
-      pageSound.play().catch((error) => {
-        console.warn("Page turn sound playback blocked:", error);
-      });
+      // Play the page turn sound
+      pageTurnSound.play();
 
       // Re-enable buttons after page load
       updateButtonStates();
@@ -72,43 +70,58 @@ fetch(storyFile)
 
     // Function to load a page
     function loadPage(pageIndex, storyData) {
-      const page = storyData.pages[pageIndex];
-      document.getElementById("page-image").src = page.image;
-      document.getElementById("page-text").textContent = page.text || "";
-      document.getElementById("current-page").textContent = pageIndex + 1;
+  const page = storyData.pages[pageIndex];
+  document.getElementById("page-image").src = page.image;
+  document.getElementById("page-text").textContent = page.text || "";
+  document.getElementById("current-page").textContent = pageIndex + 1;
 
-      const bgMusic = document.getElementById("bg-music");
-      const narration = document.getElementById("narration");
+  // Stop any currently playing audio
+  if (bgMusic) bgMusic.stop();
+  if (narration) narration.stop();
 
-      // Stop current audio if any
-      bgMusic.pause();
-      narration.pause();
+  console.log('Loading page', pageIndex + 1); // Log page load to debug
 
-      // Set and play background music if available
-      if (page.bgMusic) {
-        bgMusic.src = page.bgMusic;
-        bgMusic.volume = page.bgMusicVolume || 0.5;
-        bgMusic.play().catch((error) =>
-          console.warn("Background music playback blocked:", error)
-        );
-      }
+  // Handle background music with delay
+  if (page.bgMusic) {
+    const delay = page.bgMusicDelay || 0; // Default to no delay
+    bgMusic = new Howl({
+      src: [page.bgMusic],
+      volume: page.bgMusicVolume || 0.5,
+      loop: true
+    });
 
-      // Play narration with a delay if narration is enabled
-      if (page.narration && narrationEnabled) {
-        setTimeout(() => {
-          narration.src = page.narration;
-          narration.volume = page.narrationVolume || 1;
-          narration.play().catch((error) =>
-            console.warn("Narration playback blocked:", error)
-          );
-        }, 1000); // 1000 milliseconds = 1 second delay
-      }
+    // Log audio loading
+    console.log('Loading background music for page', pageIndex + 1); 
 
-      updateButtonStates();
-    }
+    // Start background music with a delay (if any)
+    setTimeout(() => {
+      bgMusic.play();
+      console.log('Background music playing for page', pageIndex + 1);
+    }, delay * 1000);
+  }
+
+  // Handle narration
+  if (page.narration && narrationEnabled) {
+    narration = new Howl({
+      src: [page.narration],
+      volume: page.narrationVolume || 1
+    });
+
+    // Log narration loading
+    console.log('Loading narration for page', pageIndex + 1);
+    
+    narration.play();
+  }
+
+  updateButtonStates();
+}
 
     // Update initial state of the narration toggle button
-    updateAudioToggleButton();
+    function updateAudioToggleButton() {
+      audioToggleBtn.textContent = narrationEnabled ?
+        "Disable Narration" :
+        "Enable Narration";
+    }
   })
   .catch((error) => {
     console.error("Error loading story:", error);
