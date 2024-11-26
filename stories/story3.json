@@ -1,10 +1,19 @@
 {
   "storyId": 3,
-  "title": "The Boy Who Cried Wolf",
+  "title": "The Flying Tortoise’s Lesson",
   "pages": [
+    
     {
-      "page": 1,
-      "image": "images/page-01.jpg",
+  "page": 1,
+  "image": "/images/story3/The Flying Tortoise’s Lesson-images-0.jpg",
+  "sound": "audios/pageturn.mp3",
+  "bgMusic": "audios/bg1.mp3",
+  "narrationVolume": 1,
+  "bgMusicVolume": 0.5
+},
+    {
+      "page": 2,
+      "image": "/images/story3/The Flying Tortoise’s Lesson-images-0.jpg",
       "sound": "audios/pageturn.mp3",
       "bgMusic": "audios/bg1.mp3",
       "narration": "audios/page1-audio.mp3",
@@ -12,13 +21,67 @@
       "bgMusicVolume": 0.5
     },
     {
-      "page": 2,
-      "image": "images/page-02.jpg",
+      "page": 3,
+      "image": "/images/story3/The Flying Tortoise’s Lesson-images-1.jpg",
       "sound": "audios/pageturn.mp3",
       "bgMusic": "audios/bg2.mp3",
       "narration": "audios/page2-audio.mp3",
       "narrationVolume": 1,
       "bgMusicVolume": 0.5
-    }
+    },
+    {
+  "page": 4,
+  "image": "/images/story3/The Flying Tortoise’s Lesson-images-2.jpg",
+  "sound": "audios/pageturn.mp3",
+  "bgMusic": "audios/bg1.mp3",
+  "narration": "audios/page1-audio.mp3",
+  "narrationVolume": 1,
+  "bgMusicVolume": 0.5
+},
+{
+  "page": 5,
+  "image": "/images/story3/The Flying Tortoise’s Lesson-images-3.jpg",
+  "sound": "audios/pageturn.mp3",
+  "bgMusic": "audios/bg2.mp3",
+  "narration": "audios/page2-audio.mp3",
+  "narrationVolume": 1,
+  "bgMusicVolume": 0.5
+},
+{
+  "page": 6,
+  "image": "/images/story3/The Flying Tortoise’s Lesson-images-4.jpg",
+  "sound": "audios/pageturn.mp3",
+  "bgMusic": "audios/bg1.mp3",
+  "narration": "audios/page1-audio.mp3",
+  "narrationVolume": 1,
+  "bgMusicVolume": 0.5
+},
+{
+  "page": 7,
+  "image": "/images/story3/The Flying Tortoise’s Lesson-images-5.jpg",
+  "sound": "audios/pageturn.mp3",
+  "bgMusic": "audios/bg2.mp3",
+  "narration": "audios/page2-audio.mp3",
+  "narrationVolume": 1,
+  "bgMusicVolume": 0.5
+},
+{
+  "page": 8,
+  "image": "/images/story3/The Flying Tortoise’s Lesson-images-6.jpg",
+  "sound": "audios/pageturn.mp3",
+  "bgMusic": "audios/bg1.mp3",
+  "narration": "audios/page1-audio.mp3",
+  "narrationVolume": 1,
+  "bgMusicVolume": 0.5
+},
+{
+  "page": 9,
+  "image": "/images/story3/The Flying Tortoise’s Lesson-images-0.jpg",
+  "sound": "audios/pageturn.mp3",
+  "bgMusic": "audios/bg2.mp3",
+  "narration": "audios/page2-audio.mp3",
+  "narrationVolume": 1,
+  "bgMusicVolume": 0.5
+}
   ]
 }
