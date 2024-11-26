@@ -86,3 +86,12 @@ button.active {
 #main-navigation ul li a:hover {
     background-color: #555;
 }
+
+.story-card img {
+    width: 100%;              /* Ensures the image takes full width of the card */
+    height: auto;             /* Maintains aspect ratio */
+    object-fit: cover;        /* Makes sure the image covers the area properly (with potential cropping) */
+    border-radius: 10px;      /* Optional: Rounded corners for the image */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Optional: Add a slight shadow for a more polished look */
+    margin-bottom: 20px;      /* Adds space between image and content below */
+}
