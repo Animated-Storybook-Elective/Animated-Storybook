@@ -16,7 +16,7 @@
       "image": "/images/story3/The Flying Tortoise’s Lesson-images-0.jpg",
       "sound": "audios/pageturn.mp3",
       "bgMusic": "audios/bg1.mp3",
-      "narration": "audios/page1-audio.mp3",
+      "narration": "/audios/story3/luvvoice.com-20241127-Zdxdlk.mp3",
       "narrationVolume": 1,
       "bgMusicVolume": 0.5
     },
@@ -25,7 +25,7 @@
       "image": "/images/story3/The Flying Tortoise’s Lesson-images-1.jpg",
       "sound": "audios/pageturn.mp3",
       "bgMusic": "audios/bg2.mp3",
-      "narration": "audios/page2-audio.mp3",
+      "narration": "/audios/story3/luvvoice.com-20241127-srRvgR.mp3",
       "narrationVolume": 1,
       "bgMusicVolume": 0.5
     },
@@ -34,7 +34,7 @@
   "image": "/images/story3/The Flying Tortoise’s Lesson-images-2.jpg",
   "sound": "audios/pageturn.mp3",
   "bgMusic": "audios/bg1.mp3",
-  "narration": "audios/page1-audio.mp3",
+  "narration": "/audios/story3/luvvoice.com-20241127-n1I0nm.mp3",
   "narrationVolume": 1,
   "bgMusicVolume": 0.5
 },
@@ -43,7 +43,7 @@
   "image": "/images/story3/The Flying Tortoise’s Lesson-images-3.jpg",
   "sound": "audios/pageturn.mp3",
   "bgMusic": "audios/bg2.mp3",
-  "narration": "audios/page2-audio.mp3",
+  "narration": "/audios/story3/luvvoice.com-20241127-gv20Aa.mp3",
   "narrationVolume": 1,
   "bgMusicVolume": 0.5
 },
@@ -52,7 +52,7 @@
   "image": "/images/story3/The Flying Tortoise’s Lesson-images-4.jpg",
   "sound": "audios/pageturn.mp3",
   "bgMusic": "audios/bg1.mp3",
-  "narration": "audios/page1-audio.mp3",
+  "narration": "/audios/story3/luvvoice.com-20241127-gv20Aa.mp3",
   "narrationVolume": 1,
   "bgMusicVolume": 0.5
 },
@@ -61,7 +61,7 @@
   "image": "/images/story3/The Flying Tortoise’s Lesson-images-5.jpg",
   "sound": "audios/pageturn.mp3",
   "bgMusic": "audios/bg2.mp3",
-  "narration": "audios/page2-audio.mp3",
+  "narration": "/audios/story3/luvvoice.com-20241127-CZMFes.mp3",
   "narrationVolume": 1,
   "bgMusicVolume": 0.5
 },
@@ -70,7 +70,7 @@
   "image": "/images/story3/The Flying Tortoise’s Lesson-images-6.jpg",
   "sound": "audios/pageturn.mp3",
   "bgMusic": "audios/bg1.mp3",
-  "narration": "audios/page1-audio.mp3",
+  "narration": "/audios/story3/luvvoice.com-20241127-1l6JWu.mp3",
   "narrationVolume": 1,
   "bgMusicVolume": 0.5
 },
@@ -78,7 +78,7 @@
   "page": 9,
   "image": "/images/story3/The Flying Tortoise’s Lesson-images-0.jpg",
   "sound": "audios/pageturn.mp3",
-  "bgMusic": "audios/bg2.mp3",
+  "bgMusic": "audios/bg1.mp3",
   "narration": "audios/page2-audio.mp3",
   "narrationVolume": 1,
   "bgMusicVolume": 0.5
