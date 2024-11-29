@@ -13,75 +13,76 @@
 
   <!-- Custom Stylesheet -->
   <link rel="stylesheet" href="./css/styles.css">
+
+  <!-- Animations -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet">
+
 </head>
 <body class="bg-gray-100">
-  
- <!-- Navbar -->
-<nav class="navbar bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 text-white p-4 fixed w-full top-0 z-50">
+
+  <!-- Navbar -->
+  <nav class="navbar bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 text-white p-4 fixed w-full top-0 z-50">
     <div class="container mx-auto flex items-center justify-between">
-        <!-- Logo -->
-        <div class="logo flex items-center space-x-2">
-            <img src="images/logo.png" alt="StoryPlay Logo" class="h-12">
-            <a href="index.html" class="text-2xl font-bold">Cooh StoryPlay Hub</a>
-        </div>
-        
-        <!-- Return to Home Button -->
-        <button 
-            class="bg-blue-500 text-white py-2 px-4 flex items-center rounded-full hover:bg-blue-600 transition-colors duration-300"
-            onclick="openModal()">
-            <i class="fas fa-home text-xl mr-2"></i> <!-- Cloudflare Icon -->
-            Return Home
-        </button>
+      <!-- Logo -->
+      <div class="logo flex items-center space-x-2">
+        <img src="images/logo.png" alt="StoryPlay Logo" class="h-12">
+        <a href="index.html" class="text-2xl font-bold">Cooh StoryPlay Hub</a>
+      </div>
+      
+      <!-- Return to Home Button -->
+      <button 
+        class="bg-blue-500 text-white py-2 px-4 flex items-center rounded-full hover:bg-blue-600 transition-colors duration-300"
+        onclick="openModal()">
+        <i class="fas fa-home text-xl mr-2"></i> <!-- Cloudflare Icon -->
+        Return Home
+      </button>
     </div>
-</nav>
+  </nav>
 
-
-<!-- Modal -->
-<div id="confirmation-modal" 
+  <!-- Modal for Confirm Navigation -->
+  <div id="confirmation-modal" 
     class="fixed inset-0 bg-gray-800 bg-opacity-75 flex items-center justify-center z-50 hidden">
     <div class="bg-white rounded-lg w-96 p-6 shadow-lg relative animate__animated animate__fadeInDown">
-        <!-- Modal Close Icon -->
+      <!-- Modal Close Icon -->
+      <button 
+        class="absolute top-4 right-4 text-gray-400 hover:text-gray-600" 
+        onclick="closeModal()">
+        <i class="fas fa-times text-xl"></i>
+      </button>
+      
+      <!-- Modal Header -->
+      <h2 class="text-2xl font-bold text-gray-800 mb-4">
+        <i class="fas fa-question-circle text-blue-500 mr-2"></i> Confirm Navigation
+      </h2>
+      <p class="text-gray-600 mb-6">Are you sure you want to navigate back to the home page?</p>
+      
+      <!-- Modal Buttons -->
+      <div class="flex justify-center space-x-4">
+        <!-- Cancel Button -->
         <button 
-            class="absolute top-4 right-4 text-gray-400 hover:text-gray-600" 
-            onclick="closeModal()">
-            <i class="fas fa-times text-xl"></i>
+          onclick="closeModal()" 
+          class="py-2 px-4 rounded-lg bg-gray-500 text-white shadow-md hover:bg-gray-600 hover:shadow-lg transition-all duration-300 flex items-center space-x-2">
+          <i class="fas fa-times"></i> <!-- Icon -->
+          <span>Cancel</span>
         </button>
-        
-        <!-- Modal Header -->
-        <h2 class="text-2xl font-bold text-gray-800 mb-4">
-            <i class="fas fa-question-circle text-blue-500 mr-2"></i> Confirm Navigation
-        </h2>
-        <p class="text-gray-600 mb-6">Are you sure you want to navigate back to the home page?</p>
-        
-        <!-- Modal Buttons -->
-        <div class="flex justify-center space-x-4">
-            <!-- Cancel Button -->
-            <button 
-                onclick="closeModal()" 
-                class="py-2 px-4 rounded-lg bg-gray-500 text-white shadow-md hover:bg-gray-600 hover:shadow-lg transition-all duration-300 flex items-center space-x-2">
-                <i class="fas fa-times"></i> <!-- Icon -->
-                <span>Cancel</span>
-            </button>
-            <!-- Confirm Button -->
-            <a href="index.html" 
-               class="py-2 px-4 rounded-lg bg-blue-500 text-white shadow-md hover:bg-blue-600 hover:shadow-lg transition-all duration-300 flex items-center space-x-2">
-                <i class="fas fa-check-circle"></i> <!-- Icon -->
-                <span>Confirm</span>
-            </a>
-        </div>
+        <!-- Confirm Button -->
+        <a href="index.html" 
+           class="py-2 px-4 rounded-lg bg-blue-500 text-white shadow-md hover:bg-blue-600 hover:shadow-lg transition-all duration-300 flex items-center space-x-2">
+          <i class="fas fa-check-circle"></i> <!-- Icon -->
+          <span>Confirm</span>
+        </a>
+      </div>
     </div>
-</div>
-
+  </div>
 
   <div id="storybook" class="container mx-auto p-8 mt-16 max-w-3xl">
     <div id="page-content" class="flex flex-col items-center text-center mb-6">
       <img id="page-image" class="w-96 h-auto object-cover mb-4" src="" alt="Page Image" />
-    </div>
+     </div>
   </div>
   
-  
-  <!-- Adjusted Controls Section -->
-  <div id="controls" class="flex justify-center items-center space-x-4 mb-6"> <!-- Center the buttons and add space between them -->
+  <!-- Controls Section -->
+  <div id="controls" class="flex justify-center items-center space-x-4 mb-6">
     <button id="prev-btn" class="storybook-btn bg-blue-500 text-white py-2 px-4 rounded-lg hover:bg-blue-600">
       <i class="fas fa-arrow-left"></i> Previous
     </button>
@@ -93,17 +94,46 @@
     </button>
   </div>
   
-
-    <div id="progress" class="text-center text-xl">
-      <span id="current-page">1</span>/<span id="total-pages">10</span>
-    </div>
-
-    <audio id="bg-music" loop></audio>
-    <audio id="page-sound" loop></audio>
-    <audio id="narration" loop></audio>
-
+  <!-- Page Progress -->
+  <div id="progress" class="text-center text-xl">
+    <span id="current-page">1</span>/<span id="total-pages">10</span>
   </div>
 
+  <!-- Audio Management -->
+  <audio id="bg-music" loop></audio>
+  <audio id="page-sound" loop></audio>
+  <audio id="narration" loop></audio>  
+
+  <!-- Modal for Suggesting Another Book -->
+<div id="suggestion-modal" class="fixed inset-0 bg-gray-800 bg-opacity-75 flex items-center justify-center z-50 hidden">
+  <div class="bg-white rounded-lg w-96 p-6 shadow-lg relative animate__animated animate__fadeInDown">
+    <!-- Modal Close Icon -->
+    <button class="absolute top-4 right-4 text-gray-400 hover:text-gray-600" onclick="closeSuggestionModal()">
+      <i class="fas fa-times text-xl"></i>
+    </button>
+
+    <!-- Modal Header -->
+    <h2 class="text-2xl font-bold text-gray-800 mb-4">
+      <i class="fas fa-book-reader text-blue-500 mr-2"></i> Finished Reading!
+    </h2>
+    <p class="text-gray-600 mb-6">Congratulations! You've reached the end of this story. Would you like to read another book?</p>
+
+    <!-- Modal Buttons -->
+    <div class="flex justify-center space-x-4">
+      <!-- No Button -->
+      <button onclick="closeSuggestionModal()" class="py-2 px-4 rounded-lg bg-gray-500 text-white shadow-md hover:bg-gray-600 hover:shadow-lg transition-all duration-300">
+        No, thanks
+      </button>
+      <!-- Yes Button -->
+      <a href="book-list.html" class="py-2 px-4 rounded-lg bg-blue-500 text-white shadow-md hover:bg-blue-600 hover:shadow-lg transition-all duration-300">
+        Yes, Show me more books
+      </a>
+    </div>
+  </div>
+</div>
+
+
+  <!-- Footer -->
   <footer class="bg-gray-800 text-white py-6">
     <div class="container mx-auto text-center">
       <p class="text-sm">&copy; 2024 Cooh StoryPlay Hub. All Rights Reserved.</p>
@@ -112,7 +142,21 @@
 
   <!-- Link to the external JS file -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.2.3/howler.min.js"></script>
+  <!-- Link to your custom script -->
   <script src="script.js"></script>
 
+  <!-- Modal Script -->
+  <script>
+    // Open Modal
+    function openModal() {
+      document.getElementById('confirmation-modal').classList.remove('hidden');
+    }
+
+    // Close Modal
+    function closeModal() {
+      document.getElementById('confirmation-modal').classList.add('hidden');
+    }
+  </script>
+
 </body>
-</html> 
+</html>
