@@ -6,7 +6,7 @@ body {
 }
 
 #storybook {
-  max-width: 800px;
+  max-width: 500px;
   margin: auto;
   padding: 20px;
   text-align: center;
@@ -17,14 +17,17 @@ body {
   border-radius: 15px;
 }
 
+
+
 #page-content {
   font-size: 1.5rem;
   padding: 20px;
 }
 
 #page-image {
-  max-width: 100%;
-  height: auto;
+ 
+  width: 120px;
+  height: 120px;
   margin-bottom: 5px;
 }
 .storybook-btn:active {

@@ -14,12 +14,13 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body class="bg-gray-100">
+   
     <!-- Navbar -->
     <nav class="navbar bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 text-white p-4 fixed w-full top-0 z-50">
         <div class="container mx-auto flex items-center justify-between">
             <div class="logo flex items-center space-x-2">
                 <img src="images/logo.png" alt="StoryPlay Logo" class="h-12">
-                <a href="#" class="text-2xl font-bold">Cooh StoryPlay Hub</a>
+                <a href="index.html" class="text-2xl font-bold">Cooh StoryPlay Hub</a>
             </div>
             <ul class="nav-links flex space-x-8">
                 <li><a href="index.html" class="hover:text-gray-200">Home</a></li>
@@ -29,21 +30,36 @@
         </div>
     </nav>
 
-    <!-- Hero Section -->
-    <section class="hero bg-cover bg-center text-white text-center py-36 relative" style="background-image: url('images/hero-bg.jpg');">
-        <div class="absolute inset-0 bg-black opacity-40"></div>
-        <div class="container mx-auto relative z-10">
-            <h1 class="text-5xl font-extrabold animate__animated animate__fadeInUp">Dive Into Amazing Story Worlds!</h1>
-            <p class="text-lg mt-4 animate__animated animate__fadeInUp animate__delay-1s">Explore stories across genres like Adventure, Fantasy, Mystery, and more. Your next adventure awaits!</p>
-            <a href="stories.html" class="bg-gradient-to-r from-pink-500 to-yellow-500 text-white py-3 px-8 mt-6 inline-block rounded-full text-xl hover:scale-105 transform transition-transform duration-300">Start Exploring</a>
-        </div>
-    </section>
+   <!-- Hero Section -->
+   <section class="hero bg-cover bg-center text-white text-center relative" style="background-image: url('images/hero.png'); height: 100vh;">
+    <!-- Dark Overlay -->
+    <div class="absolute inset-0 bg-black opacity-40"></div>
+
+    <!-- Content -->
+    <div class="container mx-auto relative z-10 flex flex-col items-center justify-center h-full px-4">
+        <!-- Heading -->
+        <h1 class="text-4xl md:text-6xl font-extrabold leading-tight animate__animated animate__fadeInUp">
+            Dive Into Amazing Story Worlds!
+        </h1>
+        
+        <!-- Subheading -->
+        <p class="text-base md:text-lg lg:text-xl mt-4 max-w-2xl animate__animated animate__fadeInUp animate__delay-1s">
+            Explore stories across genres like Adventure, Fantasy, Mystery, and more. Your next adventure awaits!
+        </p>
+
+        <!-- Button -->
+        <a href="#featured-stories" 
+         class="bg-gradient-to-r from-pink-500 to-yellow-500 text-white py-3 px-10 mt-6 rounded-full text-lg lg:text-xl font-semibold shadow-lg transform transition-transform duration-300 hover:scale-105 hover:shadow-2xl">
+         Explore Now </a>
+    </div>
+</section>
+
 
 <!-- Featured Stories Section -->
-<section class="featured-stories py-20">
-  <div class="container mx-auto text-center">
-    <h2 class="text-4xl font-bold mb-12 animate__animated animate__fadeInUp">Featured Storybook Previews</h2>
-    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+<<section id="featured-stories" class="featured-stories py-20">
+    <div class="container mx-auto text-center">
+      <h2 class="text-4xl font-bold mb-12 animate__animated animate__fadeInUp">Featured Storybook Previews</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
 
 <!-- Story Card 1 -->
 <div class="story-card bg-white p-6 rounded-lg shadow-xl hover:scale-105 transition-transform duration-300">
@@ -81,35 +97,35 @@
     </button>
   </a>
 </div>
-      <!-- Story Card 5 -->
+      <!-- Story Card 4 -->
       <div class="story-card bg-white p-6 rounded-lg shadow-xl hover:scale-105 transition-transform duration-300">
         <img src="https://kidstut.com/wp-content/uploads/2024/06/Slide1-14.jpg" alt="The Ant and the Grasshopper" class="w-full h-48 object-cover rounded-lg mb-4 transition-opacity duration-300">
         <h3 class="text-xl font-bold">The Ant and the Grasshopper</h3>
         <p class="text-sm text-gray-600 mb-4">This story teaches the importance of hard work and planning ahead, while warning against procrastination.</p>
- <a href="story.html?storyId=5">
+ <a href="story.html?storyId=4">
    <button class="read-now-btn bg-blue-500 text-white py-2 px-4 rounded-full hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-400 transition-colors duration-300">
      Read Now
    </button>
  </a>
       </div>
       
-      <!-- Story Card 9 -->
+      <!-- Story Card 5 -->
       <div class="story-card bg-white p-6 rounded-lg shadow-xl hover:scale-105 transition-transform duration-300">
         <img src="https://kidstut.com/wp-content/uploads/2024/06/Slide1-12.jpg" alt="The Cunning Fox and The Crow" class="w-full h-48 object-cover rounded-lg mb-4 transition-opacity duration-300">
         <h3 class="text-xl font-bold">The Cunning Fox and The Crow</h3>
         <p class="text-sm text-gray-600 mb-4">A fable about self-deception, teaching that it's easy to dismiss what we can't have as unimportant.</p>
- <a href="story.html?storyId=9">
+ <a href="story.html?storyId=5">
    <button class="read-now-btn bg-blue-500 text-white py-2 px-4 rounded-full hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-400 transition-colors duration-300">
      Read Now
    </button>
  </a>
       </div>
-<!-- Story Card 10 -->
+<!-- Story Card 6 -->
       <div class="story-card bg-white p-6 rounded-lg shadow-xl hover:scale-105 transition-transform duration-300">
         <img src="https://kidstut.com/wp-content/uploads/2024/06/Slide1-9.jpg" alt="The Honest Woodcutter" class="w-full h-48 object-cover rounded-lg mb-4 transition-opacity duration-300">
         <h3 class="text-xl font-bold">The Honest Woodcutter</h3>
         <p class="text-sm text-gray-600 mb-4">A story that teaches the value of honesty, showing how doing the right thing brings greater rewards.</p>
- <a href="story.html?storyId=10">
+ <a href="story.html?storyId=6">
    <button class="read-now-btn bg-blue-500 text-white py-2 px-4 rounded-full hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-400 transition-colors duration-300">
      Read Now
    </button>
