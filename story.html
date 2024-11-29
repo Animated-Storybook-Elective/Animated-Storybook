@@ -5,156 +5,148 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Read Story - Cooh StoryPlay Hub</title>
 
-  <!-- Cloudflare CDN for Tailwind CSS -->
+  <!-- Tailwind CSS via CDN -->
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 
-  <!-- Cloudflare CDN for Font Awesome (for icons like speaker) -->
+  <!-- Font Awesome for Icons -->
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+  <!-- Animate.css for Animations -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet">
 
   <!-- Custom Stylesheet -->
   <link rel="stylesheet" href="./css/styles.css">
-
-  <!-- Animations -->
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet">
-
 </head>
 <body class="bg-gray-100">
 
   <!-- Navbar -->
-  <nav class="navbar bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 text-white p-4 fixed w-full top-0 z-50">
-    <div class="container mx-auto flex items-center justify-between">
+  <nav class="bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 text-white p-4 fixed w-full top-0 z-50">
+    <div class="container mx-auto flex justify-between items-center">
       <!-- Logo -->
-      <div class="logo flex items-center space-x-2">
-        <img src="images/logo.png" alt="StoryPlay Logo" class="h-12">
+      <div class="flex items-center space-x-3">
+        <img src="images/logo.png" alt="StoryPlay Logo" class="h-10">
         <a href="index.html" class="text-2xl font-bold">Cooh StoryPlay Hub</a>
       </div>
-      
-      <!-- Return to Home Button -->
+      <!-- Return Home Button -->
       <button 
-        class="bg-blue-500 text-white py-2 px-4 flex items-center rounded-full hover:bg-blue-600 transition-colors duration-300"
+        class="bg-blue-500 text-white py-2 px-4 rounded-full flex items-center hover:bg-blue-600 transition duration-300"
         onclick="openModal()">
-        <i class="fas fa-home text-xl mr-2"></i> <!-- Cloudflare Icon -->
-        Return Home
+        <i class="fas fa-home mr-2"></i> Return Home
       </button>
     </div>
   </nav>
 
-  <!-- Modal for Confirm Navigation -->
+  <!-- Modal: Confirm Navigation -->
   <div id="confirmation-modal" 
-    class="fixed inset-0 bg-gray-800 bg-opacity-75 flex items-center justify-center z-50 hidden">
-    <div class="bg-white rounded-lg w-96 p-6 shadow-lg relative animate__animated animate__fadeInDown">
-      <!-- Modal Close Icon -->
+       class="fixed inset-0 bg-gray-800 bg-opacity-75 flex items-center justify-center z-50 hidden">
+    <div class="bg-white p-6 rounded-lg shadow-lg w-96 animate__animated animate__fadeInDown relative">
+      <!-- Close Button -->
       <button 
-        class="absolute top-4 right-4 text-gray-400 hover:text-gray-600" 
+        class="absolute top-4 right-4 text-gray-400 hover:text-gray-600"
         onclick="closeModal()">
         <i class="fas fa-times text-xl"></i>
       </button>
-      
-      <!-- Modal Header -->
-      <h2 class="text-2xl font-bold text-gray-800 mb-4">
+      <!-- Modal Content -->
+      <h2 class="text-2xl font-bold mb-4">
         <i class="fas fa-question-circle text-blue-500 mr-2"></i> Confirm Navigation
       </h2>
       <p class="text-gray-600 mb-6">Are you sure you want to navigate back to the home page?</p>
-      
-      <!-- Modal Buttons -->
+      <!-- Actions -->
       <div class="flex justify-center space-x-4">
-        <!-- Cancel Button -->
         <button 
           onclick="closeModal()" 
-          class="py-2 px-4 rounded-lg bg-gray-500 text-white shadow-md hover:bg-gray-600 hover:shadow-lg transition-all duration-300 flex items-center space-x-2">
-          <i class="fas fa-times"></i> <!-- Icon -->
-          <span>Cancel</span>
+          class="bg-gray-500 text-white py-2 px-4 rounded-lg hover:bg-gray-600">
+          Cancel
         </button>
-        <!-- Confirm Button -->
         <a href="index.html" 
-           class="py-2 px-4 rounded-lg bg-blue-500 text-white shadow-md hover:bg-blue-600 hover:shadow-lg transition-all duration-300 flex items-center space-x-2">
-          <i class="fas fa-check-circle"></i> <!-- Icon -->
-          <span>Confirm</span>
+           class="bg-blue-500 text-white py-2 px-4 rounded-lg hover:bg-blue-600">
+          Confirm
         </a>
       </div>
     </div>
   </div>
 
-  <div id="storybook" class="container mx-auto p-8 mt-16 max-w-3xl">
-    <div id="page-content" class="flex flex-col items-center text-center mb-6">
-      <img id="page-image" class="w-96 h-auto object-cover mb-4" src="" alt="Page Image" />
-     </div>
-  </div>
-  
-  <!-- Controls Section -->
-  <div id="controls" class="flex justify-center items-center space-x-4 mb-6">
-    <button id="prev-btn" class="storybook-btn bg-blue-500 text-white py-2 px-4 rounded-lg hover:bg-blue-600">
-      <i class="fas fa-arrow-left"></i> Previous
-    </button>
-    <button id="next-btn" class="storybook-btn bg-blue-500 text-white py-2 px-4 rounded-lg hover:bg-blue-600">
-      Next <i class="fas fa-arrow-right"></i>
-    </button>
-    <button id="audio-toggle-btn" class="storybook-btn bg-blue-500 text-white py-2 px-4 rounded-lg hover:bg-blue-600" aria-label="Toggle Narration">
-      <i class="fas fa-volume-up"></i> Narration
-    </button>
-  </div>
-  
-  <!-- Page Progress -->
-  <div id="progress" class="text-center text-xl">
-    <span id="current-page">1</span>/<span id="total-pages">10</span>
-  </div>
+  <!-- Storybook -->
+  <main class="container mx-auto mt-16 p-8 max-w-3xl">
+    <div id="storybook">
+      <div id="page-content" class="text-center">
+        <img id="page-image" class="w-96 h-auto mx-auto mb-4" src="" alt="Page Image">
+        <p id="page-text" class="text-lg text-gray-700"></p>
+      </div>
+      <!-- Controls -->
+      <div id="controls" class="flex justify-center items-center space-x-4 mt-6">
+        <button id="prev-btn" class="bg-blue-500 text-white py-2 px-4 rounded-lg hover:bg-blue-600">
+          <i class="fas fa-arrow-left"></i> Previous
+        </button>
+        <button id="next-btn" class="bg-blue-500 text-white py-2 px-4 rounded-lg hover:bg-blue-600">
+          Next <i class="fas fa-arrow-right"></i>
+        </button>
+        <button id="audio-toggle-btn" 
+                class="bg-blue-500 text-white py-2 px-4 rounded-lg hover:bg-blue-600">
+          <i class="fas fa-volume-up"></i> Narration
+        </button>
+      </div>
+      <!-- Progress -->
+      <div id="progress" class="text-center mt-4 text-xl">
+        <span id="current-page">1</span>/<span id="total-pages">10</span>
+      </div>
+    </div>
+  </main>
 
-  <!-- Audio Management -->
-  <audio id="bg-music" loop></audio>
-  <audio id="page-sound" loop></audio>
-  <audio id="narration" loop></audio>  
-
-  <!-- Modal for Suggesting Another Book -->
-<div id="suggestion-modal" class="fixed inset-0 bg-gray-800 bg-opacity-75 flex items-center justify-center z-50 hidden">
-  <div class="bg-white rounded-lg w-96 p-6 shadow-lg relative animate__animated animate__fadeInDown">
-    <!-- Modal Close Icon -->
-    <button class="absolute top-4 right-4 text-gray-400 hover:text-gray-600" onclick="closeSuggestionModal()">
-      <i class="fas fa-times text-xl"></i>
-    </button>
-
-    <!-- Modal Header -->
-    <h2 class="text-2xl font-bold text-gray-800 mb-4">
-      <i class="fas fa-book-reader text-blue-500 mr-2"></i> Finished Reading!
-    </h2>
-    <p class="text-gray-600 mb-6">Congratulations! You've reached the end of this story. Would you like to read another book?</p>
-
-    <!-- Modal Buttons -->
-    <div class="flex justify-center space-x-4">
-      <!-- No Button -->
-      <button onclick="closeSuggestionModal()" class="py-2 px-4 rounded-lg bg-gray-500 text-white shadow-md hover:bg-gray-600 hover:shadow-lg transition-all duration-300">
-        No, thanks
+  <!-- Modal: Finished Reading -->
+  <div id="suggestion-modal" 
+       class="fixed inset-0 bg-gray-800 bg-opacity-75 flex items-center justify-center z-50 hidden">
+    <div class="bg-white p-6 rounded-lg shadow-lg w-96 animate__animated animate__fadeInDown relative">
+      <!-- Close Button -->
+      <button 
+        class="absolute top-4 right-4 text-gray-400 hover:text-gray-600"
+        onclick="closeSuggestionModal()">
+        <i class="fas fa-times text-xl"></i>
       </button>
-      <!-- Yes Button -->
-      <a href="book-list.html" class="py-2 px-4 rounded-lg bg-blue-500 text-white shadow-md hover:bg-blue-600 hover:shadow-lg transition-all duration-300">
-        Yes, Show me more books
-      </a>
+      <!-- Modal Content -->
+      <h2 class="text-2xl font-bold mb-4">
+        <i class="fas fa-book-reader text-blue-500 mr-2"></i> Finished Reading!
+      </h2>
+      <p class="text-gray-600 mb-6">Congratulations! You've reached the end of this story. Would you like to read another book?</p>
+      <!-- Actions -->
+      <div class="flex justify-center space-x-4">
+        <button 
+          onclick="closeSuggestionModal()" 
+          class="bg-gray-500 text-white py-2 px-4 rounded-lg hover:bg-gray-600">
+          No, thanks
+        </button>
+        <a href="book-list.html" 
+           class="bg-blue-500 text-white py-2 px-4 rounded-lg hover:bg-blue-600">
+          Yes, Show me more books
+        </a>
+      </div>
     </div>
   </div>
-</div>
-
 
   <!-- Footer -->
-  <footer class="bg-gray-800 text-white py-6">
-    <div class="container mx-auto text-center">
-      <p class="text-sm">&copy; 2024 Cooh StoryPlay Hub. All Rights Reserved.</p>
-    </div>
+  <footer class="bg-gray-800 text-white text-center py-6">
+    <p class="text-sm">&copy; 2024 Cooh StoryPlay Hub. All Rights Reserved.</p>
   </footer>
 
-  <!-- Link to the external JS file -->
+  <!-- Audio Elements -->
+  <audio id="bg-music" loop></audio>
+  <audio id="page-sound" loop></audio>
+  <audio id="narration" loop></audio>
+
+  <!-- External Scripts -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.2.3/howler.min.js"></script>
-  <!-- Link to your custom script -->
   <script src="script.js"></script>
 
   <!-- Modal Script -->
   <script>
-    // Open Modal
     function openModal() {
       document.getElementById('confirmation-modal').classList.remove('hidden');
     }
-
-    // Close Modal
     function closeModal() {
       document.getElementById('confirmation-modal').classList.add('hidden');
+    }
+    function closeSuggestionModal() {
+      document.getElementById('suggestion-modal').classList.add('hidden');
     }
   </script>
 
