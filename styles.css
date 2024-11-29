@@ -25,7 +25,7 @@ body {
 #page-image {
   max-width: 100%;
   height: auto;
-  margin-bottom: 20px;
+  margin-bottom: 5px;
 }
 .storybook-btn:active {
   transform: scale(0.98); /* Slightly shrink the button when active */
