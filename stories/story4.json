@@ -16,7 +16,7 @@
           "sound": "audios/sound-effects/pageturn.mp3",
           "bgMusic": "audios/sound-effects/intro.mp3",
           "narrationDelay": 1, 
-          "narration": "/audios/story4/s4-1.mp3",
+          "narration": "audios/story4/s4-1.mp3",
           "narrationVolume": 1,
           "bgMusicVolume": 0.2
         },
@@ -25,7 +25,7 @@
           "image": "images/story4/The-Ant-and-the-Grasshopper_page-0002.jpg",
           "sound": "audios/sound-effects/pageturn.mp3",
           "bgMusic": "audios/sound-effects/summer.mp3",
-          "narration": "/audios/story4/s4-2.mp3",
+          "narration": "audios/story4/s4-2.mp3",
           "narrationVolume": 1,
           "bgMusicVolume": 0.2
         },
@@ -35,7 +35,7 @@
       "sound": "audios/sound-effects/pageturn.mp3",
       "bgMusic": "audios/sound-effects/grasshopper-playing.mp3",
       "bgMusicDelay": 3,
-      "narration": "/audios/story4/s4-3.mp3",
+      "narration": "audios/story4/s4-3.mp3",
       "narrationVolume": 1,
       "bgMusicVolume": 0.5
     },
@@ -45,7 +45,7 @@
       "sound": "audios/sound-effects/pageturn.mp3",
       "bgMusic": "audios/sound-effects/grasshopper-playing2.mp3",
       "bgMusicDelay": 2,
-      "narration": "/audios/story4/s4-4.mp3",
+      "narration": "audios/story4/s4-4.mp3",
       "narrationVolume": 1,
       "bgMusicVolume": 0.5
     },
@@ -54,7 +54,7 @@
       "image": "images/story4/The-Ant-and-the-Grasshopper_page-0005.jpg",
       "sound": "audios/sound-effects/pageturn.mp3",
       "bgMusic": "audios/sound-effects/winter-wind.mp3",
-      "narration": "/audios/story4/s4-5.mp3",
+      "narration": "audios/story4/s4-5.mp3",
       "narrationVolume": 1,
       "bgMusicVolume": 0.5
     },
@@ -63,7 +63,7 @@
       "image": "images/story4/The-Ant-and-the-Grasshopper_page-0006.jpg",
       "sound": "audios/sound-effects/pageturn.mp3",
       "bgMusic": "audios/sound-effects/winter-wind.mp3",
-      "narration": "/audios/story4/s4-6.mp3",
+      "narration": "audios/story4/s4-6.mp3",
       "narrationVolume": 1,
       "bgMusicVolume": 0.5
     },
@@ -72,7 +72,7 @@
       "image": "images/story4/The-Ant-and-the-Grasshopper_page-0007.jpg",
       "sound": "audios/sound-effects/pageturn.mp3",
       "bgMusic": "audios/sound-effects/summer.mp3",
-      "narration": "/audios/story4/s4-7.mp3",
+      "narration": "audios/story4/s4-7.mp3",
       "narrationVolume": 1,
       "bgMusicVolume": 0.3
     },

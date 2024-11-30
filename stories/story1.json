@@ -2,13 +2,7 @@
   "storyId": 1,
   "title": "The Lion and the Mouse",
   "pages": [
-    {
-      "page": 1,
-      "image": "images/story1/The Lion and the mouse-images-0.jpg",
-      "sound": "audios/sound-effects/pageturn.mp3",
-      "bgMusic": "audios/sound-effects/intro.mp3",
-      "bgMusicVolume": 0.2
-    },
+  
     {
       "page": 2,
       "image": "images/story1/The Lion and the mouse-images-0.jpg",
@@ -24,7 +18,7 @@
       "image": "images/story1/The Lion and the mouse-images-1.jpg",
       "sound": "audios/sound-effects/pageturn.mp3",
       "bgMusic": "audios/sound-effects/jungle.mp3",
-      "narration": "/audios/story1/s1-2.mp3",
+      "narration": "audios/story1/s1-2.mp3",
       "narrationVolume": 1,
       "bgMusicVolume": 0.2
     },
