@@ -4,24 +4,24 @@
   "pages": [
     {
       "page": 1,
-      "image": "/images/story1/The Lion and the mouse-images-0.jpg",
+      "image": "images/story1/The Lion and the mouse-images-0.jpg",
       "sound": "audios/sound-effects/pageturn.mp3",
       "bgMusic": "audios/sound-effects/intro.mp3",
       "bgMusicVolume": 0.2
     },
     {
       "page": 2,
-      "image": "/images/story1/The Lion and the mouse-images-0.jpg",
+      "image": "images/story1/The Lion and the mouse-images-0.jpg",
       "sound": "audios/sound-effects/pageturn.mp3",
       "bgMusic": "audios/sound-effects/intro.mp3",
-      "narration": "/audios/story1/s1-1.mp3",
+      "narration": "audios/story1/s1-1.mp3",
       "narrationDelay": 1, 
       "narrationVolume": 1,
       "bgMusicVolume": 0.2
     },
     {
       "page": 3,
-      "image": "/images/story1/The Lion and the mouse-images-1.jpg",
+      "image": "images/story1/The Lion and the mouse-images-1.jpg",
       "sound": "audios/sound-effects/pageturn.mp3",
       "bgMusic": "audios/sound-effects/jungle.mp3",
       "narration": "/audios/story1/s1-2.mp3",
@@ -30,54 +30,54 @@
     },
     {
       "page": 4,
-      "image": "/images/story1/The Lion and the mouse-images-2.jpg",
+      "image": "images/story1/The Lion and the mouse-images-2.jpg",
       "sound": "audios/sound-effects/pageturn.mp3",
       "bgMusic": "audios/sound-effects/jungle.mp3",
-      "narration": "/audios/story1/s1-3.mp3",
+      "narration": "audios/story1/s1-3.mp3",
       "narrationVolume": 1,
       "bgMusicVolume": 0.2
     },
     {
       "page": 5,
-      "image": "/images/story1/The Lion and the mouse-images-3.jpg",
+      "image": "images/story1/The Lion and the mouse-images-3.jpg",
       "sound": "audios/sound-effects/pageturn.mp3",
       "bgMusic": "audios/sound-effects/jungle.mp3",
-      "narration": "/audios/story1/s1-4.mp3",
+      "narration": "audios/story1/s1-4.mp3",
       "narrationVolume": 1,
       "bgMusicVolume": 0.2
     },
     {
       "page": 6,
-      "image": "/images/story1/The Lion and the mouse-images-4.jpg",
+      "image": "images/story1/The Lion and the mouse-images-4.jpg",
       "sound": "audios/sound-effects/pageturn.mp3",
       "bgMusic": "audios/sound-effects/roar.mp3",
       "bgMusicDelay": 5,
-      "narration": "/audios/story1/s1-5.mp3",
+      "narration": "audios/story1/s1-5.mp3",
       "narrationVolume": 1,
       "bgMusicVolume": 0.2
     },
     {
       "page": 7,
-      "image": "/images/story1/The Lion and the mouse-images-5.jpg",
+      "image": "images/story1/The Lion and the mouse-images-5.jpg",
       "sound": "audios/sound-effects/pageturn.mp3",
       "bgMusic": "audios/sound-effects/rat-gnawing.mp3",
       "bgMusicDelay": 2.5,
-      "narration": "/audios/story1/s1-6.mp3",
+      "narration": "audios/story1/s1-6.mp3",
       "narrationVolume": 1,
       "bgMusicVolume": 0.2
     },
     {
       "page": 8,
-      "image": "/images/story1/The Lion and the mouse-images-6.jpg",
+      "image": "images/story1/The Lion and the mouse-images-6.jpg",
       "sound": "audios/sound-effects/pageturn.mp3",
       "bgMusic": "audios/sound-effects/jungle.mp3",
-      "narration": "/audios/story1/s1-7.mp3",
+      "narration": "audios/story1/s1-7.mp3",
       "narrationVolume": 1,
       "bgMusicVolume": 0.2
     },
     {
       "page": 9,
-      "image": "/images/story1/The Lion and the mouse-images-0.jpg",
+      "image": "images/story1/The Lion and the mouse-images-0.jpg",
       "sound": "audios/sound-effects/pageturn.mp3",
       "bgMusic": "audios/sound-effects/intro.mp3",
       "bgMusicVolume": 0.2
