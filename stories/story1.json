@@ -6,14 +6,14 @@
       "page": 1,
       "image": "/images/story1/The Lion and the mouse-images-0.jpg",
       "sound": "audios/pageturn.mp3",
-      "bgMusic": "audios/bg1.mp3",
+      "bgMusic": "audios/sound-effects/intro.mp3",
       "bgMusicVolume": 0.2
     },
     {
       "page": 2,
       "image": "/images/story1/The Lion and the mouse-images-0.jpg",
       "sound": "audios/pageturn.mp3",
-      "bgMusic": "audios/bg1.mp3",
+      "bgMusic": "audios/sound-effects/intro.mp3",
       "narration": "/audios/story1/luvvoice.com-20241123-vLu24e.mp3",
       "narrationVolume": 1,
       "bgMusicVolume": 0.2
@@ -22,7 +22,7 @@
       "page": 3,
       "image": "/images/story1/The Lion and the mouse-images-1.jpg",
       "sound": "audios/pageturn.mp3",
-      "bgMusic": "audios/jungle.mp3",
+      "bgMusic": "audios/sound-effects/jungle.mp3",
       "narration": "/audios/story1/luvvoice.com-20241126-WlgxYD.mp3",
       "narrationVolume": 1,
       "bgMusicVolume": 0.2
@@ -31,7 +31,7 @@
       "page": 4,
       "image": "/images/story1/The Lion and the mouse-images-2.jpg",
       "sound": "audios/pageturn.mp3",
-      "bgMusic": "audios/jungle.mp3",
+      "bgMusic": "audios/sound-effects/jungle.mp3",
       "narration": "/audios/story1/luvvoice.com-20241126-0iSFGQ.mp3",
       "narrationVolume": 1,
       "bgMusicVolume": 0.2
@@ -40,7 +40,7 @@
       "page": 5,
       "image": "/images/story1/The Lion and the mouse-images-3.jpg",
       "sound": "audios/pageturn.mp3",
-      "bgMusic": "audios/jungle.mp3",
+      "bgMusic": "audios/sound-effects/jungle.mp3",
       "narration": "/audios/story1/luvvoice.com-20241126-Ov2oPu.mp3",
       "narrationVolume": 1,
       "bgMusicVolume": 0.2
@@ -49,7 +49,7 @@
       "page": 6,
       "image": "/images/story1/The Lion and the mouse-images-4.jpg",
       "sound": "audios/pageturn.mp3",
-      "bgMusic": "audios/bg3.mp3",
+      "bgMusic": "audios/sound-effects/roar.mp3",
       "bgMusicDelay": 5,
       "narration": "/audios/story1/luvvoice.com-20241126-viBT5e.mp3",
       "narrationVolume": 1,
@@ -59,7 +59,7 @@
       "page": 7,
       "image": "/images/story1/The Lion and the mouse-images-5.jpg",
       "sound": "audios/pageturn.mp3",
-      "bgMusic": "/audios/rat-gnawing.mp3",
+      "bgMusic": "audios/sound-effects/rat-gnawing.mp3",
       "bgMusicDelay": 2.5,
       "narration": "/audios/story1/luvvoice.com-20241126-FqWRGa.mp3",
       "narrationVolume": 1,
@@ -69,7 +69,7 @@
       "page": 8,
       "image": "/images/story1/The Lion and the mouse-images-6.jpg",
       "sound": "audios/pageturn.mp3",
-      "bgMusic": "audios/jungle.mp3",
+      "bgMusic": "audios/sound-effects/jungle.mp3",
       "narration": "/audios/story1/luvvoice.com-20241126-9S0oMh.mp3",
       "narrationVolume": 1,
       "bgMusicVolume": 0.2
@@ -78,7 +78,7 @@
       "page": 9,
       "image": "/images/story1/The Lion and the mouse-images-0.jpg",
       "sound": "audios/pageturn.mp3",
-      "bgMusic": "audios/bg1.mp3",
+      "bgMusic": "audios/sound-effects/intro.mp3",
       "bgMusicVolume": 0.2
     }
   ]

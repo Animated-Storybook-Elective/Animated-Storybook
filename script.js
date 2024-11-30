@@ -90,16 +90,19 @@ fetch(storyFile)
       console.log('Loading page', pageIndex + 1); // Log page load to debug
 
       // Handle background music with delay
-      if (page.bgMusic && !readOnlyMode) {
+      if (page.bgMusic && !readOnlyMode) { // Only play BG music if not in read-only mode
         const delay = page.bgMusicDelay || 0; // Default to no delay
         bgMusic = new Howl({
           src: [page.bgMusic],
           volume: page.bgMusicVolume || 0.5,
-          loop: true
+          loop: true,
+          onend: () => {
+            console.log('Background music ended.');
+          }
         });
 
         // Log audio loading
-        console.log('Loading background music for page', pageIndex + 1); 
+        console.log('Loading background music for page', pageIndex + 1);
 
         // Start background music with a delay (if any)
         setTimeout(() => {
@@ -112,12 +115,17 @@ fetch(storyFile)
       if (page.narration && narrationEnabled && !readOnlyMode) {
         narration = new Howl({
           src: [page.narration],
-          volume: page.narrationVolume || 1
+          volume: page.narrationVolume || 1,
+          onend: () => {
+            console.log('Narration ended.');
+            // Optionally stop BG music when narration ends
+            if (bgMusic) bgMusic.stop();
+          }
         });
 
         // Log narration loading
         console.log('Loading narration for page', pageIndex + 1);
-        
+
         narration.play();
       }
 
