@@ -63,11 +63,11 @@
     </div>
   </div>
 
-  <!-- Story Navigation and Content -->
-  <div id="controls" class="flex items-center justify-center mt-6">
+  <!-- Story Navigation and Content with Gradient Background -->
+  <div id="controls" class="flex items-center justify-center mt-6 bg-gradient-to-r from-purple-50 via-pink-100 to-red-100" data-aos="fade-up" data-aos-duration="1200">
     <!-- Prev Button -->
     <button id="prev-btn" class="p-4">
-      <img src="images/prev.png" alt="Previous" class="h-12 w-12">
+      <img src="images/prev.png" alt="Previous" class="h-20 w-20">
     </button>
 
     <!-- Storybook Content -->
@@ -82,7 +82,7 @@
 
     <!-- Next Button -->
     <button id="next-btn" class="p-4">
-      <img src="images/next.png" alt="Next" class="h-12 w-12">
+      <img src="images/next.png" alt="Next" class="h-20 w-20">
     </button>
   </div>
 
@@ -91,39 +91,39 @@
     <span id="current-page">1</span>/<span id="total-pages">10</span>
   </div>
 
-<!-- Modal: Finished Reading -->
-<div id="suggestion-modal" class="fixed inset-0 bg-gray-800 bg-opacity-75 flex items-center justify-center z-50 hidden">
-  <div class="bg-white p-8 rounded-lg shadow-lg w-96 animate__animated animate__fadeInDown relative">
-    <!-- Close Button -->
-    <button class="absolute top-4 right-4 text-gray-400 hover:text-gray-600 transition duration-300" onclick="closeSuggestionModal()">
-      <i class="fas fa-times text-xl"></i>
-    </button>
-
-    <!-- Modal Content -->
-    <h2 class="text-3xl font-semibold text-center text-blue-600 mb-4">
-      <i class="fas fa-book-reader text-blue-500 mr-2"></i> Finished Reading!
-    </h2>
-    <p class="text-lg text-center text-gray-600 mb-6">Congratulations! You've reached the end of this story. Would you like to read another book?</p>
-
-    <!-- Actions -->
-    <div class="flex justify-center space-x-4">
-      <button onclick="closeSuggestionModal()" class="bg-gray-500 text-white py-2 px-4 rounded-lg hover:bg-gray-600 transition duration-300 flex items-center space-x-2">
-        <i class="fas fa-thumbs-down"></i>
-        <span>No, thanks</span>
+  <!-- Modal: Finished Reading -->
+  <div id="suggestion-modal" class="fixed inset-0 bg-gray-800 bg-opacity-75 flex items-center justify-center z-50 hidden">
+    <div class="bg-white p-8 rounded-lg shadow-lg w-96 animate__animated animate__fadeInDown relative">
+      <!-- Close Button -->
+      <button class="absolute top-4 right-4 text-gray-400 hover:text-gray-600 transition duration-300" onclick="closeSuggestionModal()">
+        <i class="fas fa-times text-xl"></i>
       </button>
-      <a href="index.html" class="bg-blue-500 text-white py-2 px-4 rounded-lg hover:bg-blue-600 transition duration-300 flex items-center space-x-2">
-        <i class="fas fa-book"></i>
-        <span>Yes, Please.</span>
-      </a>
+
+      <!-- Modal Content -->
+      <h2 class="text-3xl font-semibold text-center text-blue-600 mb-4">
+        <i class="fas fa-book-reader text-blue-500 mr-2"></i> Finished Reading!
+      </h2>
+      <p class="text-lg text-center text-gray-600 mb-6">Congratulations! You've reached the end of this story. Would you like to read another book?</p>
+
+      <!-- Actions -->
+      <div class="flex justify-center space-x-4">
+        <button onclick="closeSuggestionModal()" class="bg-gray-500 text-white py-2 px-4 rounded-lg hover:bg-gray-600 transition duration-300 flex items-center space-x-2">
+          <i class="fas fa-thumbs-down"></i>
+          <span>No, thanks</span>
+        </button>
+        <a href="index.html" class="bg-blue-500 text-white py-2 px-4 rounded-lg hover:bg-blue-600 transition duration-300 flex items-center space-x-2">
+          <i class="fas fa-book"></i>
+          <span>Yes, Please.</span>
+        </a>
+      </div>
     </div>
   </div>
-</div>
-
-
 
   <!-- Footer -->
-  <footer class="bg-gray-800 text-white text-center py-6">
-    <p class="text-sm">&copy; 2024 Cooh StoryPlay Hub. All Rights Reserved.</p>
+  <footer class="bg-gray-800 text-white text-center py-6 mt-8">
+    <div class="container mx-auto">
+      <p class="text-sm md:text-base">&copy; 2024 Cooh StoryPlay Hub. All Rights Reserved.</p>
+    </div>
   </footer>
 
   <!-- Audio Elements -->
@@ -137,21 +137,23 @@
 
   <!-- Modal Script -->
   <script>
-    function openModal() {
-      document.getElementById('confirmation-modal').classList.remove('hidden');
-    }
-    function closeModal() {
-      document.getElementById('confirmation-modal').classList.add('hidden');
-    }
-    function closeSuggestionModal() {
-      document.getElementById('suggestion-modal').classList.add('hidden');
-    }
+   let isReadOnly = false;  // Flag to track Read-Only state
+let narration = document.getElementById("narration");
+let pageSound = document.getElementById("page-sound");
+let bgMusic = document.getElementById("bg-music");
 
-    // Optional: Add functionality to handle "read-only" toggling.
-    function toggleReadOnly() {
-      // Implement the logic for toggling read-only state
-      // This will affect whether narration plays or not
-    }
+function openModal() {
+  document.getElementById('confirmation-modal').classList.remove('hidden');
+}
+
+function closeModal() {
+  document.getElementById('confirmation-modal').classList.add('hidden');
+}
+
+function closeSuggestionModal() {
+  document.getElementById('suggestion-modal').classList.add('hidden');
+}
+
   </script>
 
 </body>
