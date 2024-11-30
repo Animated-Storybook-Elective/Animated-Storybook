@@ -1,8 +1,12 @@
+/* Global Body Styles */
 body {
   font-family: "Comic Sans MS", sans-serif;
   background-color: #f4f8ff;
   margin: 0;
   padding: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Ensures the body takes up at least the full height of the viewport */
 }
 
 /* Story Card Styles */
@@ -56,7 +60,6 @@ body {
 .story-card .read-now-btn:hover {
   background: linear-gradient(to right, #ec4899, #f59e0b);
 }
-
 
 /* Modal Styles */
 .modal {
@@ -115,4 +118,14 @@ button.absolute {
 /* Optional: Add opacity or disable interaction with content */
 .read-only .text-lg {
   pointer-events: none; /* Disable text selection or editing */
+}
+
+/* Footer Styling to Ensure it's Always at the Bottom */
+footer {
+  margin-top: auto; /* Push footer to the bottom */
+  padding: 1rem;
+  background-color: #333;
+  color: white;
+  text-align: center;
+  width: 100%;
 }

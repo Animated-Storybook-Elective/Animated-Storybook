@@ -10,8 +10,10 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
     <!-- Custom Styles -->
     <link rel="stylesheet" href="./css/styles.css">
+    <!-- AOS Animation Library -->
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
 </head>
-<body class="bg-gray-100">
+<body class="bg-gray-100 flex flex-col min-h-screen m-0 p-0"> <!-- Ensure no margin or padding on body and use flexbox layout -->
 
     <!-- Navbar -->
     <nav class="navbar bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 text-white p-4 fixed w-full top-0 z-50">
@@ -28,57 +30,103 @@
         </div>
     </nav>
 
-    <!-- About Section -->
-    <section class="about-us py-20 bg-gray-50">
-        <div class="container mx-auto text-center">
-            <h2 class="text-4xl font-bold mb-12">About Cooh StoryPlay Hub</h2>
-            <p class="text-lg text-gray-700 mb-8 max-w-2xl mx-auto">
-                Cooh StoryPlay Hub is an innovative platform that brings together a world of storytelling, interactive experiences, and community engagement. We aim to provide a library filled with stories that inspire, entertain, and teach valuable life lessons.
-            </p>
-            <p class="text-lg text-gray-700 mb-8 max-w-2xl mx-auto">
-                Our mission is to create a space where readers can explore a variety of stories, connect with fellow enthusiasts, and enjoy personalized, immersive experiences. Whether you're here for adventure, fantasy, or educational tales, Cooh StoryPlay Hub has something for everyone!
-            </p>
-        </div>
-    </section>
+    <!-- Main Content -->
+    <div class="flex-grow">
+        <!-- About Section -->
+        <section class="about-us py-20 bg-gray-50" data-aos="fade-up" data-aos-duration="1200">
+            <div class="container mx-auto text-center">
+                <h2 class="text-4xl font-bold mb-12">About Cooh StoryPlay Hub</h2>
+                <p class="text-lg text-gray-700 mb-8 max-w-2xl mx-auto">
+                    Cooh StoryPlay Hub is an innovative platform that brings together a world of storytelling, interactive experiences, and community engagement. We aim to provide a library filled with stories that inspire, entertain, and teach valuable life lessons.
+                </p>
+            </div>
 
-    <!-- About the Creator -->
-    <section class="creator py-20 bg-white">
-        <div class="container mx-auto text-center">
-            <h2 class="text-4xl font-bold mb-8">About the Creator</h2>
-            <div class="flex justify-center items-center space-x-12">
-                <img src="images/creator.jpg" alt="Creator" class="w-32 h-32 rounded-full object-cover">
-                <div>
-                    <h3 class="text-2xl font-bold">John Doe</h3>
-                    <p class="text-lg text-gray-600 mt-4 max-w-xl mx-auto">
-                        John Doe is an avid storyteller and tech enthusiast with a passion for creating interactive digital experiences. After years of exploring various narrative formats and technologies, John launched Cooh StoryPlay Hub to bring a fresh perspective to the world of storytelling. His mission is to foster creativity, education, and entertainment through digital stories that leave a lasting impact.
+        <!-- Image Gallery -->
+        <div class="image-gallery grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6 mt-12">
+            <!-- Image Items -->
+            <div class="image-item transform hover:scale-110 transition-transform duration-300">
+                <img src="https://png.pngtree.com/png-vector/20221023/ourmid/pngtree-presentation-of-a-topic-isolated-cartoon-vector-illustration-png-image_6344381.png" alt="Storytelling" class="w-full h-64 object-cover rounded-lg shadow-lg">
+            </div>
+            <div class="image-item transform hover:scale-110 transition-transform duration-300">
+                <img src="https://www.classcapades.com/assets/characters/creative.png" alt="Creative Writing" class="w-full h-64 object-cover rounded-lg shadow-lg">
+            </div>
+            <div class="image-item transform hover:scale-110 transition-transform duration-300">
+                <img src="https://egamigroup.com/wp-content/uploads/2017/02/community-engagement.png" alt="Community Engagement" class="w-full h-64 object-cover rounded-lg shadow-lg">
+            </div>
+            <div class="image-item transform hover:scale-110 transition-transform duration-300">
+                <img src="https://www.pngall.com/wp-content/uploads/5/Learning-PNG.png" alt="Learning and Growth" class="w-full h-64 object-cover rounded-lg shadow-lg">
+            </div>
+            <div class="image-item transform hover:scale-110 transition-transform duration-300">
+                <img src="https://static.vecteezy.com/system/resources/previews/024/096/713/non_2x/book-stories-with-rocket-free-png.png" alt="Adventure Stories" class="w-full h-64 object-cover rounded-lg shadow-lg">
+            </div>
+        </div>
+        </section>
+
+      <!-- About the Creators Section -->
+<section class="creator py-20 bg-white" data-aos="fade-up" data-aos-duration="1200">
+    <div class="container mx-auto text-center">
+        <h2 class="text-4xl font-bold mb-8">About the Creators</h2>
+        <div class="flex justify-center items-center space-x-12">
+            <!-- Creator 1 -->
+            <div class="creator-card">
+                <img src="images/creator2.jpg" alt="Creator 2" class="w-32 h-32 rounded-full object-cover mx-auto">
+                <h3 class="text-2xl font-bold mt-4">Jane Smith</h3>
+                <p class="text-lg text-gray-600 mt-2">A writer and visual artist focused on blending traditional storytelling with modern technology.</p>
+            </div>
+
+            <!-- Creator 2 -->
+            <div class="creator-card">
+                <img src="images/creator3.jpg" alt="Creator 3" class="w-32 h-32 rounded-full object-cover mx-auto">
+                <h3 class="text-2xl font-bold mt-4">Chris Johnson</h3>
+                <p class="text-lg text-gray-600 mt-2">A graphic novelist passionate about creating immersive worlds that spark curiosity and imagination.</p>
+            </div>
+
+            <!-- Creator 3 -->
+            <div class="creator-card">
+                <img src="images/creator4.jpg" alt="Creator 4" class="w-32 h-32 rounded-full object-cover mx-auto">
+                <h3 class="text-2xl font-bold mt-4">Emily Brown</h3>
+                <p class="text-lg text-gray-600 mt-2">A creative writer with a focus on fantasy and mystery genres, aiming to create stories that captivate and educate.</p>
+            </div>
+
+            <!-- Creator 4 -->
+            <div class="creator-card">
+                <img src="images/creator5.jpg" alt="Creator 5" class="w-32 h-32 rounded-full object-cover mx-auto">
+                <h3 class="text-2xl font-bold mt-4">Michael Lee</h3>
+                <p class="text-lg text-gray-600 mt-2">A storyteller with a flair for exploring historical fiction and non-fiction narratives.</p>
+            </div>
+
+            <!-- Creator 5 -->
+            <div class="creator-card">
+                <img src="images/creator6.jpg" alt="Creator 6" class="w-32 h-32 rounded-full object-cover mx-auto">
+                <h3 class="text-2xl font-bold mt-4">Sarah Wilson</h3>
+                <p class="text-lg text-gray-600 mt-2">A digital artist and writer who blends science fiction with deep philosophical narratives.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+        <!-- Mission and Vision Section -->
+        <section class="mission-vision py-20 bg-gray-100" data-aos="fade-up" data-aos-duration="1200">
+            <div class="container mx-auto text-center">
+                <div class="mission mb-12">
+                    <h3 class="text-2xl font-semibold text-purple-600 mb-4">Our Mission</h3>
+                    <p class="text-lg text-gray-700 mx-auto max-w-3xl">
+                        Our mission is to empower storytellers and readers alike by creating a platform that nurtures creativity, fosters community, and enables personal growth through immersive and engaging stories.
+                    </p>
+                </div>
+                <div class="vision">
+                    <h3 class="text-2xl font-semibold text-purple-600 mb-4">Our Vision</h3>
+                    <p class="text-lg text-gray-700 mx-auto max-w-3xl">
+                        We envision a world where stories transcend traditional boundaries, allowing people to experience new perspectives, ideas, and cultures.
                     </p>
                 </div>
             </div>
-        </div>
-    </section>
-
-    <!-- Our Vision Section -->
-    <section class="vision py-20 bg-gray-50">
-        <div class="container mx-auto text-center">
-            <h2 class="text-4xl font-bold mb-8">Our Vision</h2>
-            <p class="text-lg text-gray-700 mb-8 max-w-2xl mx-auto">
-                Our vision is to become a leading platform that redefines the way people experience stories. We envision a future where Cooh StoryPlay Hub serves as the go-to destination for readers of all ages, offering a diverse collection of immersive tales and interactive features. We aim to build a community that celebrates creativity and encourages lifelong learning through the power of storytelling.
-            </p>
-        </div>
-    </section>
-
-    <!-- Our Mission Section -->
-    <section class="mission py-20 bg-white">
-        <div class="container mx-auto text-center">
-            <h2 class="text-4xl font-bold mb-8">Our Mission</h2>
-            <p class="text-lg text-gray-700 mb-8 max-w-2xl mx-auto">
-                Our mission is to create an inclusive platform that allows readers to explore a wide range of stories across genres, while offering interactive elements that make the reading experience more engaging. We are dedicated to providing a safe, welcoming environment where users can not only enjoy stories but also connect with others, contribute their own ideas, and help shape the future of storytelling.
-            </p>
-        </div>
-    </section>
+        </section>
+    </div> <!-- Flex-grow ensures the content pushes the footer down -->
 
     <!-- Footer -->
-    <footer class="bg-gray-800 text-white py-6">
+    <footer class="bg-gray-800 text-white py-6 mt-auto">
         <div class="container mx-auto text-center">
             <p class="text-sm mb-2">&copy; 2024 Cooh StoryPlay Hub. All Rights Reserved.</p>
             <p class="text-sm">
@@ -88,5 +136,11 @@
         </div>
     </footer>
 
+    <!-- JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        // Initialize AOS (Animation on Scroll)
+        AOS.init();
+    </script>
 </body>
 </html>
