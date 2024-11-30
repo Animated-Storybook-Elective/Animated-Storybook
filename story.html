@@ -22,28 +22,32 @@
   <!-- Navbar -->
   <nav class="bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 text-white p-4 fixed w-full top-0 z-50">
     <div class="container mx-auto flex justify-between items-center">
-      <!-- Logo -->
+      <!-- Logo and Title -->
       <div class="flex items-center space-x-3">
         <img src="images/logo.png" alt="StoryPlay Logo" class="h-10">
         <a href="index.html" class="text-2xl font-bold">Cooh StoryPlay Hub</a>
       </div>
-      <!-- Return Home Button -->
-      <button 
-        class="bg-blue-500 text-white py-2 px-4 rounded-full flex items-center hover:bg-blue-600 transition duration-300"
-        onclick="openModal()">
-        <i class="fas fa-home mr-2"></i> Return Home
-      </button>
+
+      <!-- Navbar Buttons -->
+      <div class="flex space-x-4">
+        <!-- Return Home Button -->
+        <button class="bg-blue-500 text-white py-2 px-4 rounded-full flex items-center hover:bg-blue-600 transition duration-300" onclick="openModal()">
+          <i class="fas fa-home mr-2"></i> Return Home
+        </button>
+
+        <!-- Read-Only Button -->
+        <button id="read-only-btn" class="bg-green-500 text-white py-2 px-4 rounded-full flex items-center hover:bg-green-600 transition duration-300" onclick="toggleReadOnly()">
+          <i class="fas fa-eye mr-2"></i> Read Only
+        </button>
+      </div>
     </div>
   </nav>
 
   <!-- Modal: Confirm Navigation -->
-  <div id="confirmation-modal" 
-       class="fixed inset-0 bg-gray-800 bg-opacity-75 flex items-center justify-center z-50 hidden">
+  <div id="confirmation-modal" class="fixed inset-0 bg-gray-800 bg-opacity-75 flex items-center justify-center z-50 hidden">
     <div class="bg-white p-6 rounded-lg shadow-lg w-96 animate__animated animate__fadeInDown relative">
       <!-- Close Button -->
-      <button 
-        class="absolute top-4 right-4 text-gray-400 hover:text-gray-600"
-        onclick="closeModal()">
+      <button class="absolute top-4 right-4 text-gray-400 hover:text-gray-600" onclick="closeModal()">
         <i class="fas fa-times text-xl"></i>
       </button>
       <!-- Modal Content -->
@@ -53,27 +57,21 @@
       <p class="text-gray-600 mb-6">Are you sure you want to navigate back to the home page?</p>
       <!-- Actions -->
       <div class="flex justify-center space-x-4">
-        <button 
-          onclick="closeModal()" 
-          class="bg-gray-500 text-white py-2 px-4 rounded-lg hover:bg-gray-600">
-          Cancel
-        </button>
-        <a href="index.html" 
-           class="bg-blue-500 text-white py-2 px-4 rounded-lg hover:bg-blue-600">
-          Confirm
-        </a>
+        <button onclick="closeModal()" class="bg-gray-500 text-white py-2 px-4 rounded-lg hover:bg-gray-600">Cancel</button>
+        <a href="index.html" class="bg-blue-500 text-white py-2 px-4 rounded-lg hover:bg-blue-600">Confirm</a>
       </div>
     </div>
   </div>
 
+  <!-- Story Navigation and Content -->
   <div id="controls" class="flex items-center justify-center mt-6">
     <!-- Prev Button -->
     <button id="prev-btn" class="p-4">
       <img src="images/prev.png" alt="Previous" class="h-12 w-12">
     </button>
-  
+
     <!-- Storybook Content -->
-    <main class="text-center mx-0 mt-8"> <!-- Add "mt-8" or adjust as needed -->
+    <main class="text-center mx-0 mt-8">
       <div id="storybook">
         <div id="page-content" class="inline-block">
           <img id="page-image" class="w-96 h-auto mx-auto mb-4" src="" alt="Page Image">
@@ -81,58 +79,47 @@
         </div>
       </div>
     </main>
-  
+
     <!-- Next Button -->
     <button id="next-btn" class="p-4">
       <img src="images/next.png" alt="Next" class="h-12 w-12">
     </button>
   </div>
-  
-  
-  
-  
-      
-        <button id="audio-toggle-btn" 
-                class="bg-blue-500 text-white py-2 px-4 rounded-lg hover:bg-blue-600">
-          <i class="fas fa-volume-up"></i> Narration
-        </button>
-      </div>
-      <!-- Progress -->
-      <div id="progress" class="text-center mt-4 text-xl">
-        <span id="current-page">1</span>/<span id="total-pages">10</span>
-      </div>
-    </div>
-  </main>
 
-  <!-- Modal: Finished Reading -->
-  <div id="suggestion-modal" 
-       class="fixed inset-0 bg-gray-800 bg-opacity-75 flex items-center justify-center z-50 hidden">
-    <div class="bg-white p-6 rounded-lg shadow-lg w-96 animate__animated animate__fadeInDown relative">
-      <!-- Close Button -->
-      <button 
-        class="absolute top-4 right-4 text-gray-400 hover:text-gray-600"
-        onclick="closeSuggestionModal()">
-        <i class="fas fa-times text-xl"></i>
+  <!-- Progress -->
+  <div id="progress" class="text-center mt-4 text-xl">
+    <span id="current-page">1</span>/<span id="total-pages">10</span>
+  </div>
+
+<!-- Modal: Finished Reading -->
+<div id="suggestion-modal" class="fixed inset-0 bg-gray-800 bg-opacity-75 flex items-center justify-center z-50 hidden">
+  <div class="bg-white p-8 rounded-lg shadow-lg w-96 animate__animated animate__fadeInDown relative">
+    <!-- Close Button -->
+    <button class="absolute top-4 right-4 text-gray-400 hover:text-gray-600 transition duration-300" onclick="closeSuggestionModal()">
+      <i class="fas fa-times text-xl"></i>
+    </button>
+
+    <!-- Modal Content -->
+    <h2 class="text-3xl font-semibold text-center text-blue-600 mb-4">
+      <i class="fas fa-book-reader text-blue-500 mr-2"></i> Finished Reading!
+    </h2>
+    <p class="text-lg text-center text-gray-600 mb-6">Congratulations! You've reached the end of this story. Would you like to read another book?</p>
+
+    <!-- Actions -->
+    <div class="flex justify-center space-x-4">
+      <button onclick="closeSuggestionModal()" class="bg-gray-500 text-white py-2 px-4 rounded-lg hover:bg-gray-600 transition duration-300 flex items-center space-x-2">
+        <i class="fas fa-thumbs-down"></i>
+        <span>No, thanks</span>
       </button>
-      <!-- Modal Content -->
-      <h2 class="text-2xl font-bold mb-4">
-        <i class="fas fa-book-reader text-blue-500 mr-2"></i> Finished Reading!
-      </h2>
-      <p class="text-gray-600 mb-6">Congratulations! You've reached the end of this story. Would you like to read another book?</p>
-      <!-- Actions -->
-      <div class="flex justify-center space-x-4">
-        <button 
-          onclick="closeSuggestionModal()" 
-          class="bg-gray-500 text-white py-2 px-4 rounded-lg hover:bg-gray-600">
-          No, thanks
-        </button>
-        <a href="book-list.html" 
-           class="bg-blue-500 text-white py-2 px-4 rounded-lg hover:bg-blue-600">
-          Yes, Show me more books
-        </a>
-      </div>
+      <a href="index.html" class="bg-blue-500 text-white py-2 px-4 rounded-lg hover:bg-blue-600 transition duration-300 flex items-center space-x-2">
+        <i class="fas fa-book"></i>
+        <span>Yes, Please.</span>
+      </a>
     </div>
   </div>
+</div>
+
+
 
   <!-- Footer -->
   <footer class="bg-gray-800 text-white text-center py-6">
@@ -158,6 +145,12 @@
     }
     function closeSuggestionModal() {
       document.getElementById('suggestion-modal').classList.add('hidden');
+    }
+
+    // Optional: Add functionality to handle "read-only" toggling.
+    function toggleReadOnly() {
+      // Implement the logic for toggling read-only state
+      // This will affect whether narration plays or not
     }
   </script>
 

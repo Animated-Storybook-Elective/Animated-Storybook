@@ -1,3 +1,4 @@
+// Grab storyId from URL, default to 1 if not provided
 const urlParams = new URLSearchParams(window.location.search);
 const storyId = urlParams.get("storyId") || 1; // Default to story1 if no storyId is provided
 const storyFile = `stories/story${storyId}.json`;
@@ -14,13 +15,14 @@ fetch(storyFile)
     document.getElementById("total-pages").textContent = totalPages;
 
     let currentPage = 0;
-    let narrationEnabled = true;
+    let narrationEnabled = true; // This flag is now automatically controlled
+    let readOnlyMode = false; // Added read-only mode flag
     let bgMusic = null; // Background music instance
     let narration = null; // Narration instance
 
     const prevBtn = document.getElementById("prev-btn");
     const nextBtn = document.getElementById("next-btn");
-    const audioToggleBtn = document.getElementById("audio-toggle-btn");
+    const readOnlyBtn = document.getElementById("read-only-btn");
 
     // Initialize page loading
     loadPage(currentPage, data);
@@ -29,9 +31,15 @@ fetch(storyFile)
     prevBtn.addEventListener("click", () => handlePageTurn(-1));
     nextBtn.addEventListener("click", () => handlePageTurn(1));
 
-    audioToggleBtn.addEventListener("click", () => {
-      narrationEnabled = !narrationEnabled;
-      updateAudioToggleButton();
+    // Toggle read-only mode
+    readOnlyBtn.addEventListener("click", () => {
+      readOnlyMode = !readOnlyMode;
+      if (readOnlyMode) {
+        // Stop any audio when in read-only mode
+        if (narration) narration.stop();
+        if (bgMusic) bgMusic.stop();
+      }
+      updateButtonStates();
     });
 
     // Handle page turn with sound
@@ -70,58 +78,86 @@ fetch(storyFile)
 
     // Function to load a page
     function loadPage(pageIndex, storyData) {
-  const page = storyData.pages[pageIndex];
-  document.getElementById("page-image").src = page.image;
-  document.getElementById("page-text").textContent = page.text || "";
-  document.getElementById("current-page").textContent = pageIndex + 1;
+      const page = storyData.pages[pageIndex];
+      document.getElementById("page-image").src = page.image;
+      document.getElementById("page-text").textContent = page.text || "";
+      document.getElementById("current-page").textContent = pageIndex + 1;
 
-  // Stop any currently playing audio
-  if (bgMusic) bgMusic.stop();
-  if (narration) narration.stop();
+      // Stop any currently playing audio
+      if (bgMusic) bgMusic.stop();
+      if (narration) narration.stop();
 
-  console.log('Loading page', pageIndex + 1); // Log page load to debug
+      console.log('Loading page', pageIndex + 1); // Log page load to debug
 
-  // Handle background music with delay
-  if (page.bgMusic) {
-    const delay = page.bgMusicDelay || 0; // Default to no delay
-    bgMusic = new Howl({
-      src: [page.bgMusic],
-      volume: page.bgMusicVolume || 0.5,
-      loop: true
-    });
+      // Handle background music with delay
+      if (page.bgMusic && !readOnlyMode) {
+        const delay = page.bgMusicDelay || 0; // Default to no delay
+        bgMusic = new Howl({
+          src: [page.bgMusic],
+          volume: page.bgMusicVolume || 0.5,
+          loop: true
+        });
 
-    // Log audio loading
-    console.log('Loading background music for page', pageIndex + 1); 
+        // Log audio loading
+        console.log('Loading background music for page', pageIndex + 1); 
 
-    // Start background music with a delay (if any)
-    setTimeout(() => {
-      bgMusic.play();
-      console.log('Background music playing for page', pageIndex + 1);
-    }, delay * 1000);
-  }
+        // Start background music with a delay (if any)
+        setTimeout(() => {
+          bgMusic.play();
+          console.log('Background music playing for page', pageIndex + 1);
+        }, delay * 1000);
+      }
 
-  // Handle narration
-  if (page.narration && narrationEnabled) {
-    narration = new Howl({
-      src: [page.narration],
-      volume: page.narrationVolume || 1
-    });
+      // Handle narration
+      if (page.narration && narrationEnabled && !readOnlyMode) {
+        narration = new Howl({
+          src: [page.narration],
+          volume: page.narrationVolume || 1
+        });
 
-    // Log narration loading
-    console.log('Loading narration for page', pageIndex + 1);
-    
-    narration.play();
-  }
+        // Log narration loading
+        console.log('Loading narration for page', pageIndex + 1);
+        
+        narration.play();
+      }
 
-  updateButtonStates();
-}
+      // If in read-only mode, don't load narration or music, only page turn sound
+      if (readOnlyMode) {
+        const pageTurnSound = new Howl({
+          src: ["audios/pageturn.mp3"], // Replace with actual sound file path
+          volume: 1
+        });
+        pageTurnSound.play();
+      }
 
-    // Update initial state of the narration toggle button
-    function updateAudioToggleButton() {
-      audioToggleBtn.textContent = narrationEnabled ?
-        "Disable Narration" :
-        "Enable Narration";
+      // Check if user has finished reading the last page
+      if (pageIndex === totalPages - 1) {
+        showSuggestionModal(); // Trigger suggestion modal when the last page is reached
+      }
+
+      updateButtonStates();
     }
+
+    // Function to show the suggestion modal when story is finished
+    function showSuggestionModal() {
+      document.getElementById('suggestion-modal').classList.remove('hidden');
+    }
+
+    // Function to close the suggestion modal
+    function closeSuggestionModal() {
+      document.getElementById('suggestion-modal').classList.add('hidden');
+    }
+
+    // Function to handle "Yes, Show me more books"
+    function suggestAnotherStory() {
+      // Redirect to the homepage or show a list of suggested stories
+      window.location.href = "index.html";  // Redirecting to home page. You can customize this to load another page with book suggestions.
+    }
+
+    // Adding event listeners for the modal buttons
+    document.querySelector(".close-modal").addEventListener("click", closeSuggestionModal);
+    document.querySelector(".suggest-more-books").addEventListener("click", suggestAnotherStory);
+
   })
   .catch((error) => {
     console.error("Error loading story:", error);

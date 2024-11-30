@@ -105,3 +105,14 @@ button.absolute {
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   gap: 1rem;
 }
+
+/* Style for Read-Only active state */
+.read-only {
+  background-color: #d1d5db; /* Light gray background for read-only mode */
+  cursor: not-allowed; /* Disable cursor when hovering over disabled buttons */
+}
+
+/* Optional: Add opacity or disable interaction with content */
+.read-only .text-lg {
+  pointer-events: none; /* Disable text selection or editing */
+}
