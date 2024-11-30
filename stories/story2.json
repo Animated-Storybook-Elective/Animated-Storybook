@@ -2,15 +2,9 @@
   "storyId": 2,
   "title": "The Tortoise and the Hare",
   "pages": [
+   
     {
       "page": 1,
-      "image": "images/story2/s2.jpeg",
-      "sound": "audios/sound-effects/pageturn.mp3",
-      "bgMusic": "audios/sound-effects/intro.mp3",
-      "bgMusicVolume": 0.2
-    },
-    {
-      "page": 2,
       "image": "images/story2/s2.jpeg",
       "sound": "audios/sound-effects/pageturn.mp3",
       "bgMusic": "audios/sound-effects/intro.mp3",
@@ -20,7 +14,7 @@
       "bgMusicVolume": 0.2
     },
     {
-      "page": 3,
+      "page": 2,
       "image": "images/story2/s2-1.jpeg",
       "sound": "audios/sound-effects/pageturn.mp3",
       "bgMusic": "audios/sound-effects/jungle.mp3",
@@ -29,7 +23,7 @@
       "bgMusicVolume": 0.2
     },
     {
-      "page": 4,
+      "page": 3,
       "image": "images/story2/s2-2.jpeg",
       "sound": "audios/sound-effects/pageturn.mp3",
       "bgMusic": "audios/sound-effects/jungle.mp3",
@@ -38,7 +32,7 @@
       "bgMusicVolume": 0.2
     },
     {
-      "page": 5,
+      "page": 4,
       "image": "images/story2/s2-3.jpeg",
       "sound": "audios/sound-effects/pageturn.mp3",
       "bgMusic": "audios/sound-effects/sleeping.mp3",
@@ -48,7 +42,7 @@
       "bgMusicVolume": 0.2
     },
     {
-      "page": 6,
+      "page": 5,
       "image": "images/story2/s2-4.jpeg",
       "sound": "audios/sound-effects/pageturn.mp3",
       "bgMusic": "audios/sound-effects/cheer.mp3",
@@ -58,7 +52,7 @@
       "narrationVolume": 1
     },
     {
-      "page": 7,
+      "page": 6,
       "image": "images/story2/s2-5.jpeg",
       "sound": "audios/sound-effects/pageturn.mp3",
       "bgMusic": "audios/sound-effects/jungle.mp3",
@@ -67,7 +61,7 @@
       "narrationVolume": 1
     },
     {
-      "page": 8,
+      "page": 7,
       "image": "images/story2/s2.jpeg",
       "sound": "audios/sound-effects/pageturn.mp3",
       "bgMusic": "audios/sound-effects/intro.mp3",

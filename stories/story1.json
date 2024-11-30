@@ -4,7 +4,7 @@
   "pages": [
   
     {
-      "page": 2,
+      "page": 1,
       "image": "images/story1/The Lion and the mouse-images-0.jpg",
       "sound": "audios/sound-effects/pageturn.mp3",
       "bgMusic": "audios/sound-effects/intro.mp3",
@@ -14,7 +14,7 @@
       "bgMusicVolume": 0.2
     },
     {
-      "page": 3,
+      "page": 2,
       "image": "images/story1/The Lion and the mouse-images-1.jpg",
       "sound": "audios/sound-effects/pageturn.mp3",
       "bgMusic": "audios/sound-effects/jungle.mp3",
@@ -23,7 +23,7 @@
       "bgMusicVolume": 0.2
     },
     {
-      "page": 4,
+      "page": 3,
       "image": "images/story1/The Lion and the mouse-images-2.jpg",
       "sound": "audios/sound-effects/pageturn.mp3",
       "bgMusic": "audios/sound-effects/jungle.mp3",
@@ -32,7 +32,7 @@
       "bgMusicVolume": 0.2
     },
     {
-      "page": 5,
+      "page": 4,
       "image": "images/story1/The Lion and the mouse-images-3.jpg",
       "sound": "audios/sound-effects/pageturn.mp3",
       "bgMusic": "audios/sound-effects/jungle.mp3",
@@ -41,7 +41,7 @@
       "bgMusicVolume": 0.2
     },
     {
-      "page": 6,
+      "page": 5,
       "image": "images/story1/The Lion and the mouse-images-4.jpg",
       "sound": "audios/sound-effects/pageturn.mp3",
       "bgMusic": "audios/sound-effects/roar.mp3",
@@ -51,7 +51,7 @@
       "bgMusicVolume": 0.2
     },
     {
-      "page": 7,
+      "page": 6,
       "image": "images/story1/The Lion and the mouse-images-5.jpg",
       "sound": "audios/sound-effects/pageturn.mp3",
       "bgMusic": "audios/sound-effects/rat-gnawing.mp3",
@@ -61,7 +61,7 @@
       "bgMusicVolume": 0.2
     },
     {
-      "page": 8,
+      "page": 7,
       "image": "images/story1/The Lion and the mouse-images-6.jpg",
       "sound": "audios/sound-effects/pageturn.mp3",
       "bgMusic": "audios/sound-effects/jungle.mp3",
@@ -70,7 +70,7 @@
       "bgMusicVolume": 0.2
     },
     {
-      "page": 9,
+      "page": 8,
       "image": "images/story1/The Lion and the mouse-images-0.jpg",
       "sound": "audios/sound-effects/pageturn.mp3",
       "bgMusic": "audios/sound-effects/intro.mp3",

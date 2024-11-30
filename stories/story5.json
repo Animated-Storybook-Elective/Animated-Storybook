@@ -2,15 +2,9 @@
   "storyId": 5,
   "title": "The Ant and the Grasshopper",
   "pages": [
+    
     {
-      "page": 1,
-      "image": "images/story5/The-Cunning-Fox-and-The-Crow_page-0001.jpg",
-      "sound": "audios/sound-effects/pageturn.mp3",
-      "bgMusic": "audios/sound-effects/intro.mp3",
-      "bgMusicVolume": 0.2
-    },
-        {
-          "page": 2,
+          "page": 1,
           "image": "images/story5/The-Cunning-Fox-and-The-Crow_page-0001.jpg",
           "sound": "audios/sound-effects/pageturn.mp3",
           "bgMusic": "audios/sound-effects/intro.mp3",
@@ -20,7 +14,7 @@
           "bgMusicVolume": 0.2
         },
         {
-          "page": 3,
+          "page": 2,
           "image": "images/story5/The-Cunning-Fox-and-The-Crow_page-0002.jpg",
           "sound": "audios/sound-effects/pageturn.mp3",
           "bgMusic": "audios/sound-effects/jungle.mp3",
@@ -29,7 +23,7 @@
           "bgMusicVolume": 0.2
         },
         {
-      "page": 4,
+      "page": 3,
       "image": "images/story5/The-Cunning-Fox-and-The-Crow_page-0003.jpg",
       "sound": "audios/sound-effects/pageturn.mp3",
       "bgMusic": "audios/sound-effects/jungle.mp3",
@@ -39,7 +33,7 @@
       "bgMusicVolume": 0.5
     },
     {
-      "page": 5,
+      "page": 4,
       "image": "images/story5/The-Cunning-Fox-and-The-Crow_page-0004.jpg",
       "sound": "audios/sound-effects/pageturn.mp3",
       "bgMusic": "audios/sound-effects/crow2.mp3",
@@ -49,7 +43,7 @@
       "bgMusicVolume": 0.5
     },
     {
-      "page": 6,
+      "page": 5,
       "image": "images/story5/The-Cunning-Fox-and-The-Crow_page-0005.jpg",
       "sound": "audios/sound-effects/pageturn.mp3",
       "bgMusic": "audios/sound-effects/running-in-grass.mp3",
@@ -58,7 +52,7 @@
       "bgMusicVolume": 0.5
     },
     {
-      "page": 7,
+      "page": 6,
       "image": "images/story5/The-Cunning-Fox-and-The-Crow_page-0006.jpg",
       "sound": "audios/sound-effects/pageturn.mp3",
       "bgMusic": "audios/sound-effects/jungle.mp3",
@@ -67,7 +61,7 @@
       "bgMusicVolume": 0.5
     },
     {
-      "page": 8,
+      "page": 7,
       "image": "images/story5/The-Cunning-Fox-and-The-Crow_page-0001.jpg",
       "sound": "audios/sound-effects/pageturn.mp3",
       "bgMusic": "audios/sound-effects/intro.mp3",
