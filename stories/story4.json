@@ -1,24 +1,87 @@
 {
   "storyId": 4,
-  "title": "The Golden Goose",
+  "title": "The Ant and the Grasshopper",
   "pages": [
+     
     {
       "page": 1,
-      "image": "images/page-01.jpg",
-      "sound": "audios/pageturn.mp3",
-      "bgMusic": "audios/bg3.mp3",
-      "narration": "audios/page1-audio.mp3",
+      "image": "images/story4/The-Ant-and-the-Grasshopper_page-0001.jpg",
+      "sound": "audios/sound-effects/pageturn.mp3",
+      "bgMusic": "audios/sound-effects/intro.mp3",
+      "bgMusicVolume": 0.2
+    },
+        {
+          "page": 2,
+          "image": "images/story4/The-Ant-and-the-Grasshopper_page-0001.jpg",
+          "sound": "audios/sound-effects/pageturn.mp3",
+          "bgMusic": "audios/sound-effects/intro.mp3",
+          "narrationDelay": 1, 
+          "narration": "/audios/story4/s4-1.mp3",
+          "narrationVolume": 1,
+          "bgMusicVolume": 0.2
+        },
+        {
+          "page": 3,
+          "image": "images/story4/The-Ant-and-the-Grasshopper_page-0002.jpg",
+          "sound": "audios/sound-effects/pageturn.mp3",
+          "bgMusic": "audios/sound-effects/summer.mp3",
+          "narration": "/audios/story4/s4-2.mp3",
+          "narrationVolume": 1,
+          "bgMusicVolume": 0.2
+        },
+        {
+      "page": 4,
+      "image": "images/story4/The-Ant-and-the-Grasshopper_page-0003.jpg",
+      "sound": "audios/sound-effects/pageturn.mp3",
+      "bgMusic": "audios/sound-effects/grasshopper-playing.mp3",
+      "bgMusicDelay": 3,
+      "narration": "/audios/story4/s4-3.mp3",
       "narrationVolume": 1,
       "bgMusicVolume": 0.5
     },
     {
-      "page": 2,
-      "image": "images/page-02.jpg",
-      "sound": "audios/pageturn.mp3",
-      "bgMusic": "audios/bg4.mp3",
-      "narration": "audios/page2-audio.mp3",
+      "page": 5,
+      "image": "images/story4/The-Ant-and-the-Grasshopper_page-0004.jpg",
+      "sound": "audios/sound-effects/pageturn.mp3",
+      "bgMusic": "audios/sound-effects/grasshopper-playing2.mp3",
+      "bgMusicDelay": 2,
+      "narration": "/audios/story4/s4-4.mp3",
       "narrationVolume": 1,
       "bgMusicVolume": 0.5
+    },
+    {
+      "page": 6,
+      "image": "images/story4/The-Ant-and-the-Grasshopper_page-0005.jpg",
+      "sound": "audios/sound-effects/pageturn.mp3",
+      "bgMusic": "audios/sound-effects/winter-wind.mp3",
+      "narration": "/audios/story4/s4-5.mp3",
+      "narrationVolume": 1,
+      "bgMusicVolume": 0.5
+    },
+    {
+      "page": 7,
+      "image": "images/story4/The-Ant-and-the-Grasshopper_page-0006.jpg",
+      "sound": "audios/sound-effects/pageturn.mp3",
+      "bgMusic": "audios/sound-effects/winter-wind.mp3",
+      "narration": "/audios/story4/s4-6.mp3",
+      "narrationVolume": 1,
+      "bgMusicVolume": 0.5
+    },
+    {
+      "page": 8,
+      "image": "images/story4/The-Ant-and-the-Grasshopper_page-0007.jpg",
+      "sound": "audios/sound-effects/pageturn.mp3",
+      "bgMusic": "audios/sound-effects/summer.mp3",
+      "narration": "/audios/story4/s4-7.mp3",
+      "narrationVolume": 1,
+      "bgMusicVolume": 0.3
+    },
+    {
+      "page": 9,
+      "image": "images/story4/The-Ant-and-the-Grasshopper_page-0001.jpg",
+      "sound": "audios/sound-effects/pageturn.mp3",
+      "bgMusic": "audios/sound-effects/intro.mp3",
+      "bgMusicVolume": 0.2
     }
   ]
 }

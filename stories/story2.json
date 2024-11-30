@@ -7,8 +7,7 @@
       "image": "images/story2/s2.jpeg",
       "sound": "audios/sound-effects/pageturn.mp3",
       "bgMusic": "audios/sound-effects/intro.mp3",
-      "narrationVolume": 1,
-      "bgMusicVolume": 0.5
+      "bgMusicVolume": 0.2
     },
     {
       "page": 2,
@@ -16,8 +15,9 @@
       "sound": "audios/sound-effects/pageturn.mp3",
       "bgMusic": "audios/sound-effects/intro.mp3",
       "narration": "audios/story2/s2.mp3",
+      "narrationDelay": 1, 
       "narrationVolume": 1,
-      "bgMusicVolume": 0.5
+      "bgMusicVolume": 0.2
     },
     {
       "page": 3,
@@ -26,7 +26,7 @@
       "bgMusic": "audios/sound-effects/jungle.mp3",
       "narration": "audios/story2/s2-1.mp3",
       "narrationVolume": 1,
-      "bgMusicVolume": 0.5
+      "bgMusicVolume": 0.2
     },
     {
       "page": 4,
@@ -35,7 +35,7 @@
       "bgMusic": "audios/sound-effects/jungle.mp3",
       "narration": "audios/story2/s2-2.mp3",
       "narrationVolume": 1,
-      "bgMusicVolume": 0.5
+      "bgMusicVolume": 0.2
     },
     {
       "page": 5,
@@ -45,7 +45,7 @@
       "bgMusicDelay": 8,
       "narration": "audios/story2/s2-3.mp3",
       "narrationVolume": 1,
-      "bgMusicVolume": 0.5
+      "bgMusicVolume": 0.2
     },
     {
       "page": 6,
@@ -53,7 +53,7 @@
       "sound": "audios/sound-effects/pageturn.mp3",
       "bgMusic": "audios/sound-effects/cheer.mp3",
       "bgMusicDelay": 8,
-      "bgMusicVolume": 0.5,
+      "bgMusicVolume": 0.2,
       "narration": "audios/story2/s2-4.mp3",
       "narrationVolume": 1
     },
@@ -62,7 +62,7 @@
       "image": "images/story2/s2-5.jpeg",
       "sound": "audios/sound-effects/pageturn.mp3",
       "bgMusic": "audios/sound-effects/jungle.mp3",
-      "bgMusicVolume": 0.5,
+      "bgMusicVolume": 0.2,
       "narration": "audios/story2/s2-5.mp3",
       "narrationVolume": 1
     },
@@ -71,8 +71,7 @@
       "image": "images/story2/s2.jpeg",
       "sound": "audios/sound-effects/pageturn.mp3",
       "bgMusic": "audios/sound-effects/intro.mp3",
-      "narrationVolume": 1,
-      "bgMusicVolume": 0.5
+      "bgMusicVolume": 0.2
     }
   ]
 }

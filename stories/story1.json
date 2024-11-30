@@ -15,6 +15,7 @@
       "sound": "audios/sound-effects/pageturn.mp3",
       "bgMusic": "audios/sound-effects/intro.mp3",
       "narration": "/audios/story1/s1-1.mp3",
+      "narrationDelay": 1, 
       "narrationVolume": 1,
       "bgMusicVolume": 0.2
     },

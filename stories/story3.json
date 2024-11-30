@@ -8,18 +8,17 @@
   "image": "/images/story3/The Flying Tortoise’s Lesson-images-0.jpg",
   "sound": "audios/sound-effects/pageturn.mp3",
   "bgMusic": "audios/sound-effects/intro.mp3",
-  "narrationVolume": 1,
-  "bgMusicVolume": 0.5
+  "bgMusicVolume": 0.2
 },
     {
       "page": 2,
       "image": "/images/story3/The Flying Tortoise’s Lesson-images-0.jpg",
       "sound": "audios/sound-effects/pageturn.mp3",
       "bgMusic": "audios/sound-effects/intro.mp3",
-      "narrationDelay": 2, 
+      "narrationDelay": 1, 
       "narration": "/audios/story3/s3-1.mp3",
       "narrationVolume": 1,
-      "bgMusicVolume": 0.5
+      "bgMusicVolume": 0.2
     },
     {
       "page": 3,
@@ -28,7 +27,7 @@
       "bgMusic": "audios/sound-effects/pond.mp3",
       "narration": "/audios/story3/s3-2.mp3",
       "narrationVolume": 1,
-      "bgMusicVolume": 0.5
+      "bgMusicVolume": 0.2
     },
     {
   "page": 4,
@@ -37,7 +36,7 @@
   "bgMusic": "audios/sound-effects/pond.mp3",
   "narration": "/audios/story3/s3-3.mp3",
   "narrationVolume": 1,
-  "bgMusicVolume": 0.5
+  "bgMusicVolume": 0.2
 },
 {
   "page": 5,
@@ -46,7 +45,7 @@
   "bgMusic": "audios/sound-effects/wind.mp3",
   "narration": "/audios/story3/s3-4.mp3",
   "narrationVolume": 1,
-  "bgMusicVolume": 0.5
+  "bgMusicVolume": 0.2
 },
 {
   "page": 6,
@@ -55,7 +54,7 @@
   "bgMusic": "audios/sound-effects/kids-laughing.mp3",
   "narration": "/audios/story3/s3-5.mp3",
   "narrationVolume": 1,
-  "bgMusicVolume": 0.5
+  "bgMusicVolume": 0.2
 },
 {
   "page": 7,
@@ -65,7 +64,7 @@
   "bgMusicDelay": 6,
   "narration": "/audios/story3/s3-6.mp3",
   "narrationVolume": 1,
-  "bgMusicVolume": 0.5
+  "bgMusicVolume": 0.2
 },
 {
   "page": 8,
@@ -74,16 +73,14 @@
   "bgMusic": "audios/sound-effects/pond.mp3",
   "narration": "/audios/story3/s3-7.mp3",
   "narrationVolume": 1,
-  "bgMusicVolume": 0.5
+  "bgMusicVolume": 0.2
 },
 {
   "page": 9,
   "image": "/images/story3/The Flying Tortoise’s Lesson-images-0.jpg",
-  "sound": "audios/sound-effects/pageturn.mp33",
+  "sound": "audios/sound-effects/pageturn.mp3",
   "bgMusic": "audios/sound-effects/intro.mp3",
-  "narration": "audios/page2-audio.mp3",
-  "narrationVolume": 1,
-  "bgMusicVolume": 0.5
+  "bgMusicVolume": 0.2
 }
   ]
 }
