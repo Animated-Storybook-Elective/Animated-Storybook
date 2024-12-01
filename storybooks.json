@@ -1,0 +1,188 @@
+{
+    "plainStorybooks": [
+      {
+        "title": "The Lion and the Mouse",
+        "description": "A heartwarming tale of friendship and discovery, teaching that even the smallest creatures can make a big impact.",
+        "link": "https://heyzine.com/flip-book/26fb6e7e40.html",
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbd86Wt75R2Z500X-SdO9PF5frFBkO4HhTK1vv_BPz1_wvnq8FkXmuHwM&s=10"
+      },
+      {
+        "title": "The Tortoise and the Hare",
+        "description": "A timeless story that teaches perseverance and patience—slow and steady wins the race.",
+        "link": "https://heyzine.com/flip-book/da97009d37.html",
+        "image": "https://kidstut.com/wp-content/uploads/2024/06/1-2.jpg"
+      },
+      {
+        "title": "The Boy Who Cried Wolf",
+        "description": "A cautionary tale about the consequences of lying and how losing trust is hard to recover.",
+        "link": "https://heyzine.com/flip-book/4b93776e24.html",
+        "image": "https://online.fliphtml5.com/qvddg/rdfv/files/shot.jpg"
+      },
+      {
+        "title": "The Golden Goose",
+        "description": "A story of how kindness and generosity are rewarded, even when it seems like a small act.",
+        "link": "https://heyzine.com/flip-book/6f46b28c9e.html",
+        "image": "https://online.fliphtml5.com/efqpg/fqbq/files/shot.jpg"
+      },
+      {
+        "title": "The Ant and the Grasshopper",
+        "description": "This story teaches the importance of hard work and planning ahead, while warning against procrastination.",
+        "link": "https://heyzine.com/flip-book/42c820d540.html",
+        "image": "https://kidstut.com/wp-content/uploads/2024/06/Slide1-14.jpg"
+      },
+      {
+        "title": "The Little Red Hen",
+        "description": "A moral story about hard work, responsibility, and the importance of sharing the rewards of effort.",
+        "link": "https://heyzine.com/flip-book/c94dd7faf7.html",
+        "image": "https://online.fliphtml5.com/cphpx/vchj/files/shot.jpg"
+      },
+      {
+        "title": "Stone Soup",
+        "description": "A heartwarming story that highlights the power of sharing and cooperation to create something wonderful.",
+        "link": "https://heyzine.com/flip-book/1ed04d5c26.html",
+        "image": "https://online.fliphtml5.com/zcjyw/tova/files/shot.jpg"
+      },
+      {
+        "title": "The Ugly Duckling",
+        "description": "A beautiful story about self-worth, inner beauty, and how everyone has the potential for greatness.",
+        "link": "https://heyzine.com/flip-book/576fc14569.html",
+        "image": "https://online.fliphtml5.com/cltlc/ebcl/files/shot.jpg "
+      },
+      {
+        "title": "The Cunning Fox and The Crow",
+        "description": "A fable about self-deception, teaching that it's easy to dismiss what we can't have as unimportant.",
+        "link": "https://heyzine.com/flip-book/77f775295d.html",
+        "image": "https://kidstut.com/wp-content/uploads/2024/06/Slide1-12.jpg"
+      },
+      {
+        "title": "The Honest Woodcutter",
+        "description": "A story that teaches the value of honesty, showing how doing the right thing brings greater rewards.",
+        "link": "https://heyzine.com/flip-book/8f2f3f0345.html",
+        "image": "https://kidstut.com/wp-content/uploads/2024/06/Slide1-9.jpg"
+      }
+    
+      ],
+      "readWithMe": [
+        {
+          "title": "Tom's Adventures",
+          "description": "Read along with magical animations and sounds!",
+          "link": "https://www.example.com/books/toms-adventures",
+          "image": "https://www.example.com/images/toms-adventures-preview.jpg"
+        },
+        {
+          "title": "Alice's Wonderland",
+          "description": "A whimsical world with guided narration.",
+          "link": "https://www.example.com/books/alices-wonderland",
+          "image": "https://www.example.com/images/alices-wonderland-preview.jpg"
+        }
+
+      ],
+      "audiobooks": [
+    {
+      "title": "Beauty and the Beast",
+      "description": "An enchanting tale of love and transformation.",
+      "link": "audiobooks/beautyBeast.mp3",
+      "image": "https://www.example.com/images/beauty-and-the-beast-preview.jpg"
+    },
+    {
+      "title": "Cinderella",
+      "description": "The magical story of a girl and her glass slipper.",
+      "link": "audiobooks/cinderella.mp3",
+      "image": "https://www.example.com/images/cinderella-preview.jpg"
+    },
+    {
+      "title": "The Elves and the Shoemaker",
+      "description": "A heartwarming tale about kindness and gratitude.",
+      "link": "audiobooks/elvesshoemaker.mp3",
+      "image": "https://www.example.com/images/elves-and-the-shoemaker-preview.jpg"
+    },
+    {
+      "title": "The Gingerbread Man",
+      "description": "Run, run, as fast as you can! Enjoy this lively story.",
+      "link": "audiobooks/gingerbread.mp3",
+      "image": "https://www.example.com/images/gingerbread-man-preview.jpg"
+    },
+    {
+      "title": "Goldilocks and the Three Bears",
+      "description": "Discover what happens when Goldilocks explores the bears' house.",
+      "link": "audiobooks/goldilocks-shorter.mp3",
+      "image": "https://www.example.com/images/goldilocks-preview.jpg"
+    },
+    {
+      "title": "Little Red Riding Hood",
+      "description": "Follow Little Red Riding Hood on her way to Grandma's house.",
+      "link": "audiobooks/Little-red-riding-hood-even-shorter.mp3",
+      "image": "https://www.example.com/images/little-red-riding-hood-preview.jpg"
+    },
+    {
+      "title": "Puss in Boots",
+      "description": "The cunning cat who changes his master's fortune.",
+      "link": "audiobooks/Pussboots.mp3",
+      "image": "https://www.example.com/images/puss-in-boots-preview.jpg"
+    }
+
+      ],
+      "videoStorybooks": [
+        {
+          "title": "The Wind and the Sun",
+          "description": "Watch this magical fairy tale come to life!",
+          "link": "https://www.youtube.com/embed/l0Z8A4u3CtI?si=lhSI50qwiNWBDgpy",
+          "image": "https://www.example.com/images/cinderella-preview.jpg"
+        },
+        {
+          "title": "Jack and the Beanstalk",
+          "description": "Enjoy this visual journey with fun animations!",
+          "link": "https://www.youtube.com/embed/9a9qNLUpkV8?si=5crV40EftyaBZ_NE",
+          "image": "https://www.example.com/images/jack-and-beanstalk-preview.jpg"
+        },
+        {
+            "title": "Rapunzel",
+            "description": "Watch this magical fairy tale come to life!",
+            "link": "https://www.youtube.com/embed/ki_DGMh2r0c?si=GIeeSQoW5NPVxhBo",
+            "image": "https://www.example.com/images/cinderella-preview.jpg"
+          },
+          {
+            "title": "Snow White",
+            "description": "Enjoy this visual journey with fun animations!",
+            "link": "https://www.youtube.com/embed/wtMUy_3NGl4?si=BE81Gf3ZbY5NBfl_",
+            "image": "https://www.example.com/images/jack-and-beanstalk-preview.jpg"
+          },
+        {
+            "title": "Chicken Little",
+            "description": "Watch this magical fairy tale come to life!",
+            "link": "https://www.youtube.com/embed/-_b_G-hAM3o?si=ssnY2s9LpTW7seGj",
+            "image": "https://www.example.com/images/cinderella-preview.jpg"
+          },
+          {
+            "title": "The Bear and the Bee",
+            "description": "Enjoy this visual journey with fun animations!",
+            "link": "https://www.youtube.com/embed/9Q2t6o5TlwI?si=S2dlGXM4LyVOC1-m",
+            "image": "https://www.example.com/images/jack-and-beanstalk-preview.jpg"
+          },
+          {
+            "title": "Tale of Peter Rabbit & Benjamin Bunny",
+            "description": "Watch this magical fairy tale come to life!",
+            "link": "https://www.youtube.com/embed/ZB4lOVRMt5I?si=WikLsKp563Ezh2Rp",
+            "image": "https://www.example.com/images/cinderella-preview.jpg"
+          },
+          {
+            "title": "The Little Red Hen",
+            "description": "Enjoy this visual journey with fun animations!",
+            "link": "https://www.youtube.com/embed/VjTJvwgJnGc?si=fi75qT7pkw81cBO3",
+            "image": "https://www.example.com/images/jack-and-beanstalk-preview.jpg"
+          },
+          {
+            "title": "The Bird and the Whale ",
+            "description": "Watch this magical fairy tale come to life!",
+            "link": "https://www.youtube.com/embed/FU_0NF_jrgE?si=DYustJ018wrKZ0G0",
+            "image": "https://www.example.com/images/cinderella-preview.jpg"
+          },
+          {
+            "title": "The City Mouse and the Country Mouse",
+            "description": "Enjoy this visual journey with fun animations!",
+            "link": "https://www.youtube.com/embed/3G7RQxk396A?si=Vqj9oITNe-CPAWWu",
+            "image": "https://www.example.com/images/jack-and-beanstalk-preview.jpg"
+          }
+      ]
+    }
+    

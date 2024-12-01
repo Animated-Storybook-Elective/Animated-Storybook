@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cooh StoryPlay Hub</title>
+    <!-- Base Styles (TailwindCSS CDN for ease) -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <!-- Font Awesome for Icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <!-- Animate.css for Animations -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body class="bg-gray-100">
+   
+    <!-- Navbar -->
+    <nav class="navbar bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 text-white p-4 fixed w-full top-0 z-50">
+        <div class="container mx-auto flex items-center justify-between">
+            <div class="logo flex items-center space-x-2">
+                <img src="images/logo.png" alt="StoryPlay Logo" class="h-12">
+                <a href="index.html" class="text-2xl font-bold">Cooh StoryPlay Hub</a>
+            </div>
+            <ul class="nav-links flex space-x-8">
+                <li><a href="index.html" class="hover:text-gray-200">Home</a></li>
+                <li><a href="storybook.html" class="hover:text-gray-200">Stories</a></li>
+                <li><a href="about.html" class="hover:text-gray-200">About</a></li>
+                <li><a href="contact.html" class="hover:text-gray-200">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div id="storybook-sections" class="mt-20 p-4">
+        <!-- Placeholder for dynamically added content -->
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-6 mt-auto">
+        <div class="container mx-auto text-center">
+            <p class="text-sm mb-2">&copy; 2024 Cooh StoryPlay Hub. All Rights Reserved.</p>
+            <p class="text-sm">
+                <a href="privacy.html" class="hover:text-blue-400">Privacy Policy</a> | 
+                <a href="terms.html" class="hover:text-blue-400">Terms of Service</a>
+            </p>
+        </div>
+    </footer>
+    
+    <!-- JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // Fetch the storybook JSON data
+            fetch('storybooks.json')
+                .then(response => response.json())
+                .then(data => {
+                    const sections = document.getElementById('storybook-sections');
+
+                    // Function to create the section layout
+                    function createSection(sectionTitle, sectionData) {
+                        let sectionHTML = `
+                            <section class="py-12 bg-gray-100">
+                                <div class="container mx-auto text-center">
+                                    <h2 class="text-3xl font-bold mb-8 text-purple-700">${sectionTitle}</h2>
+                                    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                        `;
+                        
+                        sectionData.forEach(book => {
+                            sectionHTML += `
+                                <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition transform hover:scale-105 duration-300">
+                                    <h3 class="text-xl font-bold mb-2">${book.title}</h3>
+                                    <img src="${book.image}" alt="${book.title} Preview" class="w-full h-48 object-cover rounded-lg mb-4">
+                                    <p class="text-gray-600 mb-4">${book.description}</p>
+                                    <a href="storybook-detail.html?book=${encodeURIComponent(JSON.stringify(book))}">
+                                        <button class="py-2 px-6 rounded-full text-lg font-bold text-white" style="background: linear-gradient(to right, #f472b6, #fbbf24); transition: background 0.3s ease;">
+                                            Start Adventure
+                                        </button>
+                                    </a>
+                                </div>
+                            `;
+                        });
+
+                        sectionHTML += `
+                                    </div>
+                                </div>
+                            </section>
+                        `;
+                        sections.innerHTML += sectionHTML;
+                    }
+
+                    // Create each section
+                    createSection('Plain Storybooks', data.plainStorybooks);
+                    createSection('Read With Me', data.readWithMe);
+                    createSection('Audiobooks', data.audiobooks);
+                    createSection('Video Storybooks', data.videoStorybooks);
+                });
+        });
+    </script>
+</body>
+</html>
