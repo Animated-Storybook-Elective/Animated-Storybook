@@ -1,5 +1,5 @@
 {
-  "storyId": 5,
+  "storyId": 6,
   "title": "The Honest Woodcutter",
   "pages": [
     
@@ -27,17 +27,16 @@
       "image": "images/story6/Story-Time-The-honest-woodcutter_page-0003.jpg",
       "sound": "audios/sound-effects/pageturn.mp3",
       "bgMusic": "audios/sound-effects/river.mp3",
-      "bgMusicDelay": 3,
+      "bgMusicDelay": 2,
       "narration": "audios/story6/S6-3.mp3",
       "narrationVolume": 1,
       "bgMusicVolume": 0.5
     },
     {
       "page": 4,
-      "image": "iimages/story6/Story-Time-The-honest-woodcutter_page-0004.jpg",
+      "image": "images/story6/Story-Time-The-honest-woodcutter_page-0004.jpg",
       "sound": "audios/sound-effects/pageturn.mp3",
       "bgMusic": "audios/sound-effects/river.mp3",
-      "bgMusicDelay": 2,
       "narration": "audios/story6/S6-4.mp3",
       "narrationVolume": 1,
       "bgMusicVolume": 0.5
@@ -46,7 +45,7 @@
       "page": 5,
       "image": "images/story6/Story-Time-The-honest-woodcutter_page-0005.jpg",
       "sound": "audios/sound-effects/pageturn.mp3",
-      "bgMusic": "audios/sound-effects/running-in-grass.mp3",
+      "bgMusic": "audios/sound-effects/jungle.mp3",
       "narration": "audios/story6/S6-5.mp3",
       "narrationVolume": 1,
       "bgMusicVolume": 0.5
