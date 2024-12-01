@@ -26,7 +26,7 @@
         "page": 3,
         "image": "images/story8/fliphtml5.vpdfs.com_the-goose-and-the-golden-eggs-images-2.jpg",
         "sound": "audios/sound-effects/pageturn.mp3",
-        "bgMusic": "audios/sound-effects/jungle.mp3",
+        "bgMusic": "audios/sound-effects/market.mp3",
         "narration": "audios/story8/s8-3.mp3",
         "narrationVolume": 1,
         "bgMusicVolume": 0.5
@@ -35,7 +35,7 @@
         "page": 4,
         "image": "images/story8/fliphtml5.vpdfs.com_the-goose-and-the-golden-eggs-images-3.jpg",
         "sound": "audios/sound-effects/pageturn.mp3",
-        "bgMusic": "audios/sound-effects/jungle.mp3",
+        "bgMusic": "audios/sound-effects/summer.mp3",
         "narration": "audios/story8/s8-4.mp3",
         "narrationVolume": 1,
         "bgMusicVolume": 0.5
