@@ -18,16 +18,16 @@
           "image": "images/story6/Story-Time-The-honest-woodcutter_page-0002.jpg",
           "sound": "audios/sound-effects/pageturn.mp3",
           "bgMusic": "audios/sound-effects/jungle.mp3",
+          "bgMusicDelay": 2,
           "narration": "audios/story6/S6-2.mp3",
           "narrationVolume": 1,
-          "bgMusicVolume": 0.2
+          "bgMusicVolume": 0.5
         },
         {
       "page": 3,
       "image": "images/story6/Story-Time-The-honest-woodcutter_page-0003.jpg",
       "sound": "audios/sound-effects/pageturn.mp3",
       "bgMusic": "audios/sound-effects/river.mp3",
-      "bgMusicDelay": 2,
       "narration": "audios/story6/S6-3.mp3",
       "narrationVolume": 1,
       "bgMusicVolume": 0.5

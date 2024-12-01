@@ -1,0 +1,114 @@
+{
+    "storyId": 7,
+    "title": "Sammy the Nut Collector",
+    "pages": [
+      
+      {
+            "page": 1,
+            "image": "images/story7/Sammy The Nut Collector-images-0.jpg",
+            "sound": "audios/sound-effects/pageturn.mp3",
+            "bgMusic": "audios/sound-effects/intro.mp3",
+            "narrationDelay": 1, 
+            "narration": "audios/story7/s7-1.mp3",
+            "narrationVolume": 1,
+            "bgMusicVolume": 0.2
+          },
+          {
+            "page": 2,
+            "image": "images/story7/Sammy The Nut Collector-images-1.jpg",
+            "sound": "audios/sound-effects/pageturn.mp3",
+            "bgMusic": "audios/sound-effects/jungle.mp3",
+            "narration": "audios/story7/s7-2.mp3",
+            "narrationVolume": 1,
+            "bgMusicVolume": 0.5
+          },
+          {
+        "page": 3,
+        "image": "images/story7/Sammy The Nut Collector-images-2.jpg",
+        "sound": "audios/sound-effects/pageturn.mp3",
+        "bgMusic": "audios/sound-effects/jungle.mp3",
+        "narration": "audios/story7/s7-3.mp3",
+        "narrationVolume": 1,
+        "bgMusicVolume": 0.5
+      },
+      {
+        "page": 4,
+        "image": "images/story7/Sammy The Nut Collector-images-3.jpg",
+        "sound": "audios/sound-effects/pageturn.mp3",
+        "bgMusic": "audios/sound-effects/jungle.mp3",
+        "narration": "audios/story7/s7-4.mp3",
+        "narrationVolume": 1,
+        "bgMusicVolume": 0.5
+      },
+      {
+        "page": 5,
+        "image": "images/story7/Sammy The Nut Collector-images-4.jpg",
+        "sound": "audios/sound-effects/pageturn.mp3",
+        "bgMusic": "audios/sound-effects/jungle.mp3",
+        "narration": "audios/story7/s7-5.mp3",
+        "narrationVolume": 1,
+        "bgMusicVolume": 0.5
+      },
+      {
+        "page": 6,
+        "image": "images/story7/Sammy The Nut Collector-images-5.jpg",
+        "sound": "audios/sound-effects/pageturn.mp3",
+        "bgMusic": "audios/sound-effects/jungle.mp3",
+        "narration": "audios/story7/s7-6.mp3",
+        "narrationVolume": 1,
+        "bgMusicVolume": 0.5
+      },
+      {
+        "page": 7,
+        "image": "images/story7/Sammy The Nut Collector-images-6.jpg",
+        "sound": "audios/sound-effects/pageturn.mp3",
+        "bgMusic": "audios/sound-effects/jungle.mp3",
+        "narration": "audios/story7/s7-7.mp3",
+        "narrationVolume": 1,
+        "bgMusicVolume": 0.5
+      },
+      {
+        "page": 8,
+        "image": "images/story7/Sammy The Nut Collector-images-7.jpg",
+        "sound": "audios/sound-effects/pageturn.mp3",
+        "bgMusic": "audios/sound-effects/jungle.mp3",
+        "narration": "audios/story7/s7-8.mp3",
+        "narrationVolume": 1,
+        "bgMusicVolume": 0.5
+      },
+      {
+        "page": 9,
+        "image": "images/story7/Sammy The Nut Collector-images-8.jpg",
+        "sound": "audios/sound-effects/pageturn.mp3",
+        "bgMusic": "audios/sound-effects/jungle.mp3",
+        "narration": "audios/story7/s7-9.mp3",
+        "narrationVolume": 1,
+        "bgMusicVolume": 0.5
+      },
+      {
+        "page": 10,
+        "image": "images/story7/Sammy The Nut Collector-images-9.jpg",
+        "sound": "audios/sound-effects/pageturn.mp3",
+        "bgMusic": "audios/sound-effects/jungle.mp3",
+        "narration": "audios/story7/s7-10.mp3",
+        "narrationVolume": 1,
+        "bgMusicVolume": 0.5
+      },
+      {
+        "page": 11,
+        "image": "images/story7/Sammy The Nut Collector-images-10.jpg",
+        "sound": "audios/sound-effects/pageturn.mp3",
+        "bgMusic": "audios/sound-effects/jungle.mp3",
+        "narration": "audios/story7/s7-11.mp3",
+        "narrationVolume": 1,
+        "bgMusicVolume": 0.5
+      },
+      {
+        "page": 11,
+        "image": "images/story7/Sammy The Nut Collector-images-0.jpg",
+        "sound": "audios/sound-effects/pageturn.mp3",
+        "bgMusic": "audios/sound-effects/intro.mp3",
+        "bgMusicVolume": 0.3
+      }
+    ]
+  }
