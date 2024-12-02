@@ -33,7 +33,7 @@
       {
         "title": "The Little Red Hen",
         "description": "A moral story about hard work, responsibility, and the importance of sharing the rewards of effort.",
-        "link": "https://heyzine.com/flip-book/c94dd7faf7.html",
+        "link": "https://heyzine.com/flip-book/686632fbd4.html",
         "image": "https://online.fliphtml5.com/cphpx/vchj/files/shot.jpg"
       },
       {
@@ -77,112 +77,195 @@
         }
 
       ],
-      "audiobooks": [
-    {
-      "title": "Beauty and the Beast",
-      "description": "An enchanting tale of love and transformation.",
-      "link": "audiobooks/beautyBeast.mp3",
-      "image": "https://www.example.com/images/beauty-and-the-beast-preview.jpg"
-    },
-    {
-      "title": "Cinderella",
-      "description": "The magical story of a girl and her glass slipper.",
-      "link": "audiobooks/cinderella.mp3",
-      "image": "https://www.example.com/images/cinderella-preview.jpg"
-    },
-    {
-      "title": "The Elves and the Shoemaker",
-      "description": "A heartwarming tale about kindness and gratitude.",
-      "link": "audiobooks/elvesshoemaker.mp3",
-      "image": "https://www.example.com/images/elves-and-the-shoemaker-preview.jpg"
-    },
-    {
-      "title": "The Gingerbread Man",
-      "description": "Run, run, as fast as you can! Enjoy this lively story.",
-      "link": "audiobooks/gingerbread.mp3",
-      "image": "https://www.example.com/images/gingerbread-man-preview.jpg"
-    },
-    {
-      "title": "Goldilocks and the Three Bears",
-      "description": "Discover what happens when Goldilocks explores the bears' house.",
-      "link": "audiobooks/goldilocks-shorter.mp3",
-      "image": "https://www.example.com/images/goldilocks-preview.jpg"
-    },
-    {
-      "title": "Little Red Riding Hood",
-      "description": "Follow Little Red Riding Hood on her way to Grandma's house.",
-      "link": "audiobooks/Little-red-riding-hood-even-shorter.mp3",
-      "image": "https://www.example.com/images/little-red-riding-hood-preview.jpg"
-    },
-    {
-      "title": "Puss in Boots",
-      "description": "The cunning cat who changes his master's fortune.",
-      "link": "audiobooks/Pussboots.mp3",
-      "image": "https://www.example.com/images/puss-in-boots-preview.jpg"
-    }
-
+      
+        "audiobooks": [
+          {
+            "title": "Beauty and the Beast",
+            "description": "An enchanting tale of love and transformation.",
+            "link": "audiobooks/beautyBeast.mp3",
+            "image": "http://www.pngall.com/wp-content/uploads/5/Beauty-And-The-Beast-PNG-Free-Image.png"
+          },
+          {
+            "title": "Cinderella",
+            "description": "The magical story of a girl and her glass slipper.",
+            "link": "audiobooks/cinderella.mp3",
+            "image": "http://images6.fanpop.com/image/photos/34800000/Cinderella-disney-princess-34844831-643-606.png"
+          },
+          {
+            "title": "The Elves and the Shoemaker",
+            "description": "A heartwarming tale about kindness and gratitude.",
+            "link": "audiobooks/elvesshoemaker.mp3",
+            "image": "https://ci-cdn.childrensillustrators.com/images/published-books/S4BvHFMGGGnLzeycyn0ov7JtGIyNwWM6umA2bbOx.jpeg"
+          },
+          {
+            "title": "The Gingerbread Man",
+            "description": "Run, run, as fast as you can! Enjoy this lively story.",
+            "link": "audiobooks/gingerbread.mp3",
+            "image": "https://i.ytimg.com/vi/Mg2SduO7F84/maxresdefault.jpg"
+          },
+          {
+            "title": "Goldilocks and the Three Bears",
+            "description": "Discover what happens when Goldilocks explores the bears' house.",
+            "link": "audiobooks/goldilocks-shorter.mp3",
+            "image": "https://hachette.imgix.net/books/9781526380234.jpg?auto=compress,format"
+          },
+          {
+            "title": "Little Red Riding Hood",
+            "description": "Follow Little Red Riding Hood on her way to Grandma's house.",
+            "link": "audiobooks/Little-red-riding-hood-even-shorter.mp3",
+            "image": "https://dreamlittlestar.com/wp-content/uploads/2023/11/little-red-ridding-hood.jpg"
+          },
+          {
+            "title": "Puss in Boots",
+            "description": "The cunning cat who changes his master's fortune.",
+            "link": "audiobooks/Pussboots.mp3",
+            "image": "https://i.harperapps.com/hcanz/covers/9781803705026/y648.jpg"
+          },
+          {
+            "title": "Rapunzel",
+            "description": "A beautiful story about a girl with long golden hair locked in a tower.",
+            "link": "https://media.thefablecottage.com/stories/enxrtc69ttwa/enb-rapunzel-part1.mp3",
+            "image": "https://cdn.kobo.com/book-images/49f8379e-d9d5-4a83-81fe-35a74c49b331/1200/1200/False/tangled-rapunzel-s-story.jpg"
+          },
+          {
+            "title": "The Happy Prince",
+            "description": "A touching story of sacrifice, compassion, and love, as a statue and a little swallow help the needy.",
+            "link": "https://media.thefablecottage.com/stories/ena-happyprince-128-v1.mp3",
+            "image": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1599503024i/55261598.jpg"
+          },          
+          {
+            "title": "Hansel and Gretel",
+            "description": "An adventurous tale of two siblings and a witch's candy house.",
+            "link": "https://media.thefablecottage.com/stories/envol16hs9kv2/hg-ena-part1.mp3",
+            "image": "http://2.bp.blogspot.com/-_pWLzsoXgog/UNv7bc8rnnI/AAAAAAAAAPs/sZbMoswxRpE/s1600/hansel.jpg"
+          }
+       
       ],
       "videoStorybooks": [
         {
           "title": "The Wind and the Sun",
-          "description": "Watch this magical fairy tale come to life!",
+          "description": "Discover the timeless fable about kindness and persuasion brought to life with vivid animations.",
           "link": "https://www.youtube.com/embed/l0Z8A4u3CtI?si=lhSI50qwiNWBDgpy",
-          "image": "https://www.example.com/images/cinderella-preview.jpg"
+          "image": "https://www.startpage.com/av/proxy-image?piurl=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOVP.P9hwz-sllDzkdpwkZo_UkgHgFo%26pid%3DApi&sp=1733102111T98cf4971abef64c5e372eb1d993cbaaca807b61ad7b4853791754025013b48f0"
         },
         {
           "title": "Jack and the Beanstalk",
-          "description": "Enjoy this visual journey with fun animations!",
+          "description": "Follow Jack’s magical adventure up the beanstalk in this enchanting animated tale.",
           "link": "https://www.youtube.com/embed/9a9qNLUpkV8?si=5crV40EftyaBZ_NE",
-          "image": "https://www.example.com/images/jack-and-beanstalk-preview.jpg"
+          "image": "https://www.startpage.com/av/proxy-image?piurl=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOVP._kPS8o2eiXLsX32Ia5RDXgHgFo%26pid%3DApi&sp=1733101706T87a44eb374e74758ce61e127a80cb9940b57e325c833ecd2e1b059603ed7b6b4"
         },
         {
-            "title": "Rapunzel",
-            "description": "Watch this magical fairy tale come to life!",
-            "link": "https://www.youtube.com/embed/ki_DGMh2r0c?si=GIeeSQoW5NPVxhBo",
-            "image": "https://www.example.com/images/cinderella-preview.jpg"
-          },
-          {
-            "title": "Snow White",
-            "description": "Enjoy this visual journey with fun animations!",
-            "link": "https://www.youtube.com/embed/wtMUy_3NGl4?si=BE81Gf3ZbY5NBfl_",
-            "image": "https://www.example.com/images/jack-and-beanstalk-preview.jpg"
-          },
+          "title": "Rapunzel",
+          "description": "Experience the magical story of Rapunzel and her golden hair in this visually stunning retelling.",
+          "link": "https://www.youtube.com/embed/ki_DGMh2r0c?si=GIeeSQoW5NPVxhBo",
+          "image": "https://www.startpage.com/av/proxy-image?piurl=https%3A%2F%2Ftse2.mm.bing.net%2Fth%3Fid%3DOVP.A4Nob30c5fQeWfNsJWssmwHgFo%26pid%3DApi&sp=1733102058T98fc77d771a2546b264bc2509c75441925a28db4489a8ed34f739069ae928aae"
+        },
         {
-            "title": "Chicken Little",
-            "description": "Watch this magical fairy tale come to life!",
-            "link": "https://www.youtube.com/embed/-_b_G-hAM3o?si=ssnY2s9LpTW7seGj",
-            "image": "https://www.example.com/images/cinderella-preview.jpg"
-          },
-          {
-            "title": "The Bear and the Bee",
-            "description": "Enjoy this visual journey with fun animations!",
-            "link": "https://www.youtube.com/embed/9Q2t6o5TlwI?si=S2dlGXM4LyVOC1-m",
-            "image": "https://www.example.com/images/jack-and-beanstalk-preview.jpg"
-          },
-          {
-            "title": "Tale of Peter Rabbit & Benjamin Bunny",
-            "description": "Watch this magical fairy tale come to life!",
-            "link": "https://www.youtube.com/embed/ZB4lOVRMt5I?si=WikLsKp563Ezh2Rp",
-            "image": "https://www.example.com/images/cinderella-preview.jpg"
-          },
-          {
-            "title": "The Little Red Hen",
-            "description": "Enjoy this visual journey with fun animations!",
-            "link": "https://www.youtube.com/embed/VjTJvwgJnGc?si=fi75qT7pkw81cBO3",
-            "image": "https://www.example.com/images/jack-and-beanstalk-preview.jpg"
-          },
-          {
-            "title": "The Bird and the Whale ",
-            "description": "Watch this magical fairy tale come to life!",
-            "link": "https://www.youtube.com/embed/FU_0NF_jrgE?si=DYustJ018wrKZ0G0",
-            "image": "https://www.example.com/images/cinderella-preview.jpg"
-          },
-          {
-            "title": "The City Mouse and the Country Mouse",
-            "description": "Enjoy this visual journey with fun animations!",
-            "link": "https://www.youtube.com/embed/3G7RQxk396A?si=Vqj9oITNe-CPAWWu",
-            "image": "https://www.example.com/images/jack-and-beanstalk-preview.jpg"
-          }
-      ]
+          "title": "Snow White",
+          "description": "Watch the beloved tale of Snow White unfold with captivating animations and storytelling.",
+          "link": "https://www.youtube.com/embed/wtMUy_3NGl4?si=BE81Gf3ZbY5NBfl_",
+          "image": "https://www.startpage.com/av/proxy-image?piurl=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOVP._rOwVggCB3DxuE7ODv0FdgHgFo%26pid%3DApi&sp=1733102111Tce94a86b3481ac1895c9d827602ea624486d7f06a3173a52c20e93d4e536f409"
+        },
+        {
+          "title": "Chicken Little",
+          "description": "Relive the hilarious story of Chicken Little and his friends in this delightful animated classic.",
+          "link": "https://www.youtube.com/embed/-_b_G-hAM3o?si=ssnY2s9LpTW7seGj",
+          "image": "https://www.startpage.com/av/proxy-image?piurl=https%3A%2F%2Ftse3.mm.bing.net%2Fth%3Fid%3DOVP.XjYv0UQ4T47LKWela3xjsQHgFo%26pid%3DApi&sp=1733102173T3b69d7734209054b98656ae64505e5e010701c8905dbce23ec124aa17a8fc148"
+        },
+        {
+          "title": "The Bear and the Bee",
+          "description": "Enjoy this charming tale of curiosity and friendship in a beautifully animated story.",
+          "link": "https://www.youtube.com/embed/9Q2t6o5TlwI?si=S2dlGXM4LyVOC1-m",
+          "image": "https://www.startpage.com/av/proxy-image?piurl=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOVP.m_LAcSppb8k3LggbC3QCGQHgFo%26pid%3DApi&sp=1733102209T6810367c2563cf6f6bd3c90d38b70996118b42b1e4fc791aa54c671a164d0348"
+        },
+        {
+          "title": "Tale of Peter Rabbit & Benjamin Bunny",
+          "description": "Follow the mischievous adventures of Peter Rabbit and his cousin Benjamin Bunny in this classic tale.",
+          "link": "https://www.youtube.com/embed/ZB4lOVRMt5I?si=WikLsKp563Ezh2Rp",
+          "image": "https://www.startpage.com/av/proxy-image?piurl=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOVP.rpL78iFbiOZqMym5o1XfFQHgFo%26pid%3DApi&sp=1733102525T29895da6b124720bdca3a54e1f4d6601e42ba62b0535b7f067b013b5ffedeb37"
+        },
+        {
+          "title": "The Little Red Hen",
+          "description": "Learn about teamwork and hard work with this delightful story brought to life with colorful animations.",
+          "link": "https://www.youtube.com/embed/VjTJvwgJnGc?si=fi75qT7pkw81cBO3",
+          "image": "https://www.startpage.com/av/proxy-image?piurl=https%3A%2F%2Ftse3.mm.bing.net%2Fth%3Fid%3DOVP.6HarxCX_a3qGwN7Rktz4DwHgFo%26pid%3DApi&sp=1733102209T5827394f15a69ca4b7127a3f896b9ed0e825076c547fe90a54aa1780afdb9d5a"
+        },
+        {
+          "title": "The Bird and the Whale",
+          "description": "Explore the heartwarming bond between a bird and a whale in this beautifully illustrated story.",
+          "link": "https://www.youtube.com/embed/FU_0NF_jrgE?si=6eY6setBJs3beAh2",
+          "image": "https://www.startpage.com/av/proxy-image?piurl=https%3A%2F%2Ftse3.mm.bing.net%2Fth%3Fid%3DOVP.TSVfnHP6ZWqykuvQ2xo8rAHgFo%26pid%3DApi&sp=1733102614T2eaabc844a9d0aacb88bf4b765820479774231f6ff9a9d994084ab5a50149b02"
+        },
+        {
+          "title": "The City Mouse and the Country Mouse",
+          "description": "Enjoy the delightful story of two mice exploring the joys and challenges of their different lifestyles.",
+          "link": "https://www.youtube.com/embed/3G7RQxk396A?si=Vqj9oITNe-CPAWWu",
+          "image": "https://www.startpage.com/av/proxy-image?piurl=https%3A%2F%2Ftse2.mm.bing.net%2Fth%3Fid%3DOVP.lbwU-Yfie8MoMIAKzjZ1rAHgFo%26pid%3DApi&sp=1733102336Tc7933813e18e3d8014ad7bed060022fa41310403fc4a5a4f5b9a5f38179bf41f"
+        }
+
+      ],
+   "tagalogVideoStorybooks": [
+    {
+        "title": "Jungle Book",
+        "description": "Panuorin ang magic ng Jungle Book sa Filipino, kung saan ang pakikipagsapalaran at pagkakaibigan ay buhay na buhay!",
+        "link": "videos/Jungle Book _ Jungle Book in Filipino _ @FilipinoFairyTales.mp4",
+        "image": "https://www.startpage.com/av/proxy-image?piurl=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOVP.wlPXYNKAUJXULsZQTzoUegHgFo%26pid%3DApi&sp=1733107957T7dbd8d2fedd4aec6909aebeaa66fa67af8f832febaafa228bb42ad7863fb1f3a"
+    },
+    {
+        "title": "Ang Tatlong Biik",
+        "description": "Sumama sa kasiyahan at alamin kung paano niloko ng tatlong maliliit na baboy ang malaking mabagsik na lobo sa animated na bersyon ng kwentong Filipino!",
+        "link": "videos/Ang Tatlong Biik _ Three Little Pigs in Filipino _ Mga Kwentong Pambata _ @FilipinoFairyTales.mp4",
+        "image": "https://www.startpage.com/av/proxy-image?piurl=https%3A%2F%2Ftse3.mm.bing.net%2Fth%3Fid%3DOVP.L7woTE98RNO4rlCid_Un2gHgFo%26pid%3DApi&sp=1733107990T5a79c87420fe47b57686dc567f96b7f9816f0d2a20f83ff42b24f542350393b7"
+    },
+    {
+        "title": "Ang Pangit na Bibe",
+        "description": "Panuorin ang kwento ng isang pangit na bibe na naging magandang swan, sa Filipino!",
+        "link": "videos/Ang Pangit na Bibe .mp4",
+        "image": "https://www.startpage.com/av/proxy-image?piurl=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOVP.hkPl1uU2YF_CwsWROUB85wHgFo%26pid%3DApi&sp=1733108020Tb581c30ddb18d09caf95ec51d03f944090a0d77adab4daddb8c912243d1daa4a"
+    },
+    {
+        "title": "Ang Kwento ni Robin Hood",
+        "description": "Sumama kay Robin Hood sa kanyang pakikipaglaban para sa katarungan sa animated na Filipino na bersyon ng kwento!",
+        "link": "videos/Ang Kwento ni Robin Hood _ Robin Hood in Filipino _ @FilipinoFairyTales.mp4",
+        "image": "https://www.startpage.com/av/proxy-image?piurl=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOVP.e4tx---pjopldNtKNmcCogHgFo%26pid%3DApi&sp=1733108052T90b2d197da2284299636b95926adbad89cbf49b86c535bb3ed53867ddc94b26f"
+    },
+    {
+        "title": "Ang Mananabas ng Kawayan",
+        "description": "Tuklasin ang kwento ng bamboo cutter, isang mahiwagang kwento ng Filipino na puno ng pakikipagsapalaran at karunungan.",
+        "link": "videos/Ang Mananabas ng Kawayan _ Tale of the Bamboo Cutter in Filipino _ @FilipinoFairyTales.mp4",
+        "image": "https://www.startpage.com/av/proxy-image?piurl=https%3A%2F%2Ftse2.mm.bing.net%2Fth%3Fid%3DOVP.4iUQTNylKmEioF4_SFpoCQHgFo%26pid%3DApi&sp=1733108084T45bdebbcedc15b07e0096e1730fedd4af1ddca8d2b01e5e41d7dbced869c5ce8"
+    },
+    {
+        "title": "Ang Mayabang na Puno",
+        "description": "Tangkilikin ang kwento ng isang mayabang na puno na natututo ng mahalagang aral ng pagpapakumbaba, sa Filipino.",
+        "link": "videos/Ang Mayabang na Puno _ Proud Tree in Filipino _ @FilipinoFairyTales.mp4",
+        "image": "https://www.startpage.com/av/proxy-image?piurl=https%3A%2F%2Ftse3.mm.bing.net%2Fth%3Fid%3DOVP.8SfLUw4i5rFJMDrkiwQvTQHgFo%26pid%3DApi&sp=1733108119T08566d0502c9c3ab34b95630fa720c35676fb71a3d96770bcbfefeaf8a45a254"
+    },
+    {
+        "title": "Ang mga Duwende at ang Sapatero",
+        "description": "Maginhawa ang kwento ng mga duwende na tumulong sa sapatero, na nagdudulot ng kasiyahan at kabutihan sa puso!",
+        "link": "videos/Ang mga Duwende at ang Zapatero .mp4",
+        "image": "https://www.startpage.com/av/proxy-image?piurl=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOVP.6eYdYv5z7dtiE5WisO3KSAHgFo%26pid%3DApi&sp=1733108154Tab1ec5f39ef0c39bc94bbefe38be4450e7549082aa00e896879fd787715e716a"
+    },
+    {
+        "title": "Ang Unggoy at ang Buwaya",
+        "description": "Panuorin kung paano niloko ng matalinong unggoy ang buwaya sa klasikong kwento ng Filipino tungkol sa talino at kaligtasan!",
+        "link": "videos/Ang Unggoy at ang Buwaya .mp4",
+        "image": "https://www.startpage.com/av/proxy-image?piurl=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOVP.8Be4rOsOOiz0ZQvQPbPw1wHgFo%26pid%3DApi&sp=1733108186T9511b200e843efbf72cef30d4150ba162b218b7585f0a78d326f9f4746f0cd2c"
+    },
+    {
+        "title": "Si Pinocchio",
+        "description": "Sumama sa paglalakbay ni Pinocchio habang nangangarap siyang maging isang tunay na batang lalaki sa animated na Filipino na bersyon ng minamahal na kwento.",
+        "link": "videos/Si Pinocchio _ Pinocchio in Filipino _ Mga Kwentong Pambata _ @FilipinoFairyTales.mp4",
+        "image": "https://www.startpage.com/av/proxy-image?piurl=https%3A%2F%2Ftse2.mm.bing.net%2Fth%3Fid%3DOVP.Sgdncx164ZtxqVhCCXjWuQHgFo%26pid%3DApi&sp=1733108227T1a231c4ee277d561ab91eaf1e2172f5736e41d169acfa9fc5a1567e7c2d79eae"
+    },
+    {
+        "title": "Ang Ginintuang Ibon",
+        "description": "Sumama sa isang mahiwagang pakikipagsapalaran upang hanapin ang ginintuang ibon, isang kwento ng misteryo at kasiyahan sa Filipino.",
+        "link": "videos/Ang Ginintuang Ibon _ Golden Bird in Filipino _ Mga Kwentong Pambata _ @FilipinoFairyTales.mp4",
+        "image": "https://www.startpage.com/av/proxy-image?piurl=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOVP.1cNT2iKwfRgQ_8iyH6AkPQEsDh%26pid%3DApi&sp=1733108424Tf3d360fcf944ed7734ac1ab0187351d69cc0417881fab3e48a62a0b0d004f719"
+    }
+]
+
     }
     

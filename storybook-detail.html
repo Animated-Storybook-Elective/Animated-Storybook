@@ -17,12 +17,13 @@
     <style>
         /* Ensures the iframe is responsive */
         iframe {
-            width: 100%;
-            max-width: 1200px; /* Max width if needed */
-            height: 80vh; /* Adjust height to 80% of viewport height */
+            width: 100%;  /* Makes it 100% of the container width */
+            max-width: 1200px; /* Limits the maximum width */
+            height: 56.25vw;  /* Aspect ratio of 16:9 (height = width * 9/16) */
             margin: 0 auto;
             display: block;
         }
+
         /* Modal Styles */
         .modal {
             display: none;
@@ -53,7 +54,7 @@
         }
     </style>
 </head>
-<body class="bg-gray-100">
+<body class="bg-gradient-to-r from-purple-50 via-pink-100 to-red-100">
 
     <!-- Navbar -->
     <nav class="navbar bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 text-white p-4 fixed w-full top-0 z-50">
@@ -124,20 +125,60 @@
         const bookData = JSON.parse(decodeURIComponent(urlParams.get('book')));
 
         const contentDiv = document.getElementById('storybook-content');
+        
 
-        // Check if the book data contains a YouTube link (audio storybook)
-        if (bookData.link.includes("youtube.com")) {
-            contentDiv.innerHTML = `
-                <iframe width="560" height="315" src="${bookData.link}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-            `;
-        }
-        // Otherwise, assume it's a plain storybook (e.g., PDF, HTML)
-        else {
-            contentDiv.innerHTML = `
-                <p>Here's your story:</p>
-                <iframe src="${bookData.link}" frameborder="0" width="100%" height="800px"></iframe>
-            `;
-        }
+  // Check if the book data contains a YouTube link (video storybook)
+if (bookData.link.includes("youtube.com")) {
+    const videoUrl = bookData.link.includes("?") ? `${bookData.link}&autoplay=1` : `${bookData.link}?autoplay=1`; // Add autoplay parameter
+    contentDiv.innerHTML = `
+        <div class="mb-4">
+            <h2 class="text-2xl font-bold">${bookData.title}</h2>
+            <p class="text-lg">${bookData.description}</p>
+        </div>
+        <iframe src="${videoUrl}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen class="w-full max-w-4xl mx-auto" style="height: 450px;"></iframe>
+    `;
+}
+
+// Check for audiobook content (audio format)
+else if (bookData.link.includes(".mp3")) {
+    contentDiv.innerHTML = `
+        <div class="mb-4">
+            <!-- Display the Image with a larger size -->
+            <img src="${bookData.image}" alt="${bookData.title} cover" class="w-80 mx-auto mb-4 rounded-lg shadow-lg">
+            
+            <!-- Display the Title and Description -->
+            <h2 class="text-2xl font-bold">${bookData.title}</h2>
+            <p class="text-lg text-gray-700">${bookData.description}</p>
+        </div>
+        
+        <!-- Audio Player -->
+        <audio controls class="w-full max-w-3xl mx-auto mt-4" autoplay>
+            <source src="${bookData.link}" type="audio/mp3">
+            Your browser does not support the audio element.
+        </audio>
+    `;
+}
+
+  // Otherwise, assume it's a flipbook-style story (web-based)
+else if (bookData.link.includes(".mp4") || bookData.link.includes(".webm") || bookData.link.includes(".ogg")) {
+    contentDiv.innerHTML = `
+        <div class="mb-4">
+            <h2 class="text-2xl font-bold">${bookData.title}</h2>
+            <p class="text-lg">${bookData.description}</p>
+        </div>
+        <video class="w-full max-w-4xl mx-auto" autoplay controls style="height: 450px;">
+            <source src="${bookData.link}" type="video/mp4">
+            Your browser does not support the video element.
+        </video>
+    `;
+}
+// Otherwise, assume it's a flipbook-style story (web-based)
+else {
+    contentDiv.innerHTML = `
+        <p>Here's your story:</p>
+        <iframe src="${bookData.link}" frameborder="0" class="w-full max-w-3xl mx-auto" style="height: 450px;"></iframe>
+    `;
+}
     </script>
 
 </body>
