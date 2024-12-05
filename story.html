@@ -30,10 +30,10 @@
 <!-- Navbar Buttons -->
 <div class="flex space-x-4">
   <!-- Return Home Button -->
-  <button class="bg-blue-500 text-white py-2 px-4 rounded-full flex items-center hover:bg-blue-600 transition duration-300" onclick="returnHome()">
-    <i class="fas fa-home mr-2"></i> Return Home
+  <button onclick="openModal()" class="bg-blue-500 text-white py-2 px-4 rounded-lg hover:bg-blue-600">
+    Return to Home
   </button>
-
+  
   <!-- Read-Only Button -->
   <button id="read-only-btn" class="bg-green-500 text-white py-2 px-4 rounded-full flex items-center hover:bg-green-600 transition duration-300" onclick="toggleReadOnly()">
     <i class="fas fa-eye mr-2"></i> Read Only
@@ -43,6 +43,7 @@
   </nav>
 
   <!-- Modal: Confirm Navigation -->
+   
   <div id="confirmation-modal" class="fixed inset-0 bg-gray-800 bg-opacity-75 flex items-center justify-center z-50 hidden">
     <div class="bg-white p-6 rounded-lg shadow-lg w-96 animate__animated animate__fadeInDown relative">
       <!-- Close Button -->
@@ -57,10 +58,11 @@
       <!-- Actions -->
       <div class="flex justify-center space-x-4">
         <button onclick="closeModal()" class="bg-gray-500 text-white py-2 px-4 rounded-lg hover:bg-gray-600">Cancel</button>
-        <a href="storybook.html" class="bg-blue-500 text-white py-2 px-4 rounded-lg hover:bg-blue-600">Confirm</a>
+        <a href="index.html" class="bg-blue-500 text-white py-2 px-4 rounded-lg hover:bg-blue-600">Confirm</a>
       </div>
     </div>
   </div>
+  
 
   <!-- Story Navigation and Content with Gradient Background -->
   <div id="controls" class="flex items-center justify-center mt-6 bg-gradient-to-r from-purple-50 via-pink-100 to-red-100" data-aos="fade-up" data-aos-duration="1200">
@@ -135,13 +137,18 @@
   <script src="script.js"></script>
 
   <!-- Modal Script  -->
-  <script>
-  function returnHome() {
-    // Optionally, confirm navigation
-    const confirmNavigation = confirm("Are you sure you want to navigate back to the home page?");
-    if (confirmNavigation) {
-      window.location.href = "index.html"; // Replace with the path to your homepage
-    }
+
+<script>
+  // Function to display the modal
+  function openModal() {
+    const modal = document.getElementById("confirmation-modal");
+    modal.classList.remove("hidden"); // Remove the 'hidden' class to show the modal
+  }
+
+  // Function to hide the modal
+  function closeModal() {
+    const modal = document.getElementById("confirmation-modal");
+    modal.classList.add("hidden"); // Add the 'hidden' class to hide the modal
   }
 </script>
 

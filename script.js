@@ -45,7 +45,7 @@ fetch(storyFile)
     // Handle page turn with sound
     function handlePageTurn(direction) {
       const pageTurnSound = new Howl({
-        src: ["audios/pageturn.mp3"], // Replace with actual sound file path
+        src: ["./audios/pageturn.mp3"], // Replace with actual sound file path
         volume: 1
       });
 

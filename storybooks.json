@@ -281,6 +281,66 @@
         "link": "videos/Ang Ginintuang Ibon _ Golden Bird in Filipino _ Mga Kwentong Pambata _ @FilipinoFairyTales.mp4",
         "image": "https://thumbs.dreamstime.com/z/gold-bird-flight-vector-illustration-gradients-38881779.jpg"
        }
-      ]
-    }
+      ],
+      
+        "featuredBooks": [
+          {
+            "id": 1,
+            "title": "The Lion and the Mouse",
+            "image": "https://kidstut.com/wp-content/uploads/2024/06/1.jpg",
+            "description": "A heartwarming tale of friendship and discovery, teaching that even the smallest creatures can make a big impact.",
+            "link": "story.html?storyId=1"
+          },
+          {
+            "id": 2,
+            "title": "The Tortoise and the Hare",
+            "image": "https://kidstut.com/wp-content/uploads/2024/06/1-2.jpg",
+            "description": "A timeless story that teaches perseverance and patience—slow and steady wins the race.",
+            "link": "story.html?storyId=2"
+          },
+          {
+            "id": 3,
+            "title": "The Flying Tortoise’s Lesson",
+            "image": "https://kidstut.com/wp-content/uploads/2024/06/Slide1-10.jpg",
+            "description": "A cautionary tale about the dangers of overestimating our abilities and attempting things beyond our limits, leading to unintended consequences.",
+            "link": "story.html?storyId=3"
+          },
+          {
+            "id": 4,
+            "title": "The Ant and the Grasshopper",
+            "image": "https://kidstut.com/wp-content/uploads/2024/06/Slide1-14.jpg",
+            "description": "This story teaches the importance of hard work and planning ahead, while warning against procrastination.",
+            "link": "story.html?storyId=4"
+          },
+          {
+            "id": 5,
+            "title": "The Cunning Fox and The Crow",
+            "image": "https://kidstut.com/wp-content/uploads/2024/06/Slide1-12.jpg",
+            "description": "A fable about self-deception, teaching that it's easy to dismiss what we can't have as unimportant.",
+            "link": "story.html?storyId=5"
+          },
+          {
+            "id": 6,
+            "title": "The Honest Woodcutter",
+            "image": "https://kidstut.com/wp-content/uploads/2024/06/Slide1-9.jpg",
+            "description": "A story that teaches the value of honesty, showing how doing the right thing brings greater rewards.",
+            "link": "story.html?storyId=6"
+          },
+          {
+            "id": 7,
+            "title": "Sammy the Nut Collector",
+            "image": "https://kidstut.com/wp-content/uploads/2024/06/Slide1-8.jpg",
+            "description": "A story that teaches us, even the smallest creatures can achieve big dreams with determination.",
+            "link": "story.html?storyId=7"
+          },
+          {
+            "id": 8,
+            "title": "The Goose and the Golden Egg",
+            "image": "https://online.fliphtml5.com/efqpg/fqbq/files/shot.jpg",
+            "description": "A story that teaches us a valuable lesson about patience, contentment, and the dangers of greed.",
+            "link": "story.html?storyId=8"
+          }
+        ]
+      }
+      
     
