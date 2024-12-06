@@ -155,20 +155,21 @@ fetch(storyFile)
     // Function to show the suggestion modal when story is finished
     function showSuggestionModal() {
       document.getElementById('suggestion-modal').classList.remove('hidden');
+      document.body.classList.add('no-scroll'); // Prevent background scrolling
     }
 
     // Function to close the suggestion modal
     function closeSuggestionModal() {
       document.getElementById('suggestion-modal').classList.add('hidden');
+      document.body.classList.remove('no-scroll'); // Re-enable background scrolling
     }
 
-    // Function to handle "Yes, Show me more books"
+    // Function to suggest another story (redirects to book selection page)
     function suggestAnotherStory() {
-      // Redirect to the homepage or show a list of suggested stories
-      window.location.href = "index.html";  // Redirecting to home page. You can customize this to load another page with book suggestions.
+      window.location.href = "storybook.html"; // Replace with actual path for book selection
     }
 
-    // Adding event listeners for the modal buttons
+    // Event listeners for modal buttons
     document.querySelector(".close-modal").addEventListener("click", closeSuggestionModal);
     document.querySelector(".suggest-more-books").addEventListener("click", suggestAnotherStory);
 
