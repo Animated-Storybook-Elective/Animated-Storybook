@@ -53,20 +53,23 @@ document.addEventListener('DOMContentLoaded', function () {
                                 <div class="container mx-auto text-center">
                                     <h2 class="text-3xl font-bold mb-8 text-purple-700">${sectionTitles[key]}</h2>
                                     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
-                                        ${filteredBooks.map(book => `
-                                            <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition transform hover:scale-105 duration-300 flex flex-col h-full">
-                                                <img src="${book.image}" alt="${book.title}" class="w-full h-48 object-cover rounded-lg mb-4">
-                                                <div class="flex-1">
-                                                    <h3 class="text-xl font-bold mb-2">${book.title}</h3>
-                                                    <p class="text-gray-600 mb-4">${book.description}</p>
+                                        ${filteredBooks.map(book => {
+                                            const isFeatured = key === 'featuredBooks';
+                                            return `
+                                                <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition transform hover:scale-105 duration-300 flex flex-col h-full">
+                                                    <img src="${book.image}" alt="${book.title}" class="w-full h-48 object-cover rounded-lg mb-4">
+                                                    <div class="flex-1">
+                                                        <h3 class="text-xl font-bold mb-2">${book.title}</h3>
+                                                        <p class="text-gray-600 mb-4">${book.description}</p>
+                                                    </div>
+                                                    <a href="story.html?storyId=${book.id}">
+                                                        <button class="read-now-btn py-2 px-6 text-lg font-bold mt-auto">
+                                                            Start Adventure
+                                                        </button>
+                                                    </a>
                                                 </div>
-                                                <a href="storybook-detail.html?book=${encodeURIComponent(JSON.stringify(book))}">
-                                                    <button class="read-now-btn py-2 px-6 text-lg font-bold mt-auto">
-                                                        Start Adventure
-                                                    </button>
-                                                </a>
-                                            </div>
-                                        `).join('')}
+                                            `;
+                                        }).join('')}
                                     </div>
                                 </div>
                             </section>
