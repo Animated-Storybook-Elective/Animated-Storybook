@@ -14,76 +14,121 @@
   <!-- Animate.css for Animations -->
   <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet">
 
+  <!-- AOS Library -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+
   <!-- Custom Stylesheet -->
-  <link rel="stylesheet" href="./css/story.css">
+  <style>
+    /* Prevent scrolling on the sides */
+    html, body {
+      height: 100%;
+      margin: 0;
+      overflow-x: hidden; /* Disable horizontal scrolling */
+    }
+
+    /* Prevent vertical overflow and ensure body fills the screen */
+    body {
+      overflow-y: scroll; /* Keep vertical scrolling in control */
+    }
+
+    /* Center the content */
+    #controls {
+      display: flex;
+      justify-content: center; /* Horizontally center the content */
+      align-items: center; /* Vertically center the content */
+      height: 100vh; /* Full height of the screen */
+      position: relative; /* For positioning buttons */
+    }
+
+    /* Story container */
+    #storybook {
+      display: flex;
+      flex-direction: column; /* Arrange content vertically */
+      justify-content: center; /* Vertically center the content */
+      align-items: center; /* Horizontally center the content */
+      text-align: center; /* Center the text */
+      padding: 30px; /* Added padding for better spacing */
+    }
+
+    /* Ensure buttons stay on top */
+    #prev-btn, #next-btn {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%); /* Vertically center */
+      z-index: 10; /* Ensure buttons stay above other elements */
+      padding: 10px; /* Larger padding for bigger buttons */
+    }
+
+    /* Left and right positioning for buttons */
+    #prev-btn {
+      left: 20px;
+    }
+
+    #next-btn {
+      right: 20px;
+    }
+
+    /* Disable body scroll when modal is open */
+    body.no-scroll {
+      overflow: hidden;
+    }
+
+    /* Hide scrollbars */
+    ::-webkit-scrollbar {
+      display: none;
+    }
+
+    /* Styling for the image to prevent cropping and ensure it fits */
+    #page-image {
+      width: 100%; /* Make the image take the full width of the container */
+      max-width: 100%; /* Limit width to 95% of the container */
+      height: auto; /* Maintain the aspect ratio */
+      object-fit: contain; /* Ensure the image fits within the container without cropping */
+      max-height: 100vh; /* Limit height to 85% of the viewport height */
+      margin-bottom: 2rem; /* Increased space between image and text */
+    }
+
+    /* Adjustments to text styling */
+    #page-text {
+      font-size: 1.75rem; /* Slightly larger text */
+      color: #4A4A4A;
+      margin-top: 1.5rem; /* Space between text and image */
+      max-width: 90%; /* Ensure text fits the container */
+      text-align: center;
+      line-height: 1.8; /* Increased line height for better readability */
+    }
+
+    /* Progress bar styling */
+    #progress {
+      font-size: 1.5rem; /* Larger font for progress bar */
+      color: #333;
+      margin-top: 25px; /* Increased space */
+    }
+  </style>
 </head>
 <body class="bg-gray-100">
 
-  <!-- Navbar -->
-  <nav class="bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 text-white p-4 fixed w-full top-0 z-50">
-    <div class="container mx-auto flex justify-between items-center">
-      <!-- Logo and Title -->
-      <div class="flex items-center space-x-3">
-        <img src="images/logo.png" alt="StoryPlay Logo" class="h-10">
-        <a href="index.html" class="text-2xl font-bold">Cooh StoryPlay Hub</a>
-      </div>
-
-      <!-- Navbar Buttons -->
-      <div class="flex space-x-4">
-        <!-- Return Home Button -->
-        <button class="bg-blue-500 text-white py-2 px-4 rounded-full flex items-center hover:bg-blue-600 transition duration-300" onclick="openModal()">
-          <i class="fas fa-home mr-2"></i> Return Home
-        </button>
-
-        <!-- Read-Only Button -->
-        <button id="read-only-btn" class="bg-green-500 text-white py-2 px-4 rounded-full flex items-center hover:bg-green-600 transition duration-300" onclick="toggleReadOnly()">
-          <i class="fas fa-eye mr-2"></i> Read Only
-        </button>
-      </div>
-    </div>
-  </nav>
-
-  <!-- Modal: Confirm Navigation -->
-  <div id="confirmation-modal" class="fixed inset-0 bg-gray-800 bg-opacity-75 flex items-center justify-center z-50 hidden">
-    <div class="bg-white p-6 rounded-lg shadow-lg w-96 animate__animated animate__fadeInDown relative">
-      <!-- Close Button -->
-      <button class="absolute top-4 right-4 text-gray-400 hover:text-gray-600" onclick="closeModal()">
-        <i class="fas fa-times text-xl"></i>
-      </button>
-      <!-- Modal Content -->
-      <h2 class="text-2xl font-bold mb-4">
-        <i class="fas fa-question-circle text-blue-500 mr-2"></i> Confirm Navigation
-      </h2>
-      <p class="text-gray-600 mb-6">Are you sure you want to navigate back to the home page?</p>
-      <!-- Actions -->
-      <div class="flex justify-center space-x-4">
-        <button onclick="closeModal()" class="bg-gray-500 text-white py-2 px-4 rounded-lg hover:bg-gray-600">Cancel</button>
-        <a href="index.html" class="bg-blue-500 text-white py-2 px-4 rounded-lg hover:bg-blue-600">Confirm</a>
-      </div>
-    </div>
-  </div>
-
-  <!-- Story Navigation and Content with Gradient Background -->
-  <div id="controls" class="flex items-center justify-center mt-6 bg-gradient-to-r from-purple-50 via-pink-100 to-red-100" data-aos="fade-up" data-aos-duration="1200">
+  <!-- Story Navigation and Content -->
+  <div id="controls" class="flex items-center justify-center bg-gradient-to-r from-purple-50 via-pink-100 to-red-100" data-aos="fade-up" data-aos-duration="1200">
+    
     <!-- Prev Button -->
-    <button id="prev-btn" class="p-4">
-      <img src="images/prev.png" alt="Previous" class="h-20 w-20">
+    <button id="prev-btn" onclick="navigate('prev')">
+      <img src="images/prev.png" alt="Previous" class="h-24 w-24"> <!-- Increased button size -->
     </button>
 
     <!-- Storybook Content -->
-    <main class="text-center mx-0 mt-8">
-      <div id="storybook">
-        <div id="page-content" class="inline-block">
-          <img id="page-image" class="w-96 h-auto mx-auto mb-4" src="" alt="Page Image">
-          <p id="page-text" class="text-lg text-gray-700"></p>
-        </div>
+    <main id="storybook" class="flex flex-col items-center justify-center">
+      <div id="page-content" class="inline-block">
+        <img id="page-image" src="images/placeholder.png" alt="Page Image">
+        <p id="page-text">This is a placeholder text. The story text will appear here.</p>
       </div>
     </main>
 
     <!-- Next Button -->
-    <button id="next-btn" class="p-4">
-      <img src="images/next.png" alt="Next" class="h-20 w-20">
+    <button id="next-btn" onclick="navigate('next')">
+      <img src="images/next.png" alt="Next" class="h-24 w-24"> <!-- Increased button size -->
     </button>
+
   </div>
 
   <!-- Progress -->
@@ -91,70 +136,50 @@
     <span id="current-page">1</span>/<span id="total-pages">10</span>
   </div>
 
-  <!-- Modal: Finished Reading -->
-  <div id="suggestion-modal" class="fixed inset-0 bg-gray-800 bg-opacity-75 flex items-center justify-center z-50 hidden">
-    <div class="bg-white p-8 rounded-lg shadow-lg w-96 animate__animated animate__fadeInDown relative">
-      <!-- Close Button -->
-      <button class="absolute top-4 right-4 text-gray-400 hover:text-gray-600 transition duration-300" onclick="closeSuggestionModal()">
-        <i class="fas fa-times text-xl"></i>
-      </button>
-
-      <!-- Modal Content -->
-      <h2 class="text-3xl font-semibold text-center text-blue-600 mb-4">
-        <i class="fas fa-book-reader text-blue-500 mr-2"></i> Finished Reading!
-      </h2>
-      <p class="text-lg text-center text-gray-600 mb-6">Congratulations! You've reached the end of this story. Would you like to read another book?</p>
-
-      <!-- Actions -->
-      <div class="flex justify-center space-x-4">
-        <button onclick="closeSuggestionModal()" class="bg-gray-500 text-white py-2 px-4 rounded-lg hover:bg-gray-600 transition duration-300 flex items-center space-x-2">
-          <i class="fas fa-thumbs-down"></i>
-          <span>No, thanks</span>
-        </button>
-        <a href="index.html" class="bg-blue-500 text-white py-2 px-4 rounded-lg hover:bg-blue-600 transition duration-300 flex items-center space-x-2">
-          <i class="fas fa-book"></i>
-          <span>Yes, Please.</span>
-        </a>
-      </div>
-    </div>
-  </div>
-
-  <!-- Footer -->
-  <footer class="bg-gray-800 text-white text-center py-6 mt-8">
-    <div class="container mx-auto">
-      <p class="text-sm md:text-base">&copy; 2024 Cooh StoryPlay Hub. All Rights Reserved.</p>
-    </div>
-  </footer>
-
   <!-- Audio Elements -->
   <audio id="bg-music" loop></audio>
   <audio id="page-sound" loop></audio>
   <audio id="narration" loop></audio>
 
+ <!-- Modal: Finished Reading -->
+<div id="suggestion-modal" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 hidden">
+  <div class="bg-white p-6 rounded-lg shadow-lg w-full max-w-md relative animate__animated animate__fadeInDown">
+    <!-- Close Button -->
+    <button 
+      class="absolute top-4 right-4 text-gray-500 hover:text-gray-700 transition duration-300" 
+      onclick="closeSuggestionModal()">
+      <i class="fas fa-times text-2xl"></i>
+    </button>
+
+    <!-- Modal Content -->
+    <h2 class="text-2xl font-bold text-center text-blue-600 mb-4">
+      <i class="fas fa-book-reader text-blue-500 mr-2"></i> Finished Reading!
+    </h2>
+    <p class="text-center text-gray-600 text-lg mb-6">
+      Congratulations! You've reached the end of this story. Would you like to read another book?
+    </p>
+
+    <!-- Modal Actions -->
+    <div class="flex justify-center space-x-4">
+      <button 
+        class="bg-gray-500 text-white py-2 px-4 rounded-lg hover:bg-gray-600 transition flex items-center space-x-2" 
+        onclick="closeSuggestionModal()">
+        <i class="fas fa-thumbs-down"></i>
+        <span>No, thanks</span>
+      </button>
+      <a 
+        href="storybook.html" 
+        class="bg-blue-500 text-white py-2 px-4 rounded-lg hover:bg-blue-600 transition flex items-center space-x-2">
+        <i class="fas fa-book"></i>
+        <span>Yes, Please.</span>
+      </a>
+    </div>
+  </div>
+</div>
+
   <!-- External Scripts -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.2.3/howler.min.js"></script>
   <script src="script.js"></script>
-
-  <!-- Modal Script -->
-  <script>
-   let isReadOnly = false;  // Flag to track Read-Only state
-let narration = document.getElementById("narration");
-let pageSound = document.getElementById("page-sound");
-let bgMusic = document.getElementById("bg-music");
-
-function openModal() {
-  document.getElementById('confirmation-modal').classList.remove('hidden');
-}
-
-function closeModal() {
-  document.getElementById('confirmation-modal').classList.add('hidden');
-}
-
-function closeSuggestionModal() {
-  document.getElementById('suggestion-modal').classList.add('hidden');
-}
-
-  </script>
 
 </body>
 </html>

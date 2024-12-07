@@ -1,0 +1,346 @@
+{
+    "plainStorybooks": [
+      {
+        "title": "The Lion and the Mouse",
+        "description": "A heartwarming tale of friendship and discovery, teaching that even the smallest creatures can make a big impact.",
+        "link": "https://heyzine.com/flip-book/26fb6e7e40.html",
+        "image": "https://infinitylearn.com/surge/wp-content/uploads/2023/11/MicrosoftTeams-image-53-1.jpg"
+       },
+      {
+        "title": "The Tortoise and the Hare",
+        "description": "A timeless story that teaches perseverance and patience—slow and steady wins the race.",
+        "link": "https://heyzine.com/flip-book/da97009d37.html",
+        "image": "http://www.kidsgen.com/fables_and_fairytales/images/tortoise-and-the-hare.jpg"
+      },
+      {
+        "title": "The Boy Who Cried Wolf",
+        "description": "A cautionary tale about the consequences of lying and how losing trust is hard to recover.",
+        "link": "https://heyzine.com/flip-book/4b93776e24.html",
+        "image": "https://edustudynotes.com/wp-content/uploads/2023/10/got-an-idea-to-make-full-of-villagers.jpeg"
+      },
+      {
+        "title": "The Golden Goose",
+        "description": "A story of how kindness and generosity are rewarded, even when it seems like a small act.",
+        "link": "https://heyzine.com/flip-book/6f46b28c9e.html",
+        "image": "https://www.indiaparenting.com/images/76/golden-goose.jpg"
+      },
+      {
+        "title": "The Ant and the Grasshopper",
+        "description": "This story teaches the importance of hard work and planning ahead, while warning against procrastination.",
+        "link": "https://heyzine.com/flip-book/42c820d540.html",
+        "image": "https://storyworks2.scholastic.com/content/dam/classroom-magazines/storyworks2/issues/2022-23/050123/the-grasshopper-and-the-ant/ST2-06-050123-P24-FictionGrasshopperAnt-PO-0.jpg"
+      },
+      {
+        "title": "The Little Red Hen",
+        "description": "A moral story about hard work, responsibility, and the importance of sharing the rewards of effort.",
+        "link": "https://heyzine.com/flip-book/686632fbd4.html",
+        "image": "https://www.storyphoria.com/content/images/size/w2000/2023/12/hen-and-bread.png"
+      },
+      {
+        "title": "Stone Soup",
+        "description": "A heartwarming story that highlights the power of sharing and cooperation to create something wonderful.",
+        "link": "https://heyzine.com/flip-book/1ed04d5c26.html",
+        "image": "https://www.wikihow.com/images/thumb/e/e2/Make-Stone-Soup-Step-6.jpg/v4-460px-Make-Stone-Soup-Step-6.jpg"
+      },
+      {
+        "title": "The Ugly Duckling",
+        "description": "A beautiful story about self-worth, inner beauty, and how everyone has the potential for greatness.",
+        "link": "https://heyzine.com/flip-book/576fc14569.html",
+        "image": "https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/acb59983947639.5d4c1eabb9029.jpg"
+      },
+      {
+        "title": "The Cunning Fox and The Crow",
+        "description": "A fable about self-deception, teaching that it's easy to dismiss what we can't have as unimportant.",
+        "link": "https://heyzine.com/flip-book/77f775295d.html",
+        "image": "https://cdn.firstcry.com/education/2022/08/10183553/crow-fox-fable1.jpg"
+      },
+      {
+        "title": "The Honest Woodcutter",
+        "description": "A story that teaches the value of honesty, showing how doing the right thing brings greater rewards.",
+        "link": "https://heyzine.com/flip-book/8f2f3f0345.html",
+        "image": "https://kidstut.com/wp-content/uploads/2024/06/Slide1-9.jpg"
+      }
+        ],       
+    
+      "readWithMe": [
+  {
+    "title": "Steam Train Dream Train",
+    "description": "Read along with magical animations and sounds that bring the story to life!",
+    "link": "read-Along/Steam Train Dream Train Audiobook for Children Read Aloud @ Book in Bed.mp4",
+    "image": "https://tomlichtenheld.com/wordpress/wp-content/uploads/2021/12/STDT_INT3.png"
+  },
+  {
+    "title": "The Lorax",
+    "description": "Immerse yourself in a whimsical world with guided narration and colorful animations.",
+    "link": "read-Along/The Lorax Dr. Seuss Audiobook for kids Read Aloud app @ Book in Bed.mp4",
+    "image": "https://image.tmdb.org/t/p/original/hMBeJJXFBx1OKSKhSCcxOvU3kgj.jpg"
+  },
+  {
+    "title": "How the Grinch Stole Christmas",
+    "description": "Follow along with magical animations and sounds that make this classic holiday story even more fun!",
+    "link": "read-Along/How the Grinch Stole Christmas Audiobook Read Aloud by Dr. Seuss @ Book in Bed.mp4",
+    "image": "https://image.tmdb.org/t/p/original/pzvWSDYFiXJ6paBW3u4lQyecfAd.jpg"
+  },
+  {
+    "title": "Horton Hears a Who",
+    "description": "Step into a whimsical world with guided narration and enchanting illustrations.",
+    "link": "read-Along/Horton Hears Who by Dr. Seuss Audiobook Read Along @ Book in Bed.mp4",
+    "image": "https://www.themoviedb.org/t/p/original/iYYMhLU7Q702XydshudAcyViJ9V.jpg"
+  },
+  {
+    "title": "Goodnight, Goodnight, Construction Site",
+    "description": "Enjoy magical animations and sounds that make bedtime stories even more special.",
+    "link": "read-Along/Goodnight, Goodnight, Construction Site Audiobook Read Along @ Book in Bed.mp4",
+    "image": "https://m.media-amazon.com/images/I/61ZUsg-damL._SL500_.jpg"
+  }
+],
+        "audiobooks": [
+          {
+            "title": "Beauty and the Beast",
+            "description": "An enchanting tale of love and transformation.",
+            "link": "audiobooks/beautyBeast.mp3",
+            "image": "http://www.pngall.com/wp-content/uploads/5/Beauty-And-The-Beast-PNG-Free-Image.png"
+          },
+          {
+            "title": "Cinderella",
+            "description": "The magical story of a girl and her glass slipper.",
+            "link": "audiobooks/cinderella.mp3",
+            "image": "http://images6.fanpop.com/image/photos/34800000/Cinderella-disney-princess-34844831-643-606.png"
+          },
+          {
+            "title": "The Elves and the Shoemaker",
+            "description": "A heartwarming tale about kindness and gratitude.",
+            "link": "audiobooks/elvesshoemaker.mp3",
+            "image": "https://ci-cdn.childrensillustrators.com/images/published-books/S4BvHFMGGGnLzeycyn0ov7JtGIyNwWM6umA2bbOx.jpeg"
+          },
+          {
+            "title": "The Gingerbread Man",
+            "description": "Run, run, as fast as you can! Enjoy this lively story.",
+            "link": "audiobooks/gingerbread.mp3",
+            "image": "https://i.ytimg.com/vi/Mg2SduO7F84/maxresdefault.jpg"
+          },
+          {
+            "title": "Goldilocks and the Three Bears",
+            "description": "Discover what happens when Goldilocks explores the bears' house.",
+            "link": "audiobooks/goldilocks-shorter.mp3",
+            "image": "https://hachette.imgix.net/books/9781526380234.jpg?auto=compress,format"
+          },
+          {
+            "title": "Little Red Riding Hood",
+            "description": "Follow Little Red Riding Hood on her way to Grandma's house.",
+            "link": "audiobooks/Little-red-riding-hood-even-shorter.mp3",
+            "image": "https://dreamlittlestar.com/wp-content/uploads/2023/11/little-red-ridding-hood.jpg"
+          },
+          {
+            "title": "Puss in Boots",
+            "description": "The cunning cat who changes his master's fortune.",
+            "link": "audiobooks/Pussboots.mp3",
+            "image": "https://i.harperapps.com/hcanz/covers/9781803705026/y648.jpg"
+          },
+          {
+            "title": "Rapunzel",
+            "description": "A beautiful story about a girl with long golden hair locked in a tower.",
+            "link": "https://media.thefablecottage.com/stories/enxrtc69ttwa/enb-rapunzel-part1.mp3",
+            "image": "https://cdn.kobo.com/book-images/49f8379e-d9d5-4a83-81fe-35a74c49b331/1200/1200/False/tangled-rapunzel-s-story.jpg"
+          },
+          {
+            "title": "The Happy Prince",
+            "description": "A touching story of sacrifice, compassion, and love, as a statue and a little swallow help the needy.",
+            "link": "https://media.thefablecottage.com/stories/ena-happyprince-128-v1.mp3",
+            "image": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1599503024i/55261598.jpg"
+          },          
+          {
+            "title": "Hansel and Gretel",
+            "description": "An adventurous tale of two siblings and a witch's candy house.",
+            "link": "https://media.thefablecottage.com/stories/envol16hs9kv2/hg-ena-part1.mp3",
+            "image": "http://2.bp.blogspot.com/-_pWLzsoXgog/UNv7bc8rnnI/AAAAAAAAAPs/sZbMoswxRpE/s1600/hansel.jpg"
+          }
+       
+      ],
+      "videoStorybooks": [
+        {
+          "title": "The Wind and the Sun",
+          "description": "Discover the timeless fable about kindness and persuasion brought to life with vivid animations.",
+          "link": "https://www.youtube.com/embed/l0Z8A4u3CtI?si=lhSI50qwiNWBDgpy",
+          "image": "https://media.thefablecottage.com/stories/images/wind01.jpg"
+        },
+        {
+          "title": "Jack and the Beanstalk",
+          "description": "Follow Jack’s magical adventure up the beanstalk in this enchanting animated tale.",
+          "link": "https://www.youtube.com/embed/9a9qNLUpkV8?si=5crV40EftyaBZ_NE",
+          "image": "https://media.thefablecottage.com/stories/images/jack9.jpg"
+        },
+        {
+          "title": "Rapunzel",
+          "description": "Experience the magical story of Rapunzel and her golden hair in this visually stunning retelling.",
+          "link": "https://www.youtube.com/embed/ki_DGMh2r0c?si=GIeeSQoW5NPVxhBo",
+          "image": "https://media.thefablecottage.com/stories/images/rapunzel10.jpg"
+        },
+        {
+          "title": "Snow White",
+          "description": "Watch the beloved tale of Snow White unfold with captivating animations and storytelling.",
+          "link": "https://www.youtube.com/embed/wtMUy_3NGl4?si=BE81Gf3ZbY5NBfl_",
+          "image": "https://media.thefablecottage.com/stories/images/sw-17-url.jpg"  
+        },
+        {
+          "title": "Chicken Little",
+          "description": "Relive the hilarious story of Chicken Little and his friends in this delightful animated classic.",
+          "link": "https://www.youtube.com/embed/-_b_G-hAM3o?si=ssnY2s9LpTW7seGj",
+          "image": "https://media.thefablecottage.com/stories/images/chicken2-en.jpg"  
+        },
+        {
+          "title": "The Bear and the Bee",
+          "description": "Enjoy this charming tale of curiosity and friendship in a beautifully animated story.",
+          "link": "https://www.youtube.com/embed/9Q2t6o5TlwI?si=S2dlGXM4LyVOC1-m",
+          "image": "https://media.thefablecottage.com/stories/images/beebear02.jpg"
+         },
+        {
+          "title": "Tale of Peter Rabbit & Benjamin Bunny",
+          "description": "Follow the mischievous adventures of Peter Rabbit and his cousin Benjamin Bunny in this classic tale.",
+          "link": "https://www.youtube.com/embed/ZB4lOVRMt5I?si=WikLsKp563Ezh2Rp",
+          "image": "https://i.pinimg.com/736x/09/7a/d3/097ad350a07a2a7287161b7ab4ab0b14.jpg"
+         },
+        {
+          "title": "The Little Red Hen",
+          "description": "Learn about teamwork and hard work with this delightful story brought to life with colorful animations.",
+          "link": "https://www.youtube.com/embed/VjTJvwgJnGc?si=fi75qT7pkw81cBO3",
+          "image": "https://media.thefablecottage.com/stories/images/redhen00.jpg"
+         },
+        {
+          "title": "The Bird and the Whale",
+          "description": "Explore the heartwarming bond between a bird and a whale in this beautifully illustrated story.",
+          "link": "https://www.youtube.com/embed/FU_0NF_jrgE?si=6eY6setBJs3beAh2",
+          "image": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1654885636i/61262787.jpg"
+          },
+        {
+          "title": "The City Mouse and the Country Mouse",
+          "description": "Enjoy the delightful story of two mice exploring the joys and challenges of their different lifestyles.",
+          "link": "https://www.youtube.com/embed/3G7RQxk396A?si=Vqj9oITNe-CPAWWu",
+          "image": "https://media.thefablecottage.com/stories/images/mouse-1.jpg"
+           }
+
+      ],
+   "tagalogVideoStorybooks": [
+    {
+        "title": "Jungle Book",
+        "description": "Panuorin ang magic ng Jungle Book sa Filipino, kung saan ang pakikipagsapalaran at pagkakaibigan ay buhay na buhay!",
+        "link": "videos/Jungle Book _ Jungle Book in Filipino _ @FilipinoFairyTales.mp4",
+        "image": "https://dreamlittlestar.com/wp-content/uploads/2024/01/the-jungle-book.jpg"
+       },
+    {
+        "title": "Ang Tatlong Biik",
+        "description": "Sumama sa kasiyahan at alamin kung paano niloko ng tatlong maliliit na baboy ang malaking mabagsik na lobo sa animated na bersyon ng kwentong Filipino!",
+        "link": "videos/Ang Tatlong Biik _ Three Little Pigs in Filipino _ Mga Kwentong Pambata _ @FilipinoFairyTales.mp4",
+        "image": "https://media.baamboozle.com/uploads/images/575367/1638417280_61373.jpeg"
+        },
+    {
+        "title": "Ang Pangit na Bibe",
+        "description": "Panuorin ang kwento ng isang pangit na bibe na naging magandang swan, sa Filipino!",
+        "link": "videos/Ang Pangit na Bibe .mp4",
+        "image": "https://i.ytimg.com/vi/Lt2JM6LHhyg/maxresdefault.jpg"
+       },
+    {
+        "title": "Ang Kwento ni Robin Hood",
+        "description": "Sumama kay Robin Hood sa kanyang pakikipaglaban para sa katarungan sa animated na Filipino na bersyon ng kwento!",
+        "link": "videos/Ang Kwento ni Robin Hood _ Robin Hood in Filipino _ @FilipinoFairyTales.mp4",
+        "image": "https://static.vecteezy.com/system/resources/previews/005/161/833/original/cartoon-robin-hood-holding-a-bow-free-vector.jpg"
+       },
+    {
+        "title": "Ang Mananabas ng Kawayan",
+        "description": "Tuklasin ang kwento ng bamboo cutter, isang mahiwagang kwento ng Filipino na puno ng pakikipagsapalaran at karunungan.",
+        "link": "videos/Ang Mananabas ng Kawayan _ Tale of the Bamboo Cutter in Filipino _ @FilipinoFairyTales.mp4",
+        "image": "http://th04.deviantart.net/fs71/PRE/f/2012/009/e/a/kaguya_hime__the_bamboo_princess_by_seraphim_kimiko-d4lssgz.jpg"
+      },
+    {
+        "title": "Ang Mayabang na Puno",
+        "description": "Tangkilikin ang kwento ng isang mayabang na puno na natututo ng mahalagang aral ng pagpapakumbaba, sa Filipino.",
+        "link": "videos/Ang Mayabang na Puno _ Proud Tree in Filipino _ @FilipinoFairyTales.mp4",
+        "image": "https://www.goodfreephotos.com/albums/vector-images/colorful-natural-tree-vector-clipart.png"
+       },
+    {
+        "title": "Ang mga Duwende at ang Sapatero",
+        "description": "Maginhawa ang kwento ng mga duwende na tumulong sa sapatero, na nagdudulot ng kasiyahan at kabutihan sa puso!",
+        "link": "videos/Ang mga Duwende at ang Zapatero .mp4",
+        "image": "http://3.bp.blogspot.com/-ELdkOvcLskM/UNo5S-Jdx5I/AAAAAAAAAAs/0pLJFF7Ovso/s1600/The+elves+and+the+shoemaker.jpg"
+        },
+    {
+        "title": "Ang Unggoy at ang Buwaya",
+        "description": "Panuorin kung paano niloko ng matalinong unggoy ang buwaya sa klasikong kwento ng Filipino tungkol sa talino at kaligtasan!",
+        "link": "videos/Ang Unggoy at ang Buwaya .mp4",
+        "image": "https://4.bp.blogspot.com/-qGSYNaar3i8/V7m-488_kPI/AAAAAAAAAFE/fe7BHD70l-kuYvMCRvkkpL2L-fm5zoRYQCEw/s1600/3.jpg"
+       },
+    {
+        "title": "Si Pinocchio",
+        "description": "Sumama sa paglalakbay ni Pinocchio habang nangangarap siyang maging isang tunay na batang lalaki sa animated na Filipino na bersyon ng minamahal na kwento.",
+        "link": "videos/Si Pinocchio _ Pinocchio in Filipino _ Mga Kwentong Pambata _ @FilipinoFairyTales.mp4",
+        "image": "https://www.diariodecultura.com.ar/wp-content/uploads/2020/10/fre-2.png"
+          },
+    {
+        "title": "Ang Ginintuang Ibon",
+        "description": "Sumama sa isang mahiwagang pakikipagsapalaran upang hanapin ang ginintuang ibon, isang kwento ng misteryo at kasiyahan sa Filipino.",
+        "link": "videos/Ang Ginintuang Ibon _ Golden Bird in Filipino _ Mga Kwentong Pambata _ @FilipinoFairyTales.mp4",
+        "image": "https://thumbs.dreamstime.com/z/gold-bird-flight-vector-illustration-gradients-38881779.jpg"
+       }
+      ],
+      
+        "featuredBooks": [
+          {
+            "id": 1,
+            "title": "The Lion and the Mouse",
+            "image": "https://kidstut.com/wp-content/uploads/2024/06/1.jpg",
+            "description": "A heartwarming tale of friendship and discovery, teaching that even the smallest creatures can make a big impact.",
+            "link": "story.html?storyId=1"
+          },
+          {
+            "id": 2,
+            "title": "The Tortoise and the Hare",
+            "image": "https://kidstut.com/wp-content/uploads/2024/06/1-2.jpg",
+            "description": "A timeless story that teaches perseverance and patience—slow and steady wins the race.",
+            "link": "story.html?storyId=2"
+          },
+          {
+            "id": 3,
+            "title": "The Flying Tortoise’s Lesson",
+            "image": "https://kidstut.com/wp-content/uploads/2024/06/Slide1-10.jpg",
+            "description": "A cautionary tale about the dangers of overestimating our abilities and attempting things beyond our limits, leading to unintended consequences.",
+            "link": "story.html?storyId=3"
+          },
+          {
+            "id": 4,
+            "title": "The Ant and the Grasshopper",
+            "image": "https://kidstut.com/wp-content/uploads/2024/06/Slide1-14.jpg",
+            "description": "This story teaches the importance of hard work and planning ahead, while warning against procrastination.",
+            "link": "story.html?storyId=4"
+          },
+          {
+            "id": 5,
+            "title": "The Cunning Fox and The Crow",
+            "image": "https://kidstut.com/wp-content/uploads/2024/06/Slide1-12.jpg",
+            "description": "A fable about self-deception, teaching that it's easy to dismiss what we can't have as unimportant.",
+            "link": "story.html?storyId=5"
+          },
+          {
+            "id": 6,
+            "title": "The Honest Woodcutter",
+            "image": "https://kidstut.com/wp-content/uploads/2024/06/Slide1-9.jpg",
+            "description": "A story that teaches the value of honesty, showing how doing the right thing brings greater rewards.",
+            "link": "story.html?storyId=6"
+          },
+          {
+            "id": 7,
+            "title": "Sammy the Nut Collector",
+            "image": "https://kidstut.com/wp-content/uploads/2024/06/Slide1-8.jpg",
+            "description": "A story that teaches us, even the smallest creatures can achieve big dreams with determination.",
+            "link": "story.html?storyId=7"
+          },
+          {
+            "id": 8,
+            "title": "The Goose and the Golden Egg",
+            "image": "https://online.fliphtml5.com/efqpg/fqbq/files/shot.jpg",
+            "description": "A story that teaches us a valuable lesson about patience, contentment, and the dangers of greed.",
+            "link": "story.html?storyId=8"
+          }
+        ]
+      }
+      
+    
