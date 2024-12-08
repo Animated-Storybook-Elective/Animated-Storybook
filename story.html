@@ -24,26 +24,25 @@
     <div class="container mx-auto flex justify-between items-center">
       <!-- Logo and Title -->
       <div class="flex items-center space-x-3">
-        <img src="images/logo.png" alt="StoryPlay Logo" class="h-10">
+      <img src="images/logo.png" alt="StoryPlay Logo" class="h-12">
         <a href="index.html" class="text-2xl font-bold">Cooh StoryPlay Hub</a>
       </div>
-<!-- Navbar Buttons -->
-<div class="flex space-x-4">
-  <!-- Return Home Button -->
-  <button onclick="openModal()" class="bg-blue-500 text-white py-2 px-4 rounded-lg hover:bg-blue-600">
-    Return to Home
-  </button>
-  
-  <!-- Read-Only Button -->
-  <button id="read-only-btn" class="bg-green-500 text-white py-2 px-4 rounded-full flex items-center hover:bg-green-600 transition duration-300" onclick="toggleReadOnly()">
-    <i class="fas fa-eye mr-2"></i> Read Only
-  </button>
-</div>
-
+      <!-- Navbar Buttons -->
+      <div class="flex space-x-4">
+        <!-- Return Home Button -->
+        <button onclick="openModal()" class="bg-blue-500 text-white py-2 px-4 rounded-lg hover:bg-blue-600">
+          Return to Home
+        </button>
+        
+        <!-- Read-Only Button -->
+        <button id="read-only-btn" class="bg-green-500 text-white py-2 px-4 rounded-full flex items-center hover:bg-green-600 transition duration-300" onclick="toggleReadOnly()">
+          <i class="fas fa-eye mr-2"></i> Read Only
+        </button>
+      </div>
+    </div>
   </nav>
 
   <!-- Modal: Confirm Navigation -->
-   
   <div id="confirmation-modal" class="fixed inset-0 bg-gray-800 bg-opacity-75 flex items-center justify-center z-50 hidden">
     <div class="bg-white p-6 rounded-lg shadow-lg w-96 animate__animated animate__fadeInDown relative">
       <!-- Close Button -->
@@ -62,7 +61,6 @@
       </div>
     </div>
   </div>
-  
 
   <!-- Story Navigation and Content with Gradient Background -->
   <div id="controls" class="flex items-center justify-center mt-6 bg-gradient-to-r from-purple-50 via-pink-100 to-red-100" data-aos="fade-up" data-aos-duration="1200">
@@ -134,59 +132,32 @@
 
   <!-- External Scripts -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.2.3/howler.min.js"></script>
+  
+  <!-- GSAP Library -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+
   <script src="script.js"></script>
 
-  <!-- Modal Script  -->
-
-<script>
-  // Function to display the modal
-  function openModal() {
-    const modal = document.getElementById("confirmation-modal");
-    modal.classList.remove("hidden"); // Remove the 'hidden' class to show the modal
-  }
-
-  // Function to hide the modal
-  function closeModal() {
-    const modal = document.getElementById("confirmation-modal");
-    modal.classList.add("hidden"); // Add the 'hidden' class to hide the modal
-  }
-
-  document.addEventListener('DOMContentLoaded', function () {
-    // Get the storyId from the URL
-    const params = new URLSearchParams(window.location.search);
-    const storyId = params.get('storyId');
-
-    if (!storyId) {
-        console.error('No storyId found in URL');
-        return;
+  <!-- Modal Script -->
+  <script>
+    // Function to display the modal
+    function openModal() {
+      const modal = document.getElementById("confirmation-modal");
+      modal.classList.remove("hidden"); // Remove the 'hidden' class to show the modal
     }
 
-    // Fetch the book data
-    fetch('storybooks.json')
-        .then(response => response.json())
-        .then(data => {
-            // Find the book based on the storyId
-            const book = data.featuredBooks.find(book => book.id === parseInt(storyId));
+    // Function to hide the modal
+    function closeModal() {
+      const modal = document.getElementById("confirmation-modal");
+      modal.classList.add("hidden"); // Add the 'hidden' class to hide the modal
+    }
 
-            if (book) {
-                // Populate the book details on the page
-                document.getElementById('book-title').textContent = book.title;
-                document.getElementById('book-description').textContent = book.description;
-                document.getElementById('book-image').src = book.image;
-                document.getElementById('book-link').href = book.link;
-            } else {
-                console.error('Book not found!');
-                // Optionally, show an error message
-                document.getElementById('book-details').innerHTML = `<p>Sorry, we couldn't find the story you're looking for.</p>`;
-            }
-        })
-        .catch(error => {
-            console.error('Error fetching story data:', error);
-            document.getElementById('book-details').innerHTML = `<p>Sorry, there was an error loading the story details.</p>`;
-        });
-});
-
-</script>
+    // Function to close the suggestion modal
+    function closeSuggestionModal() {
+      const suggestionModal = document.getElementById("suggestion-modal");
+      suggestionModal.classList.add("hidden");
+    }
+  </script>
 
 </body>
 </html>
