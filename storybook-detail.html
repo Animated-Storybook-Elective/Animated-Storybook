@@ -15,10 +15,10 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet">
 
     <style>
-        iframe, video {
-            width: 100%;
-            max-width: 1200px;
-            height: 56.25vw; /* Aspect ratio 16:9 */
+        iframe {
+            width: 100%;  
+            max-width: 1200px; 
+            height: 56.25vw;  
             margin: 0 auto;
             display: block;
         }
@@ -26,12 +26,14 @@
         .modal {
             display: none;
             position: fixed;
-            inset: 0;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
             background: rgba(0, 0, 0, 0.5);
             justify-content: center;
             align-items: center;
         }
-
         .modal-content {
             background-color: white;
             padding: 20px;
@@ -40,44 +42,50 @@
             max-width: 400px;
             text-align: center;
         }
+        .modal-button {
+            background-color: #E53E3E; 
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
     </style>
 </head>
 <body class="bg-gradient-to-r from-purple-50 via-pink-100 to-red-100">
 
-    <!-- Navbar -->
     <nav class="navbar bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 text-white p-4 fixed w-full top-0 z-50">
         <div class="container mx-auto flex items-center justify-between">
             <div class="logo flex items-center space-x-2">
-                <img src="images/logo.png" alt="StoryPlay Logo" class="h-12">
+<img src="images/logo.png" alt="StoryPlay Logo" class="h-12">
                 <a href="index.html" class="text-2xl font-bold">Cooh StoryPlay Hub</a>
             </div>
-            <button class="bg-blue-500 text-white py-2 px-4 rounded-full hover:bg-blue-600 transition duration-300" onclick="openModal()">
-                <i class="fas fa-home mr-2"></i> Return Home
-            </button>
+            <div class="flex space-x-4">
+                <button class="bg-blue-500 text-white py-2 px-4 rounded-full flex items-center hover:bg-blue-600 transition duration-300" onclick="openModal()">
+                    <i class="fas fa-home mr-2"></i> Return Home
+                </button>
+            </div>
         </div>
     </nav>
 
-    <!-- Modal -->
-    <div id="confirmation-modal" class="modal">
-        <div class="modal-content animate__animated animate__fadeInDown">
+    <!-- Modal: Confirm Navigation -->
+    <div id="confirmation-modal" class="fixed inset-0 bg-gray-800 bg-opacity-75 flex items-center justify-center z-50 hidden">
+        <div class="bg-white p-6 rounded-lg shadow-lg w-96 animate__animated animate__fadeInDown relative">
             <button class="absolute top-4 right-4 text-gray-400 hover:text-gray-600" onclick="closeModal()">
-                <i class="fas fa-times"></i>
+                <i class="fas fa-times text-xl"></i>
             </button>
-            <h2 class="text-2xl font-bold mb-4">
-                <i class="fas fa-question-circle text-blue-500 mr-2"></i> Confirm Navigation
-            </h2>
+            <h2 class="text-2xl font-bold mb-4"><i class="fas fa-question-circle text-blue-500 mr-2"></i> Confirm Action</h2>
             <p class="text-gray-600 mb-6">Are you sure you want to navigate back to the home page?</p>
             <div class="flex justify-center space-x-4">
                 <button onclick="closeModal()" class="bg-gray-500 text-white py-2 px-4 rounded-lg hover:bg-gray-600">Cancel</button>
-                <a href="index.html" class="bg-blue-500 text-white py-2 px-4 rounded-lg hover:bg-blue-600">Confirm</a>
+                <a href="storybook.html" class="bg-blue-500 text-white py-2 px-4 rounded-lg hover:bg-blue-600">Confirm</a>
             </div>
         </div>
     </div>
 
-    <!-- Story Content -->
     <div class="container mx-auto mt-24 p-4">
         <div id="storybook-content" class="text-center">
-            <!-- Dynamic content will be loaded here -->
+            <!-- Dynamic content will be inserted here (either video or storybook) -->
         </div>
     </div>
 
@@ -92,69 +100,89 @@
     </footer>
 
     <script>
-        // Modal functions
+        // Function to open the modal when "Return Home" button is clicked
         function openModal() {
             document.getElementById("confirmation-modal").style.display = "flex";
         }
 
+        // Function to close the modal when "Cancel" or "X" button is clicked
         function closeModal() {
             document.getElementById("confirmation-modal").style.display = "none";
         }
 
-       document.addEventListener('DOMContentLoaded', function () {
-    const urlParams = new URLSearchParams(window.location.search);
+// Parse the URL query to get the book data
+const urlParams = new URLSearchParams(window.location.search);
+const bookData = JSON.parse(decodeURIComponent(urlParams.get('book')));
 
-    const bookDetails = {
-        id: urlParams.get('id'),
-        title: urlParams.get('title'),
-        description: urlParams.get('description'),
-        image: urlParams.get('image'),
-        link: urlParams.get('link')
-    };
+// Check if the book is part of the featured books list
+const featuredBooks = [
+  { "id": 1, "title": "The Lion and the Mouse" },
+  { "id": 2, "title": "The Tortoise and the Hare" },
+  { "id": 3, "title": "The Flying Tortoise’s Lesson" },
+  { "id": 4, "title": "The Ant and the Grasshopper" },
+  { "id": 5, "title": "The Cunning Fox and The Crow" },
+  { "id": 6, "title": "The Honest Woodcutter" },
+  { "id": 7, "title": "Sammy the Nut Collector" },
+  { "id": 8, "title": "The Goose and the Golden Egg" }
+];
 
-    const contentDiv = document.getElementById('storybook-content');
+// Check if the book's ID matches any in the featuredBooks array
+const isFeatured = featuredBooks.some(featuredBook => featuredBook.id === bookData.id);
 
-    if (!bookDetails.id) {
-        contentDiv.innerHTML = `<h2 class="text-2xl font-bold text-red-600">Story Not Found</h2>`;
-        return;
-    }
+// If the book is a featured one, redirect to the story page
+if (isFeatured) {
+  window.location.href = `story.html?book=${encodeURIComponent(JSON.stringify(bookData))}`;
+} else {
+  // Proceed with displaying the story content for regular books in storybook-detail.html
+  const contentDiv = document.getElementById('storybook-content');
 
-    const { title, description, image, link } = bookDetails;
-
-    if (link.includes("youtube.com")) {
-        contentDiv.innerHTML = `
-            <h2 class="text-3xl font-bold">${title}</h2>
-            <p class="text-lg">${description}</p>
-            <iframe src="${link}?autoplay=1" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-        `;
-    } else if (link.endsWith(".mp3")) {
-        contentDiv.innerHTML = `
-            <img src="${image}" alt="${title}" class="w-80 mx-auto mb-4 rounded-lg">
-            <h2 class="text-3xl font-bold">${title}</h2>
-            <p class="text-lg">${description}</p>
-            <audio controls autoplay>
-                <source src="${link}" type="audio/mp3">
-                Your browser does not support the audio element.
-            </audio>
-        `;
-    } else if (link.endsWith(".mp4") || link.endsWith(".webm")) {
-        contentDiv.innerHTML = `
-            <h2 class="text-3xl font-bold">${title}</h2>
-            <p class="text-lg">${description}</p>
-            <video controls autoplay>
-                <source src="${link}" type="video/mp4">
-                Your browser does not support the video element.
-            </video>
-        `;
-    } else {
-        contentDiv.innerHTML = `
-            <h2 class="text-3xl font-bold">${title}</h2>
-            <p class="text-lg">${description}</p>
-            <iframe src="${link}" frameborder="0"></iframe>
-        `;
-    }
-});
-
+  // Check if the book data contains a YouTube link (video storybook)
+  if (bookData.link.includes("youtube.com")) {
+    const videoUrl = bookData.link.includes("?") ? `${bookData.link}&autoplay=1` : `${bookData.link}?autoplay=1`; // Add autoplay parameter
+    contentDiv.innerHTML = `
+      <div class="mb-4">
+        <h2 class="text-2xl font-bold">${bookData.title}</h2>
+        <p class="text-lg">${bookData.description}</p>
+      </div>
+      <iframe src="${videoUrl}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen class="w-full max-w-4xl mx-auto" style="height: 450px;"></iframe>
+    `;
+  }
+  // Check for audiobook content (audio format)
+  else if (bookData.link.includes(".mp3")) {
+    contentDiv.innerHTML = `
+      <div class="mb-4">
+        <img src="${bookData.image}" alt="${bookData.title} cover" class="w-80 mx-auto mb-4 rounded-lg shadow-lg">
+        <h2 class="text-2xl font-bold">${bookData.title}</h2>
+        <p class="text-lg text-gray-700">${bookData.description}</p>
+      </div>
+      <!-- Audio Player -->
+      <audio controls class="w-full max-w-3xl mx-auto mt-4" autoplay>
+        <source src="${bookData.link}" type="audio/mp3">
+        Your browser does not support the audio element.
+      </audio>
+    `;
+  }
+  // Check for video-based flipbook story (mp4, webm, ogg)
+  else if (bookData.link.includes(".mp4") || bookData.link.includes(".webm") || bookData.link.includes(".ogg")) {
+    contentDiv.innerHTML = `
+      <div class="mb-4">
+        <h2 class="text-2xl font-bold">${bookData.title}</h2>
+        <p class="text-lg">${bookData.description}</p>
+      </div>
+      <video class="w-full max-w-4xl mx-auto" autoplay controls style="height: 450px;">
+        <source src="${bookData.link}" type="video/mp4">
+        Your browser does not support the video element.
+      </video>
+    `;
+  }
+  // Otherwise, assume it's a flipbook-style story (web-based)
+  else {
+    contentDiv.innerHTML = `
+      <p>Here's your story:</p>
+      <iframe src="${bookData.link}" frameborder="0" class="w-full max-w-3xl mx-auto" style="height: 450px;"></iframe>
+    `;
+  }
+}
     </script>
 
 </body>
