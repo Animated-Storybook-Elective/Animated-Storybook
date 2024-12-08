@@ -26,7 +26,8 @@
       "page": 3,
       "image": "images/story1/The Lion and the mouse-images-2.jpg",
       "sound": "audios/sound-effects/pageturn.mp3",
-      "bgMusic": "audios/sound-effects/jungle.mp3",
+      "bgMusic": "audios/sound-effects/squeaking.mp3",
+      "bgMusicDelay": 5,
       "narration": "audios/story1/s1-3.mp3",
       "narrationVolume": 1,
       "bgMusicVolume": 0.2
